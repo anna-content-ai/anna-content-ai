@@ -1,59 +1,79 @@
-# Hi, I'm Anna 👋
+# Anna Ziółkowska
 
-AI & Content Marketing Specialist based in Warsaw, Poland.
+**Content Marketing & AI-Assisted Content Specialist | Warsaw, Poland**
 
-I help brands create better content by combining marketing strategy, AI tools and creativity. My focus is on content marketing, social media, SEO and practical AI workflows that improve everyday marketing processes.
+I am a marketing and content professional with 9+ years of experience in content creation, social media, digital marketing and brand communication.
 
----
-
-## 🚀 Areas of expertise
-
-- Content Marketing
-- Social Media Strategy
-- AI-assisted Content Creation
-- Prompt Engineering
-- SEO Content
-- Digital Marketing
-- WordPress
-- Marketing Analytics
+I combine editorial judgment, marketing strategy and AI tools to create clear, accurate and audience-focused content. My current focus is on practical AI-assisted workflows that improve research, content production, editing, quality control and repurposing.
 
 ---
 
-## 🛠️ Tools I use
+## Professional focus
 
-- ChatGPT
-- Claude
-- NotebookLM
-- Figma
-- Canva
-- WordPress
-- Google Analytics
-- CapCut
-
----
-
-## 🌱 Currently learning
-
-- AI Content Operations
-- AI Agents
-- Advanced Prompt Engineering
-- n8n
+- Content strategy and editorial planning
+- AI-assisted content creation and editing
+- Social media and brand communication
+- SEO content and on-page optimization
+- Content repurposing across digital channels
+- Research, fact-checking and quality assurance
+- Prompt design and structured AI workflows
+- WordPress content publishing
 
 ---
 
-## 📂 Featured projects
+## How I work with AI
 
-Coming soon...
+I use AI to support the content process rather than replace editorial judgment.
 
-- AI Prompt Library
-- AI Content Workflows
-- Marketing Case Studies
-- AI Experiments
-- Portfolio Website
+My typical workflow:
+
+**Research → Content brief → Prompt design → Draft → Human editing → Fact-checking → SEO optimization → Publication**
+
+I work primarily with ChatGPT, Claude and NotebookLM to:
+
+- organize research and source materials,
+- develop content structures and first drafts,
+- adapt content to different audiences and channels,
+- improve clarity, consistency and brand voice,
+- review AI-generated outputs for accuracy and quality,
+- create reusable content and editorial workflows.
 
 ---
 
-## 📫 Connect with me
+## Selected projects
+| Project | Focus | Status |
+|---|---|---|
+| **AI Prompt Library** | Practical prompts for content, social media, SEO, research and editing | In development |
+| **AI Content Workflows** | Documented processes for AI-assisted content production and quality control | In development |
+| **Marketing Case Studies** | Selected marketing, content and social media projects | In development |
+| **Brand Impersonation Detection with AI** | Postgraduate thesis combining AI, marketing and cybersecurity | In progress |
+| **AI Prościej** | Personal educational content project focused on practical AI use | In development |
 
-- LinkedIn: *(add your profile link here)*
-- Portfolio: *(coming soon)*
+---
+
+## Tools
+| Area | Tools |
+|---|---|
+| **AI and research** | ChatGPT, Claude, NotebookLM |
+| **Content management** | WordPress, GetResponse |
+| **Design and video** | Figma, Canva, CapCut |
+| **Analytics and insights** | Google Analytics 4, Google Trends |
+| **Social media** | Meta Business Suite, LinkedIn, TikTok, YouTube |
+| **Marketing operations** | Microsoft Office, Google Workspace |
+| **Developing skills** | n8n, Make, AI agents |
+---
+
+## Currently developing
+- AI-assisted editorial workflows
+- Content quality evaluation
+- Prompt design for marketing and content
+- AI-supported research and fact-checking
+- Scalable content repurposing processes
+
+---
+
+## Contact
+
+- **LinkedIn:** https://bit.ly/linkedin-anna-ziolkowska
+- **Portfolio:** Coming soon
+- **Email:** aiprosciej@gmail.com
