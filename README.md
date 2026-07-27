@@ -6,8 +6,6 @@ I am a marketing and content professional with 9+ years of experience in content
 
 I combine editorial judgment, marketing strategy and AI tools to create clear, accurate and audience-focused content. My current focus is on practical AI-assisted workflows that improve research, content production, editing, quality control and repurposing.
 
----
-
 ## Professional focus
 
 - Content strategy and editorial planning
@@ -18,8 +16,6 @@ I combine editorial judgment, marketing strategy and AI tools to create clear, a
 - Research, fact-checking and quality assurance
 - Prompt design and structured AI workflows
 - WordPress content publishing
-
----
 
 ## How I work with AI
 
@@ -38,8 +34,6 @@ I work primarily with ChatGPT, Claude and NotebookLM to:
 - review AI-generated outputs for accuracy and quality,
 - create reusable content and editorial workflows.
 
----
-
 ## Selected projects
 | Project | Focus | Status |
 |---|---|---|
@@ -48,8 +42,6 @@ I work primarily with ChatGPT, Claude and NotebookLM to:
 | **Marketing Case Studies** | Selected marketing, content and social media projects | In development |
 | **Brand Impersonation Detection with AI** | Postgraduate thesis combining AI, marketing and cybersecurity | In progress |
 | **AI Prościej** | Personal educational content project focused on practical AI use | In development |
-
----
 
 ## Tools
 | Area | Tools |
@@ -61,7 +53,6 @@ I work primarily with ChatGPT, Claude and NotebookLM to:
 | **Social media** | Meta Business Suite, LinkedIn, TikTok, YouTube |
 | **Marketing operations** | Microsoft Office, Google Workspace |
 | **Developing skills** | n8n, Make, AI agents |
----
 
 ## Currently developing
 - AI-assisted editorial workflows
@@ -69,8 +60,6 @@ I work primarily with ChatGPT, Claude and NotebookLM to:
 - Prompt design for marketing and content
 - AI-supported research and fact-checking
 - Scalable content repurposing processes
-
----
 
 ## Contact
 
