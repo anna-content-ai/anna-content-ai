@@ -1,13 +1,11 @@
 # Anna Ziółkowska
 
 **Content Marketing & AI-Assisted Content Specialist | Warsaw, Poland**
-
 I am a marketing and content professional with 9+ years of experience in content creation, social media, digital marketing and brand communication.
 
 I combine editorial judgment, marketing strategy and AI tools to create clear, accurate and audience-focused content. My current focus is on practical AI-assisted workflows that improve research, content production, editing, quality control and repurposing.
 
 ## Professional focus
-
 - Content strategy and editorial planning
 - AI-assisted content creation and editing
 - Social media and brand communication
@@ -18,15 +16,12 @@ I combine editorial judgment, marketing strategy and AI tools to create clear, a
 - WordPress content publishing
 
 ## How I work with AI
-
 I use AI to support the content process rather than replace editorial judgment.
 
 My typical workflow:
-
 **Research → Content brief → Prompt design → Draft → Human editing → Fact-checking → SEO optimization → Publication**
 
 I work primarily with ChatGPT, Claude and NotebookLM to:
-
 - organize research and source materials,
 - develop content structures and first drafts,
 - adapt content to different audiences and channels,
@@ -47,22 +42,25 @@ I work primarily with ChatGPT, Claude and NotebookLM to:
 | Area | Tools |
 |---|---|
 | **AI and research** | ChatGPT, Claude, NotebookLM |
+| **AI translation and language** | DeepL |
+| **AI voice and audio** | ElevenLabs |
+| **AI-assisted design and video** | Canva AI, CapCut AI |
 | **Content management** | WordPress, GetResponse |
-| **Design and video** | Figma, Canva, CapCut |
+| **Graphic design and illustration** | Figma, Canva, Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Procreate |
+| **Video editing** | CapCut |
 | **Analytics and insights** | Google Analytics 4, Google Trends |
 | **Social media** | Meta Business Suite, LinkedIn, TikTok, YouTube |
+| **Project management and collaboration** | Microsoft Teams, Trello, Asana, Notion |
 | **Marketing operations** | Microsoft Office, Google Workspace |
-| **Developing skills** | n8n, Make, AI agents |
 
 ## Currently developing
-- AI-assisted editorial workflows
+- AI-assisted content editing
 - Content quality evaluation
-- Prompt design for marketing and content
+- Prompt design for marketing tasks
 - AI-supported research and fact-checking
-- Scalable content repurposing processes
+- Content repurposing across digital channels
 
 ## Contact
-
 - **LinkedIn:** https://bit.ly/linkedin-anna-ziolkowska
 - **Portfolio:** Coming soon
 - **Email:** aiprosciej@gmail.com
