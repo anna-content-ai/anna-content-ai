@@ -12,6 +12,7 @@ I combine content strategy, editorial judgment and practical AI workflows to cre
 - AI-assisted content creation and editing
 - Social media and brand communication
 - Content quality evaluation and UX writing
+- Product concepts, information architecture and user flows
 - Research, fact-checking and source verification
 - Content repurposing across digital channels
 - Prompt design and structured AI workflows
@@ -22,6 +23,7 @@ I combine content strategy, editorial judgment and practical AI workflows to cre
 
 | Project | What it demonstrates |
 |---|---|
+| [Odetchnij Teraz – Well-being App Concept](https://github.com/anna-content-ai/odetchnij-teraz) | Product thinking, information architecture, UX writing, accessibility considerations and AI-assisted prototyping |
 | [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library) | Practical prompts, documented workflows and case studies for content, editing, research and quality assurance |
 | [AI Content Review – SaaS Landing Page and UX Writing](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md) | Editorial review, unsupported-claim detection, UX writing and safer interface copy |
 | [ChatGPT vs Claude – Content Review Comparison](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/chatgpt-vs-claude-content-review.md) | Model-output evaluation, prompt testing, factual caution and human editorial decision-making |
@@ -35,6 +37,7 @@ I combine content strategy, editorial judgment and practical AI workflows to cre
 - identifying unsupported claims and information requiring verification,
 - comparing model outputs and documenting their limitations,
 - adapting content to different audiences and communication channels,
+- designing user flows and supportive interface content,
 - separating verified facts from interpretations, assumptions and unknowns,
 - maintaining human responsibility for final editorial decisions.
 
@@ -74,6 +77,10 @@ Every AI-generated output requires human review before publication.
 
 ## Current projects
 
+### Odetchnij Teraz
+
+A mobile well-being app concept focused on short breathing, grounding and emotional-reset activities. The project includes product thinking, information architecture, UX writing, onboarding and habit flows, accessibility considerations and AI-assisted prototyping.
+
 ### AI Prościej
 
 A personal educational content concept focused on making AI tools and workflows easier to understand and use in everyday marketing and office work.
@@ -84,11 +91,12 @@ A postgraduate thesis combining marketing, artificial intelligence and cybersecu
 
 ### Visual portfolio
 
-A dedicated portfolio website presenting selected content, social media, AI-assisted workflow and research projects is currently in development.
+A dedicated portfolio website presenting selected content, social media, AI-assisted workflow, product and research projects is currently in development.
 
 ## Contact
 
 - **LinkedIn:** [Anna Ziółkowska](https://bit.ly/linkedin-anna-ziolkowska)
 - **GitHub project:** [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library)
+- **Product case study:** [Odetchnij Teraz](https://github.com/anna-content-ai/odetchnij-teraz)
 - **Email:** [aiprosciej@gmail.com](mailto:aiprosciej@gmail.com)
 - **Portfolio website:** In development
