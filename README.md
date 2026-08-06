@@ -23,7 +23,7 @@ I combine content strategy, editorial judgment and practical AI workflows to cre
 
 | Project | What it demonstrates |
 |---|---|
-| [Odetchnij Teraz – Interactive Well-being App Prototype](https://github.com/anna-content-ai/odetchnij-teraz) | Product thinking, information architecture, UX writing, accessibility, MVP prioritisation and AI-assisted prototyping |
+| [Odetchnij Teraz – Interactive Well-being App Prototype](https://github.com/anna-content-ai/odetchnij-teraz) | SGH team project; interface design through AI-assisted vibe coding, UX writing, information architecture, Nielsen heuristics, accessibility and MVP prioritisation |
 | [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library) | Practical prompts, documented workflows and case studies for content, editing, research and quality assurance |
 | [AI Content Review – SaaS Landing Page and UX Writing](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md) | Editorial review, unsupported-claim detection, UX writing and safer interface copy |
 | [ChatGPT vs Claude – Content Review Comparison](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/chatgpt-vs-claude-content-review.md) | Model-output evaluation, prompt testing, factual caution and human editorial decision-making |
@@ -38,19 +38,24 @@ I combine content strategy, editorial judgment and practical AI workflows to cre
 - comparing model outputs and documenting their limitations,
 - adapting content to different audiences and communication channels,
 - designing user flows and supportive interface content,
+- applying usability heuristics and accessibility principles to AI-generated interfaces,
 - prioritising a clear MVP story for portfolio presentation,
 - separating verified facts from interpretations, assumptions and unknowns,
-- maintaining human responsibility for final editorial decisions.
+- maintaining human responsibility for final editorial and design decisions.
 
 ## How I work with AI
 
-I use AI to support the content process rather than replace editorial judgment.
+I use AI to support the content and design process rather than replace human judgment.
 
-My typical workflow:
+My typical content workflow:
 
 **Research → Content brief → Prompt design → Draft → Human editing → Fact-checking → Channel adaptation → Publication**
 
-I work primarily with ChatGPT, Claude and NotebookLM to:
+For interface prototyping, I use an iterative process:
+
+**Concept → Prompted prototype → UX review → Heuristic evaluation → Accessibility check → Refinement → Human approval**
+
+I work primarily with ChatGPT, Claude, NotebookLM and Figma Make to:
 
 - organize research and source materials,
 - create content structures and first drafts,
@@ -58,9 +63,10 @@ I work primarily with ChatGPT, Claude and NotebookLM to:
 - adapt materials to different audiences and channels,
 - compare alternative outputs and editorial approaches,
 - identify unsupported claims and information gaps,
+- prototype and refine interface flows,
 - document reusable content and research processes.
 
-Every AI-generated output requires human review before publication.
+Every AI-generated output requires human review before publication or presentation.
 
 ## Tools
 
@@ -69,7 +75,7 @@ Every AI-generated output requires human review before publication.
 | **AI and research** | ChatGPT, Claude, NotebookLM |
 | **Language editing and translation** | DeepL |
 | **Content management and email** | WordPress, GetResponse |
-| **Graphic design and illustration** | Figma, Canva, Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Procreate |
+| **Graphic design and illustration** | Figma, Figma Make, Canva, Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Procreate |
 | **Video and audio** | CapCut, ElevenLabs |
 | **Analytics and insights** | Google Analytics 4, Google Trends |
 | **Social media** | Meta Business Suite, LinkedIn, TikTok, YouTube |
@@ -80,7 +86,9 @@ Every AI-generated output requires human review before publication.
 
 ### Odetchnij Teraz
 
-An evolving UX/UI concept and interactive well-being app prototype focused on short breathing, grounding and emotional-reset activities. The core portfolio flow covers onboarding, home, breathing exercises, completion, habits and progress. The project includes product thinking, information architecture, UX writing, accessibility considerations, MVP prioritisation and AI-assisted prototyping.
+An evolving UX/UI concept and interactive well-being app prototype created as a team assignment during the postgraduate programme **Artificial Intelligence and Automation in Marketing at SGH Warsaw School of Economics**.
+
+My role focused on translating the team concept into interfaces through AI-assisted vibe coding in Figma Make. I designed and refined key flows, applied information architecture, UX writing, Nielsen’s usability heuristics, cognitive-load reduction, accessibility principles and consistent interaction states. The core portfolio flow covers onboarding, home, breathing exercises, completion, habits and progress.
 
 ### AI Prościej
 
