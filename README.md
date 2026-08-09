@@ -24,6 +24,7 @@ I combine content strategy, editorial judgment and practical AI workflows to cre
 | Project | What it demonstrates |
 |---|---|
 | [Odetchnij Teraz – Interactive Well-being App Prototype](https://github.com/anna-content-ai/odetchnij-teraz) | SGH team project; interface design through AI-assisted vibe coding, UX writing, information architecture, Nielsen heuristics, accessibility and MVP prioritisation |
+| [Głębsze spojrzenie – YouTube AI Voiceover Project](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP) | Scriptwriting, AI-generated narration with ElevenLabs, voice selection, content adaptation and YouTube publishing |
 | [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library) | Practical prompts, documented workflows and case studies for content, editing, research and quality assurance |
 | [AI Content Review – SaaS Landing Page and UX Writing](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md) | Editorial review, unsupported-claim detection, UX writing and safer interface copy |
 | [ChatGPT vs Claude – Content Review Comparison](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/chatgpt-vs-claude-content-review.md) | Model-output evaluation, prompt testing, factual caution and human editorial decision-making |
@@ -39,6 +40,7 @@ I combine content strategy, editorial judgment and practical AI workflows to cre
 - adapting content to different audiences and communication channels,
 - designing user flows and supportive interface content,
 - applying usability heuristics and accessibility principles to AI-generated interfaces,
+- creating AI-assisted voiceover content for YouTube,
 - prioritising a clear MVP story for portfolio presentation,
 - separating verified facts from interpretations, assumptions and unknowns,
 - maintaining human responsibility for final editorial and design decisions.
@@ -55,7 +57,11 @@ For interface prototyping, I use an iterative process:
 
 **Concept → Prompted prototype → UX review → Heuristic evaluation → Accessibility check → Refinement → Human approval**
 
-I work primarily with ChatGPT, Claude, NotebookLM and Figma Make to:
+For AI-assisted audio content:
+
+**Topic → Script → Voice selection → ElevenLabs voiceover → Video editing → YouTube publishing**
+
+I work primarily with ChatGPT, Claude, NotebookLM, Figma Make and ElevenLabs to:
 
 - organize research and source materials,
 - create content structures and first drafts,
@@ -64,6 +70,7 @@ I work primarily with ChatGPT, Claude, NotebookLM and Figma Make to:
 - compare alternative outputs and editorial approaches,
 - identify unsupported claims and information gaps,
 - prototype and refine interface flows,
+- create and test AI-generated narration for video content,
 - document reusable content and research processes.
 
 Every AI-generated output requires human review before publication or presentation.
@@ -90,6 +97,12 @@ An evolving UX/UI concept and interactive well-being app prototype created as a 
 
 My role focused on translating the team concept into interfaces through AI-assisted vibe coding in Figma Make. I designed and refined key flows, applied information architecture, UX writing, Nielsen’s usability heuristics, cognitive-load reduction, accessibility principles and consistent interaction states. The core portfolio flow covers onboarding, home, breathing exercises, completion, habits and progress.
 
+### Głębsze spojrzenie
+
+A personal YouTube content project focused on reflective and psychology-inspired topics. I developed scripts and used ElevenLabs to create AI-generated voiceovers, experimenting with voice selection, narration style and adaptation of written content into video format before publishing on YouTube.
+
+[Visit the YouTube channel](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP)
+
 ### AI Prościej
 
 A personal educational content concept focused on making AI tools and workflows easier to understand and use in everyday marketing and office work.
@@ -107,5 +120,6 @@ A dedicated portfolio website presenting selected content, social media, AI-assi
 - **LinkedIn:** [Anna Ziółkowska](https://bit.ly/linkedin-anna-ziolkowska)
 - **GitHub project:** [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library)
 - **Product case study:** [Odetchnij Teraz](https://github.com/anna-content-ai/odetchnij-teraz)
+- **YouTube project:** [Głębsze spojrzenie](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP)
 - **Email:** [aiprosciej@gmail.com](mailto:aiprosciej@gmail.com)
 - **Portfolio website:** In development
