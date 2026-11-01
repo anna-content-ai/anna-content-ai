@@ -79,7 +79,7 @@ Używam głównie ChatGPT, Claude, NotebookLM, Figma Make i ElevenLabs, żeby:
 
 ## Kontakt
 
-- **LinkedIn:** [Anna Ziółkowska](https://bit.ly/linkedin-anna-ziolkowska)
+- **LinkedIn:** [Anna Ziółkowska](https://www.linkedin.com/in/anna-ziolkowska-ai)
 - **E-mail:** [aiprosciej@gmail.com](mailto:aiprosciej@gmail.com)
 - **Projekt produktowy:** [Odetchnij Teraz](https://github.com/anna-content-ai/odetchnij-teraz)
 - **Prompty i case studies:** [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library)
