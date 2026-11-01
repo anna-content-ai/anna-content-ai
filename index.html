@@ -72,6 +72,17 @@
     transition: background 0.2s ease;
   }
   .cta:hover { background: var(--ink-2); }
+
+  .entry { margin-top: 48px; }
+  .entry-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .entry-list a {
+    display: flex; flex-direction: column; gap: 4px; padding: 18px 20px;
+    background: var(--panel); border-radius: 16px; text-decoration: none; color: var(--ink);
+    border: 1px solid transparent; transition: border-color 0.2s ease;
+  }
+  .entry-list a:hover { border-color: var(--accent); }
+  .entry-list strong { font-family: var(--serif); font-weight: 400; font-size: 1.15rem; }
+  .entry-list span { color: var(--ink-2); font-size: 0.92rem; }
   .cta .arrow { color: #E8A48B; }
 
   section { margin-top: 88px; scroll-margin-top: 88px; }
@@ -143,6 +154,15 @@
     <p class="lead">Ponad 9 lat w content marketingu, social mediach i brand communication. Łączę strategię treści, osąd redakcyjny i praktyczne workflow z AI. AI przyspiesza research, produkcję i edycję, a odpowiedzialność za wynik zostaje po stronie człowieka.</p>
     <p class="name">Anna Ziółkowska</p>
     <a class="cta" href="#kontakt">Napisz do mnie <span class="arrow" aria-hidden="true">↓</span></a>
+
+    <nav class="entry" aria-label="Zacznij od">
+      <p class="eyebrow">Zacznij od</p>
+      <ul class="entry-list">
+        <li><a href="#projekty"><strong>Projektów</strong><span>Prompty, case studies i prototyp aplikacji</span></a></li>
+        <li><a href="#workflow"><strong>Workflow</strong><span>Jak łączę strategię, AI i redakcję</span></a></li>
+        <li><a href="#obszary"><strong>Usług</strong><span>Obszary, w których pomagam zespołom</span></a></li>
+      </ul>
+    </nav>
   </div>
 
   <section id="obszary">
