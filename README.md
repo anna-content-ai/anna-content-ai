@@ -2,124 +2,87 @@
 
 **Content Marketing & AI-Assisted Content Specialist | Warsaw, Poland**
 
-I am a marketing and content professional with 9+ years of experience in content creation, social media, digital marketing and brand communication.
+Pomagam zespołom tworzyć treści, które są jasne, sprawdzone i dopasowane do odbiorcy. Mam ponad 9 lat doświadczenia w content marketingu, social mediach, brand communication i digital marketingu.
 
-I combine content strategy, editorial judgment and practical AI workflows to create clear, accurate and audience-focused content. My work focuses on improving research, content production, editing, fact-checking, quality control and cross-channel content adaptation.
+Łączę strategię treści, osąd redakcyjny i praktyczne workflow z AI. Najbardziej interesuje mnie to, jak AI przyspiesza research, produkcję, edycję i kontrolę jakości, a jednocześnie nie zdejmuje odpowiedzialności z człowieka.
 
-## Professional focus
+> **Zacznij tutaj:** przejrzyj **Featured work** poniżej. Każdy projekt pokazuje inny fragment mojego workflow: od promptów, przez ocenę treści generowanych przez AI, po prototyp interfejsu i audio.
 
-- Content strategy and editorial planning
-- AI-assisted content creation and editing
-- Social media and brand communication
-- Content quality evaluation and UX writing
-- Product concepts, information architecture and user flows
-- Research, fact-checking and source verification
-- Content repurposing across digital channels
-- Prompt design and structured AI workflows
-- SEO content and on-page optimization
-- WordPress content publishing
+## Co robię
+
+- Strategia treści i planowanie redakcyjne
+- Content z pomocą AI: briefy, drafty, edycja, fact-checking
+- Ocena jakości treści generowanych przez AI
+- UX writing i architektura informacji
+- Repurposing treści między kanałami
+- SEO i publikacja na WordPressie
+- Projektowanie promptów i powtarzalnych workflow
 
 ## Featured work
 
-| Project | What it demonstrates |
+| Projekt | Co pokazuje |
 |---|---|
-| [Odetchnij Teraz – Interactive Well-being App Prototype](https://github.com/anna-content-ai/odetchnij-teraz) | SGH team project; interface design through AI-assisted vibe coding, UX writing, information architecture, Nielsen heuristics, accessibility and MVP prioritisation |
-| [Głębsze spojrzenie – YouTube AI Voiceover Project](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP) | Scriptwriting, AI-generated narration with ElevenLabs, voice selection, content adaptation and YouTube publishing |
-| [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library) | Practical prompts, documented workflows and case studies for content, editing, research and quality assurance |
-| [AI Content Review – SaaS Landing Page and UX Writing](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md) | Editorial review, unsupported-claim detection, UX writing and safer interface copy |
-| [ChatGPT vs Claude – Content Review Comparison](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/chatgpt-vs-claude-content-review.md) | Model-output evaluation, prompt testing, factual caution and human editorial decision-making |
-| [Newsletter Content Repurposing – AI Prościej](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/newsletter-content-repurposing-example.md) | Adapting one educational source into LinkedIn, Instagram, email and short-form video content |
-| [Airline Brand Impersonation Research – LOT Case Study](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/airline-brand-impersonation-research-example.md) | Source verification, claim-evidence assessment, risk communication and responsible AI-assisted research |
+| [Odetchnij Teraz – prototyp aplikacji well-being](https://github.com/anna-content-ai/odetchnij-teraz) | Projekt zespołowy SGH: projekt interfejsu z pomocą AI (vibe coding), UX writing, architekturę informacji, heurystyki Nielsena, dostępność i priorytetyzację MVP |
+| [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library) | Sprawdzone prompty i udokumentowane workflow do contentu, edycji, researchu i QA |
+| [AI Content Review – landing page SaaS i UX writing](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md) | Redakcyjną weryfikację treści, wykrywanie nieprawdziwych twierdzeń i bezpieczniejszy copy w interfejsie |
+| [ChatGPT vs Claude – porównanie w review treści](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/chatgpt-vs-claude-content-review.md) | Ocenę wyników modeli, testy promptów, ostrożność faktograficzną i decyzje redakcyjne po stronie człowieka |
+| [Repurposing newslettera – AI Prościej](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/newsletter-content-repurposing-example.md) | Adaptację jednego źródła edukacyjnego na LinkedIn, Instagram, e-mail i krótkie wideo |
+| [Głębsze spojrzenie – YouTube z lektorem AI](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP) | Scenariusze, narrację AI w ElevenLabs, dobór głosu, adaptację tekstu na wideo i publikację na YouTube |
+| [Badanie podszywania się pod markę lotniczą – LOT](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/airline-brand-impersonation-research-example.md) | Weryfikację źródeł, ocenę dowodów wobec twierdzeń, komunikację ryzyka i odpowiedzialny research z AI |
 
-## What this portfolio demonstrates
+## Jak pracuję z AI
 
-- designing reusable AI-assisted content workflows,
-- evaluating AI-generated outputs instead of treating them as finished content,
-- identifying unsupported claims and information requiring verification,
-- comparing model outputs and documenting their limitations,
-- adapting content to different audiences and communication channels,
-- designing user flows and supportive interface content,
-- applying usability heuristics and accessibility principles to AI-generated interfaces,
-- creating AI-assisted voiceover content for YouTube,
-- prioritising a clear MVP story for portfolio presentation,
-- separating verified facts from interpretations, assumptions and unknowns,
-- maintaining human responsibility for final editorial and design decisions.
+AI wspiera proces contentowy i projektowy, ale nie zastępuje osądu człowieka. Każdy wynik AI przechodzi przegląd przed publikacją.
 
-## How I work with AI
+**Content:** Research → Brief → Prompt → Draft → Edycja przez człowieka → Fact-checking → Adaptacja do kanału → Publikacja
 
-I use AI to support the content and design process rather than replace human judgment.
+**Prototypy interfejsów:** Koncept → Prototyp z promptów → Przegląd UX → Ewaluacja heurystyczna → Sprawdzenie dostępności → Poprawki → Akceptacja człowieka
 
-My typical content workflow:
+**Audio:** Temat → Scenariusz → Wybór głosu → Lektor w ElevenLabs → Montaż wideo → Publikacja na YouTube
 
-**Research → Content brief → Prompt design → Draft → Human editing → Fact-checking → Channel adaptation → Publication**
+Używam głównie ChatGPT, Claude, NotebookLM, Figma Make i ElevenLabs, żeby:
 
-For interface prototyping, I use an iterative process:
+- porządkować research i materiały źródłowe,
+- tworzyć struktury treści i pierwsze drafty,
+- sprawdzać klarowność, dokładność i spójność,
+- dopasowywać materiały do odbiorców i kanałów,
+- porównywać alternatywne wersje i podejścia redakcyjne,
+- wyłapywać nieprawdziwe twierdzenia i luki w informacjach,
+- prototypować i poprawiać przepływy w interfejsie,
+- tworzyć i testować narrację AI do wideo,
+- dokumentować powtarzalne procesy contentowe.
 
-**Concept → Prompted prototype → UX review → Heuristic evaluation → Accessibility check → Refinement → Human approval**
+## Narzędzia
 
-For AI-assisted audio content:
-
-**Topic → Script → Voice selection → ElevenLabs voiceover → Video editing → YouTube publishing**
-
-I work primarily with ChatGPT, Claude, NotebookLM, Figma Make and ElevenLabs to:
-
-- organize research and source materials,
-- create content structures and first drafts,
-- review content for clarity, accuracy and consistency,
-- adapt materials to different audiences and channels,
-- compare alternative outputs and editorial approaches,
-- identify unsupported claims and information gaps,
-- prototype and refine interface flows,
-- create and test AI-generated narration for video content,
-- document reusable content and research processes.
-
-Every AI-generated output requires human review before publication or presentation.
-
-## Tools
-
-| Area | Tools |
+| Obszar | Narzędzia |
 |---|---|
-| **AI and research** | ChatGPT, Claude, NotebookLM |
-| **Language editing and translation** | DeepL |
-| **Content management and email** | WordPress, GetResponse |
-| **Graphic design and illustration** | Figma, Figma Make, Canva, Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Procreate |
-| **Video and audio** | CapCut, ElevenLabs |
-| **Analytics and insights** | Google Analytics 4, Google Trends |
+| **AI i research** | ChatGPT, Claude, NotebookLM |
+| **Redakcja i tłumaczenia** | DeepL |
+| **Publikacja i e-mail** | WordPress, GetResponse |
+| **Grafika i ilustracja** | Figma, Figma Make, Canva, Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Procreate |
+| **Wideo i audio** | CapCut, ElevenLabs |
+| **Analityka** | Google Analytics 4, Google Trends |
 | **Social media** | Meta Business Suite, LinkedIn, TikTok, YouTube |
-| **Project management and collaboration** | Microsoft Teams, Trello, Asana, Notion, Google Workspace |
-| **Marketing operations** | Microsoft Office |
+| **Zarządzanie projektami** | Microsoft Teams, Trello, Asana, Notion, Google Workspace |
+| **Operacje marketingowe** | Microsoft Office |
 
-## Current projects
+## Aktualne projekty
 
-### Odetchnij Teraz
+**Odetchnij Teraz.** Ewoluujący koncept UX/UI i interaktywny prototyp aplikacji well-being, stworzony jako zadanie zespołowe na studiach podyplomowych *Artificial Intelligence and Automation in Marketing* w SGH. Przełożyłam koncept zespołu na interfejsy z pomocą AI w Figma Make. Zaprojektowałam i dopracowałam kluczowe przepływy: onboarding, home, ćwiczenia oddechowe, ekran ukończenia, nawyki i postępy. Pracowałam nad architekturą informacji, UX writingiem, heurystykami Nielsena, ograniczeniem obciążenia poznawczego i dostępnością.
 
-An evolving UX/UI concept and interactive well-being app prototype created as a team assignment during the postgraduate programme **Artificial Intelligence and Automation in Marketing at SGH Warsaw School of Economics**.
+**Głębsze spojrzenie.** Osobisty projekt na YouTube o tematach refleksyjnych i inspirowanych psychologią. Pisałam scenariusze i tworzyłam lektor w ElevenLabs. Testowałam dobór głosu, styl narracji i adaptację tekstu na wideo przed publikacją.
 
-My role focused on translating the team concept into interfaces through AI-assisted vibe coding in Figma Make. I designed and refined key flows, applied information architecture, UX writing, Nielsen’s usability heuristics, cognitive-load reduction, accessibility principles and consistent interaction states. The core portfolio flow covers onboarding, home, breathing exercises, completion, habits and progress.
+**AI Prościej.** Koncept edukacyjny o tym, jak AI i jego workflow można zrozumieć i wykorzystać w codziennym marketingu i pracy biurowej.
 
-### Głębsze spojrzenie
+**Badanie podszywania się pod markę lotniczą (praca podyplomowa).** Projekt łączący marketing, AI i cyberbezpieczeństwo. Dotyczy wykrywania fałszywych promocji i treści podszywających się pod marki linii lotniczych.
 
-A personal YouTube content project focused on reflective and psychology-inspired topics. I developed scripts and used ElevenLabs to create AI-generated voiceovers, experimenting with voice selection, narration style and adaptation of written content into video format before publishing on YouTube.
+**Portfolio wizualne.** Strona prezentująca wybrane treści, social media, workflow AI, projekty produktowe i badawcze jest w przygotowaniu.
 
-[Visit the YouTube channel](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP)
-
-### AI Prościej
-
-A personal educational content concept focused on making AI tools and workflows easier to understand and use in everyday marketing and office work.
-
-### Brand Impersonation Detection with AI
-
-A postgraduate thesis combining marketing, artificial intelligence and cybersecurity. The project focuses on detecting false promotions and digital content impersonating airline brands.
-
-### Visual portfolio
-
-A dedicated portfolio website presenting selected content, social media, AI-assisted workflow, product and research projects is currently in development.
-
-## Contact
+## Kontakt
 
 - **LinkedIn:** [Anna Ziółkowska](https://bit.ly/linkedin-anna-ziolkowska)
-- **GitHub project:** [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library)
-- **Product case study:** [Odetchnij Teraz](https://github.com/anna-content-ai/odetchnij-teraz)
-- **YouTube project:** [Głębsze spojrzenie](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP)
-- **Email:** [aiprosciej@gmail.com](mailto:aiprosciej@gmail.com)
-- **Portfolio website:** In development
+- **E-mail:** [aiprosciej@gmail.com](mailto:aiprosciej@gmail.com)
+- **Projekt produktowy:** [Odetchnij Teraz](https://github.com/anna-content-ai/odetchnij-teraz)
+- **Prompty i case studies:** [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library)
+- **YouTube:** [Głębsze spojrzenie](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP)
+- **Strona portfolio:** w przygotowaniu
