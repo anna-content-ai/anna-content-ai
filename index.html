@@ -47,9 +47,14 @@
     display: flex; align-items: center; justify-content: space-between; gap: 16px;
   }
   .brand { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); text-decoration: none; }
-  .nav-links { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 0.95rem; }
-  .nav-links a { color: var(--ink-2); text-decoration: none; }
+  .nav-links { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; font-size: 0.95rem; overflow-x: auto; }
+  .nav-links a {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 999px;
+    color: var(--ink-2); text-decoration: none; white-space: nowrap;
+  }
   .nav-links a:hover { color: var(--accent); }
+  .nav-links a[aria-current="true"] { background: var(--panel); color: var(--ink); font-weight: 600; }
+  .to-top { color: var(--ink-2); font-weight: 600; }
 
   main { max-width: 880px; margin: 0 auto; padding: 0 24px; }
   .hero { padding: 88px 0 24px; }
@@ -75,8 +80,9 @@
 
   .entry { margin-top: 48px; }
   .entry-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .entry-list li { display: flex; }
   .entry-list a {
-    display: flex; flex-direction: column; gap: 4px; padding: 18px 20px;
+    flex: 1; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px;
     background: var(--panel); border-radius: 16px; text-decoration: none; color: var(--ink);
     border: 1px solid transparent; transition: border-color 0.2s ease;
   }
@@ -94,7 +100,7 @@
     padding: 7px 15px; font-size: 0.92rem; color: var(--ink-2);
   }
 
-  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
   .card {
     background: var(--panel); border-radius: 20px; padding: 26px;
     display: flex; flex-direction: column; border: 1px solid transparent;
@@ -102,8 +108,8 @@
   }
   .card:hover { border-color: var(--line); transform: translateY(-2px); }
   .card p { color: var(--ink-2); margin: 0 0 18px; font-size: 0.97rem; }
-  .card a { margin-top: auto; color: var(--accent); font-weight: 600; text-decoration: none; font-size: 0.95rem; }
-  .card a:hover { text-decoration: underline; }
+  .card a { margin-top: auto; color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; font-size: 0.95rem; align-self: flex-start; }
+  .card a:hover { color: var(--accent); }
 
   .flow-group + .flow-group { margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--line); }
   .flow { color: var(--ink-2); font-size: 0.98rem; margin: 0; }
@@ -121,7 +127,9 @@
   }
 
   @media (max-width: 640px) {
-    .nav-links { display: none; }
+    .nav-inner { flex-direction: column; align-items: flex-start; gap: 6px; padding: 10px 20px; }
+    .nav-links { width: 100%; }
+    .grid { grid-template-columns: 1fr; }
     .hero { padding-top: 56px; }
     section { margin-top: 64px; }
     .panel { padding: 24px; }
@@ -236,6 +244,31 @@
   </section>
 </main>
 
-<footer>© Anna Ziółkowska · Każdy wynik AI przechodzi przegląd przed publikacją.</footer>
+<footer>
+  <p style="margin:0 0 12px">© Anna Ziółkowska · Każdy wynik AI przechodzi przegląd przed publikacją.</p>
+  <a class="to-top" href="#top">↑ Wróć na górę</a>
+</footer>
+
+<script>
+  // Stan systemu: podświetla sekcję, w której jest czytelniczka
+  (function () {
+    var links = document.querySelectorAll('.nav-links a');
+    var map = {};
+    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && map[e.target.id]) {
+          links.forEach(function (a) { a.removeAttribute('aria-current'); });
+          map[e.target.id].setAttribute('aria-current', 'true');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+  })();
+</script>
 </body>
 </html>
