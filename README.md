@@ -2,7 +2,7 @@
 
 **Content Marketing & AI-Assisted Content Specialist | Warsaw, Poland**
 
-Pomagam zespołom tworzyć treści, które są jasne, sprawdzone i dopasowane do odbiorcy. Mam ponad 9 lat doświadczenia w content marketingu, social mediach, brand communication i digital marketingu.
+Analizuję treści w sieci i poprawiam to, co nie działa. Mam ponad 9 lat doświadczenia w marketingu i social mediach, warsztat UX/UI oraz ukończone studia podyplomowe z AI i automatyzacji w marketingu na SGH.
 
 Łączę strategię treści, osąd redakcyjny i praktyczne workflow z AI. Najbardziej interesuje mnie to, jak AI przyspiesza research, produkcję, edycję i kontrolę jakości, a jednocześnie nie zdejmuje odpowiedzialności z człowieka.
 
