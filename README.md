@@ -27,7 +27,6 @@ Pomagam zespołom tworzyć treści, które są jasne, sprawdzone i dopasowane do
 | [AI Content Review – landing page SaaS i UX writing](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md) | Redakcyjną weryfikację treści, wykrywanie nieprawdziwych twierdzeń i bezpieczniejszy copy w interfejsie |
 | [ChatGPT vs Claude – porównanie w review treści](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/chatgpt-vs-claude-content-review.md) | Ocenę wyników modeli, testy promptów, ostrożność faktograficzną i decyzje redakcyjne po stronie człowieka |
 | [Repurposing newslettera – AI Prościej](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/newsletter-content-repurposing-example.md) | Adaptację jednego źródła edukacyjnego na LinkedIn, Instagram, e-mail i krótkie wideo |
-| [Głębsze spojrzenie – YouTube z lektorem AI](https://youtube.com/@glebszespojrzenie?si=KfI-xTDSroXdaqHP) | Scenariusze, narrację AI w ElevenLabs, dobór głosu, adaptację tekstu na wideo i publikację na YouTube |
 | [Badanie podszywania się pod markę lotniczą – LOT](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/airline-brand-impersonation-research-example.md) | Weryfikację źródeł, ocenę dowodów wobec twierdzeń, komunikację ryzyka i odpowiedzialny research z AI |
 
 ## Jak pracuję z AI
