@@ -7,21 +7,19 @@
 <meta name="description" content="Portfolio Anny Ziółkowskiej: strategia treści, content z pomocą AI, UX writing i repurposing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #FAF9F5;
-    --panel: #F1EEE7;
-    --line: #DED8CC;
-    --ink: #15140F;
-    --ink-2: #3D382F;
-    --muted: #6E675C;
-    --accent: #C45D3D;
-    --serif: "Playfair Display", Georgia, serif;
-    --sans: "Inter", system-ui, sans-serif;
+    --bg: #FFFFFF;
+    --panel: #F4F4F2;
+    --line: #E4E4E0;
+    --ink: #0E0E0E;
+    --ink-2: #3A3A38;
+    --muted: #6B6B67;
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
   body {
     margin: 0;
     background: var(--bg);
@@ -31,7 +29,7 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  a:focus-visible, .cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
 
   .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--bg); padding: 8px 12px; border-radius: 8px; }
   .skip:focus { left: 8px; z-index: 10; }
@@ -39,104 +37,103 @@
   /* Nawigacja */
   .nav {
     position: sticky; top: 0; z-index: 5;
-    background: rgba(250, 249, 245, 0.92); backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--line);
   }
   .nav-inner {
-    max-width: 1040px; margin: 0 auto; padding: 14px 24px;
+    max-width: 1040px; margin: 0 auto; padding: 12px 24px;
     display: flex; align-items: center; justify-content: space-between; gap: 16px;
   }
-  .brand { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); text-decoration: none; }
-  .nav-links { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; font-size: 0.95rem; overflow-x: auto; }
+  .brand { font-weight: 700; font-size: 1rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+  .nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; font-size: 0.95rem; overflow-x: auto; }
   .nav-links a {
     display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 999px;
     color: var(--ink-2); text-decoration: none; white-space: nowrap;
   }
-  .nav-links a:hover { color: var(--accent); }
-  .nav-links a[aria-current="true"] { background: var(--panel); color: var(--ink); font-weight: 600; }
-  .to-top { color: var(--ink-2); font-weight: 600; }
+  .nav-links a:hover { color: var(--ink); background: var(--panel); }
+  .nav-links a[aria-current="true"] { background: var(--ink); color: var(--bg); font-weight: 600; }
 
   main { max-width: 880px; margin: 0 auto; padding: 0 24px; }
-  .hero { padding: 88px 0 24px; }
-  h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
-  h1 { font-size: clamp(2.4rem, 6vw, 3.8rem); }
-  h2 { font-size: clamp(1.7rem, 3.5vw, 2.1rem); margin-bottom: 24px; }
-  h3 { font-size: 1.3rem; margin-bottom: 10px; }
+  .hero { padding: 104px 0 24px; }
+  h1, h2, h3 { font-weight: 700; line-height: 1.08; margin: 0; letter-spacing: -0.03em; }
+  h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); }
+  h2 { font-size: clamp(1.7rem, 3.5vw, 2.3rem); margin-bottom: 28px; }
+  h3 { font-size: 1.15rem; margin-bottom: 10px; letter-spacing: -0.01em; }
 
   .eyebrow {
-    color: var(--muted); font-size: 0.82rem; font-weight: 600;
-    letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 14px;
+    color: var(--muted); font-size: 0.8rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 16px;
   }
-  .lead { color: var(--ink-2); max-width: 640px; margin: 22px 0 0; font-size: 1.05rem; }
-  .name { margin-top: 14px; color: var(--muted); font-size: 1rem; }
+  .lead { color: var(--ink-2); max-width: 620px; margin: 26px 0 0; font-size: 1.1rem; }
+  .name { margin-top: 16px; color: var(--muted); font-size: 0.95rem; font-weight: 500; }
 
   .cta {
-    display: inline-flex; align-items: center; gap: 10px; margin-top: 30px;
-    padding: 13px 22px; border-radius: 999px;
+    display: inline-flex; align-items: center; gap: 10px; margin-top: 32px;
+    padding: 14px 24px; border-radius: 999px;
     background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 600;
     transition: background 0.2s ease;
   }
   .cta:hover { background: var(--ink-2); }
 
-  .entry { margin-top: 48px; }
+  .entry { margin-top: 56px; }
   .entry-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .entry-list li { display: flex; }
   .entry-list a {
-    flex: 1; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px;
+    flex: 1; display: flex; flex-direction: column; gap: 6px; padding: 20px 22px;
     background: var(--panel); border-radius: 16px; text-decoration: none; color: var(--ink);
     border: 1px solid transparent; transition: border-color 0.2s ease;
   }
-  .entry-list a:hover { border-color: var(--accent); }
-  .entry-list strong { font-family: var(--serif); font-weight: 400; font-size: 1.15rem; }
+  .entry-list a:hover { border-color: var(--ink); }
+  .entry-list strong { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.01em; }
   .entry-list span { color: var(--ink-2); font-size: 0.92rem; }
-  .cta .arrow { color: #E8A48B; }
 
-  section { margin-top: 88px; scroll-margin-top: 88px; }
+  section { margin-top: 104px; scroll-margin-top: 96px; }
   .panel { background: var(--panel); border-radius: 20px; padding: 32px; }
 
   .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
   .tags li {
-    background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
-    padding: 7px 15px; font-size: 0.92rem; color: var(--ink-2);
+    background: var(--bg); border: 1px solid var(--line); border-radius: 999px;
+    padding: 8px 16px; font-size: 0.92rem; font-weight: 500; color: var(--ink-2);
   }
 
   .grid { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
   .card {
-    background: var(--panel); border-radius: 20px; padding: 26px;
+    background: var(--panel); border-radius: 20px; padding: 28px;
     display: flex; flex-direction: column; border: 1px solid transparent;
     transition: border-color 0.2s ease, transform 0.2s ease;
   }
-  .card:hover { border-color: var(--line); transform: translateY(-2px); }
-  .card p { color: var(--ink-2); margin: 0 0 18px; font-size: 0.97rem; }
-  .card a { margin-top: auto; color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; font-size: 0.95rem; align-self: flex-start; }
-  .card a:hover { color: var(--accent); }
+  .card:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .card p { color: var(--ink-2); margin: 0 0 20px; font-size: 0.97rem; }
+  .card a { margin-top: auto; color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; font-size: 0.95rem; align-self: flex-start; }
+  .card a:hover { text-decoration-thickness: 2px; }
 
-  .flow-group + .flow-group { margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--line); }
+  .flow-group + .flow-group { margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line); }
   .flow { color: var(--ink-2); font-size: 0.98rem; margin: 0; }
 
   .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; list-style: none; }
   .contact-links a {
-    display: inline-block; padding: 10px 18px; border-radius: 999px;
-    border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 500;
+    display: inline-block; padding: 12px 20px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 600;
   }
-  .contact-links a:hover { border-color: var(--accent); color: var(--accent); }
+  .contact-links a:hover { border-color: var(--ink); }
 
   footer {
-    max-width: 880px; margin: 110px auto 0; padding: 24px 24px 48px;
+    max-width: 880px; margin: 120px auto 0; padding: 24px 24px 48px;
     border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem;
   }
+  footer a { color: var(--ink); font-weight: 600; }
 
   @media (max-width: 640px) {
     .nav-inner { flex-direction: column; align-items: flex-start; gap: 6px; padding: 10px 20px; }
     .nav-links { width: 100%; }
     .grid { grid-template-columns: 1fr; }
-    .hero { padding-top: 56px; }
-    section { margin-top: 64px; }
+    .hero { padding-top: 60px; }
+    section { margin-top: 72px; }
     .panel { padding: 24px; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .card { transition: none; }
+    .card, .entry-list a, .cta { transition: none; }
   }
 </style>
 </head>
@@ -158,10 +155,10 @@
 <main id="main">
   <div class="hero" id="top">
     <p class="eyebrow">Content Marketing &amp; AI-Assisted Content · Warszawa</p>
-    <h1>Treść, która się sprawdza? <span style="color:var(--accent)">Najpierw ją zweryfikuj.</span></h1>
+    <h1>Treść, która się sprawdza? Najpierw ją zweryfikuj.</h1>
     <p class="lead">Ponad 9 lat w content marketingu, social mediach i brand communication. Łączę strategię treści, osąd redakcyjny i praktyczne workflow z AI. AI przyspiesza research, produkcję i edycję, a odpowiedzialność za wynik zostaje po stronie człowieka.</p>
     <p class="name">Anna Ziółkowska</p>
-    <a class="cta" href="#kontakt">Napisz do mnie <span class="arrow" aria-hidden="true">↓</span></a>
+    <a class="cta" href="#kontakt">Napisz do mnie <span aria-hidden="true">↓</span></a>
 
     <nav class="entry" aria-label="Zacznij od">
       <p class="eyebrow">Zacznij od</p>
@@ -246,7 +243,7 @@
 
 <footer>
   <p style="margin:0 0 12px">© Anna Ziółkowska · Każdy wynik AI przechodzi przegląd przed publikacją.</p>
-  <a class="to-top" href="#top">↑ Wróć na górę</a>
+  <a href="#top">↑ Wróć na górę</a>
 </footer>
 
 <script>
