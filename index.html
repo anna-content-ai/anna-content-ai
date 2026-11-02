@@ -4,16 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anna Ziółkowska – treści, UX writing i AI w marketingu</title>
-<meta name="description" content="Portfolio Anny Ziółkowskiej: treści, UX writing i AI w marketingu. Ponad 9 lat doświadczenia.">
+<meta name="description" content="Portfolio Anny Ziółkowskiej: ponad 9 lat w marketingu, analiza i poprawa treści na www i w social mediach, UX writing oraz workflow z AI.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/bricolage-grotesque-latin-ext-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-<meta name="theme-color" content="#EEF0F2">
+<meta name="theme-color" content="#14170F">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Anna Ziółkowska – treści, UX writing i AI w marketingu">
-<meta property="og:description" content="Poprawiam treści tak, żeby klient od razu wiedział, co dostanie. Marketing, UX writing i AI z człowiekiem na końcu.">
+<meta property="og:description" content="Poprawiam treści, żeby sprzedawały jasno. Marketing, UX writing i AI z człowiekiem na końcu.">
 <meta property="og:image" content="https://anna-content-ai.github.io/anna-content-ai/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/space-grotesk-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
   @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("fonts/inter-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("fonts/inter-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
@@ -23,325 +25,279 @@
   @font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/inter-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 700; font-display: swap; src: url("fonts/bricolage-grotesque-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 700; font-display: swap; src: url("fonts/bricolage-grotesque-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 800; font-display: swap; src: url("fonts/bricolage-grotesque-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 800; font-display: swap; src: url("fonts/bricolage-grotesque-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 500; font-display: swap; src: url("fonts/space-grotesk-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 500; font-display: swap; src: url("fonts/space-grotesk-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 700; font-display: swap; src: url("fonts/space-grotesk-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 700; font-display: swap; src: url("fonts/space-grotesk-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url("fonts/ibm-plex-mono-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url("fonts/ibm-plex-mono-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url("fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   :root {
-    --canvas: #EEF0F2;
-    --sheet: #FFFFFF;
-    --line: #E3E5E8;
-    --ink: #15171A;
-    --ink-2: #3B4048;
-    --muted: #646A73;
-    --hl: #FFE45C;
-    --ins: #0B7A45;
-    --ins-bg: #E2F5EA;
-    --del: #C8372B;
-    --del-bg: #FBE6E3;
-    --display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+    --bg: #14170F; --surface: #1D2116; --surface-2: #252A1D; --line: #30362A; --line-2: #3A4030;
+    --text: #ECEBE4; --text-2: #B9BCAE; --muted: #8F9483;
+    --accent: #E2683C; --accent-ink: #14170F; --sage: #A3B18A; --sage-text: #C3CEA9; --sage-bg: rgba(163,177,138,.14);
+    --display: "Space Grotesk", "Inter", system-ui, sans-serif;
     --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
     --ease: cubic-bezier(.2,.7,.2,1);
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-  body { margin: 0; background: var(--canvas); color: var(--ink); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+  main { overflow-x: clip; }
   a { color: inherit; }
-  a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
-  ::selection { background: var(--hl); }
-  .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: #fff; padding: 8px 12px; border-radius: 8px; }
-  .skip:focus { left: 8px; z-index: 20; }
-  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--accent-ink); padding: 8px 12px; border-radius: 8px; z-index: 50; }
+  .skip:focus { left: 8px; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
   .mono { font-family: var(--mono); }
+  h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: -.035em; margin: 0; }
 
-  /* Pasek edytora */
-  .bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-  .bar .wrap { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding-top: 8px; padding-bottom: 8px; }
-  .file { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; }
-  .file .ic { width: 26px; height: 32px; border-radius: 3px 9px 3px 3px; background: #fff; border: 1.5px solid var(--ink); position: relative; flex: none; }
-  .file .ic::before { content: ""; position: absolute; right: -1.5px; top: -1.5px; width: 9px; height: 9px; background: var(--hl); border-left: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); border-radius: 0 9px 0 3px; }
-  .file .ic::after { content: ""; position: absolute; left: 5px; width: 11px; top: 13px; height: 2px; background: var(--ink); box-shadow: 0 5px 0 var(--ink), 0 10px 0 var(--del); }
-  .file b { display: block; font-size: .95rem; line-height: 1.2; }
-  .file small { display: block; font: 400 .75rem var(--mono); color: var(--muted); }
-  .tabs { display: flex; gap: 2px; list-style: none; margin: 0; padding: 4px; background: var(--canvas); border-radius: 12px; }
-  .tabs a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 9px; font-size: .92rem; font-weight: 500; text-decoration: none; color: var(--ink-2); white-space: nowrap; }
-  .tabs a:hover { background: #fff; }
-  .tabs a[aria-current="true"] { background: #fff; color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08); font-weight: 600; }
-  .who { justify-self: end; display: flex; align-items: center; gap: 10px; }
-  .avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--hl); color: var(--ink); display: grid; place-items: center; font: 700 .8rem var(--sans); border: 2px solid #fff; box-shadow: 0 0 0 1px var(--line); flex: none; }
-  .bar { transition: transform .3s var(--ease); }
+  /* Nawigacja */
+  .bar { position: sticky; top: 0; z-index: 20; background: rgba(20,23,15,.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid transparent; transition: border-color .3s, transform .3s var(--ease); }
+  .bar.scrolled { border-color: var(--line); }
   .bar.hide { transform: translateY(-100%); }
-  .menu-btn { display: none; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid #C3C8CF; background: #fff; font: 600 .92rem var(--sans); color: var(--ink); cursor: pointer; }
-  .share { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 600; font-size: .92rem; text-decoration: none; }
+  .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; }
+  .brand i { width: 24px; height: 24px; border-radius: 7px; background: var(--accent); position: relative; }
+  .brand i::after { content: ""; position: absolute; left: 6px; right: 6px; top: 11px; height: 2px; background: var(--accent-ink); box-shadow: 0 -4px 0 var(--accent-ink); }
+  .links { display: flex; align-items: center; gap: 4px; list-style: none; margin: 0; padding: 0; }
+  .links a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 10px; text-decoration: none; font-size: .95rem; color: var(--text-2); transition: color .2s, background .2s; }
+  .links a:hover { color: var(--text); background: var(--surface); }
+  .links a[aria-current="true"] { color: var(--text); background: var(--surface-2); }
+  .links .cta-nav a { background: var(--text); color: var(--accent-ink); font-weight: 600; margin-left: 8px; }
+  .links .cta-nav a:hover { background: #fff; }
+  .menu-btn { display: none; min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text); font: 600 .92rem var(--sans); cursor: pointer; }
 
-  /* Arkusz z poprawkami */
-  .stage { padding: 48px 0 24px; }
-  .doc { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 28px; align-items: start; }
-  .sheet { background: var(--sheet); border-radius: 6px; box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 20px 50px -24px rgba(16,24,40,.25); padding: 56px 64px 52px; position: relative; }
-  .status { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 16px; padding: 7px 14px 7px 12px; border-radius: 999px; background: var(--ins-bg); color: var(--ins); font-weight: 600; font-size: .92rem; }
-  .status i { width: 9px; height: 9px; border-radius: 50%; background: var(--ins); box-shadow: 0 0 0 0 rgba(11,122,69,.5); animation: ping 2s infinite; }
-  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(11,122,69,.45); } 80%,100% { box-shadow: 0 0 0 9px rgba(11,122,69,0); } }
-  .crumb { font: 500 .8rem var(--mono); color: var(--muted); margin: 0 0 22px; }
+  /* Hero */
+  .hero { position: relative; padding: 72px 0 0; }
+  .hero::before { content: ""; position: absolute; inset: -68px -32px 0; background-image: linear-gradient(rgba(236,235,228,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(236,235,228,.045) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse 60% 70% at 70% 35%, #000 25%, transparent 75%); mask-image: radial-gradient(ellipse 60% 70% at 70% 35%, #000 25%, transparent 75%); pointer-events: none; z-index: -1; }
+  .glow { position: absolute; width: 640px; height: 640px; right: -160px; top: -140px; border-radius: 50%; background: radial-gradient(closest-side, rgba(226,104,60,.32), transparent); pointer-events: none; z-index: -1; animation: drift 14s ease-in-out infinite alternate; }
+  @keyframes drift { to { transform: translate(-60px, 40px) scale(1.08); } }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: 56px; align-items: center; }
+  .pill { display: inline-flex; align-items: center; gap: 9px; font: 500 .82rem var(--mono); padding: 6px 13px; border-radius: 999px; background: var(--sage-bg); color: var(--sage-text); border: 1px solid rgba(163,177,138,.3); }
+  .pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--sage); animation: ping 2.2s infinite; }
+  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(163,177,138,.55); } 80%,100% { box-shadow: 0 0 0 9px rgba(163,177,138,0); } }
+  h1 { font-size: clamp(2.8rem, 6.6vw, 5.4rem); line-height: .98; margin-top: 24px; }
+  h1 .acc { color: var(--accent); }
+  .lead { font-size: 1.15rem; color: var(--text-2); max-width: 540px; margin: 24px 0 0; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 0 22px; border-radius: 12px; font: 600 1rem var(--sans); text-decoration: none; cursor: pointer; border: 1px solid transparent; transition: transform .2s var(--ease), background .2s, border-color .2s, box-shadow .2s; }
+  .btn-main { background: var(--accent); color: var(--accent-ink); }
+  .btn-main:hover { transform: translateY(-2px); box-shadow: 0 12px 30px -12px rgba(226,104,60,.7); }
+  .btn-line { background: transparent; color: var(--text); border-color: var(--line-2); }
+  .btn-line:hover { border-color: var(--text-2); background: var(--surface); }
+
+  /* Panel przeglądu treści */
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; box-shadow: 0 40px 90px -40px rgba(0,0,0,.85); position: relative; }
+  .panel-top { display: flex; justify-content: space-between; align-items: center; font: 500 .76rem var(--mono); color: var(--muted); margin-bottom: 12px; gap: 10px; }
+  .panel-top .live { display: inline-flex; gap: 6px; align-items: center; color: var(--sage-text); }
+  .panel-top .live i { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); animation: blink 1.4s infinite; }
   @keyframes blink { 50% { opacity: .25; } }
-  h1, h2, h3 { font-family: var(--display); letter-spacing: -.03em; margin: 0; }
-  h1 { font-weight: 800; font-size: clamp(2.5rem, 5.2vw, 4.4rem); line-height: 1.03; }
-  del { color: var(--del); text-decoration: line-through; text-decoration-thickness: .08em; background: var(--del-bg); border-radius: .12em; padding: 0 .06em; }
-  h1 del { display: inline-block; font-size: .5em; font-weight: 700; letter-spacing: -.01em; opacity: .85; vertical-align: .35em; margin: 0 .1em; transition: background .25s, opacity .25s; }
-  h1 ins { display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; padding: 0 .08em; }
-  h1 del.focus, .lead mark.focus { background: #F7C9C3; opacity: 1; }
-  ins { color: var(--ins); text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .1em; background: var(--ins-bg); border-radius: .12em; padding: 0 .06em; }
-  mark { background: var(--hl); color: inherit; border-radius: .15em; padding: 0 .08em; }
-  h1.typing ins::after { content: ""; display: inline-block; width: .06em; height: .85em; background: var(--ins); vertical-align: -.06em; margin-left: .05em; animation: blink 1s steps(1) infinite; }
-  .lead { font-size: 1.15rem; color: var(--ink-2); max-width: 620px; margin: 28px 0 0; }
-  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 12px; font: 600 1rem var(--sans); text-decoration: none; cursor: pointer; border: 1px solid transparent; transition: transform .2s var(--ease), box-shadow .2s, background .2s; }
-  .btn-main { background: var(--ink); color: #fff; }
-  .btn-main:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -12px rgba(0,0,0,.5); }
-  .btn-line { background: #fff; color: var(--ink); border-color: #CDD1D6; }
-  .btn-line:hover { border-color: var(--ink); }
-  .kbd { font: 500 .72rem var(--mono); border: 1px solid rgba(255,255,255,.35); border-radius: 5px; padding: 1px 6px; opacity: .8; }
+  .dots { display: inline-flex; gap: 6px; }
+  .dots i { width: 9px; height: 9px; border-radius: 50%; background: var(--line-2); }
+  .copy { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 16px; font-size: 1.02rem; line-height: 1.5; min-height: 104px; }
+  .copy .old { color: #C98A70; text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 2px; transition: opacity .4s; }
+  .copy .new { display: block; color: var(--sage-text); text-decoration: underline; text-decoration-color: var(--sage); text-underline-offset: 4px; margin-top: 6px; min-height: 1.5em; }
+  .copy .new.typing::after { content: ""; display: inline-block; width: 2px; height: 1em; background: var(--sage-text); vertical-align: -.15em; margin-left: 2px; animation: blink 1s steps(1) infinite; }
+  .checks { list-style: none; margin: 10px 0 0; padding: 0; }
+  .checks li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 11px 2px; border-top: 1px solid var(--line); font-size: .95rem; color: var(--text-2); }
+  .checks b { font: 500 .76rem var(--mono); padding: 3px 9px; border-radius: 6px; background: var(--surface-2); color: var(--muted); transition: background .3s, color .3s; white-space: nowrap; }
+  .checks li.done { color: var(--text); }
+  .checks li.done b { background: var(--sage-bg); color: var(--sage-text); }
+  .checks li.human b { background: rgba(226,104,60,.16); color: #F0A285; }
+  .panel-caption { font: 400 .76rem var(--mono); color: var(--muted); margin: 12px 2px 0; }
 
-  /* Komentarze na marginesie */
-  .margin { display: grid; gap: 14px; padding-top: 40px; }
-  .note { background: #fff; border-radius: 12px; padding: 14px 16px; box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 10px 26px -18px rgba(16,24,40,.35); border-left: 3px solid var(--hl); position: relative; }
-  .note header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-  .note header .avatar { width: 22px; height: 22px; font-size: .58rem; border-width: 1px; }
-  .note b { font-size: .88rem; display: block; line-height: 1.2; }
-  .note small { font: 400 .72rem var(--mono); color: var(--muted); }
-  .note p { margin: 0; font-size: .93rem; color: var(--ink-2); line-height: 1.5; }
-  .note.ok { border-left-color: var(--ins); }
-  .note { transition: transform .25s var(--ease), box-shadow .25s; cursor: default; }
-  .note:hover { transform: translateX(-4px); box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 16px 30px -18px rgba(16,24,40,.45); }
-  .lead mark { transition: background .25s; }
-  .lead mark.focus { background: #FFD21A; }
-  .note .resolve { margin-top: 10px; display: inline-flex; gap: 6px; align-items: center; font: 500 .75rem var(--mono); color: var(--ins); }
-  .card-id { background: #fff; border-radius: 16px; padding: 18px; display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 10px 26px -18px rgba(16,24,40,.35); }
-  .card-id .mono-av, .card-id .pic { width: 64px; height: 64px; border-radius: 50%; background: var(--hl); display: grid; place-items: center; font: 800 1.3rem var(--display); color: var(--ink); object-fit: cover; }
-  .card-id b { display: block; font-size: 1rem; line-height: 1.25; }
-  .card-id div span { display: block; font-size: .86rem; color: var(--muted); line-height: 1.35; margin-top: 2px; }
-  .id-links { grid-column: 1 / -1; display: flex; gap: 6px; list-style: none; margin: 0; padding: 12px 0 0; border-top: 1px solid var(--line); }
-  .id-links a { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border-radius: 8px; background: var(--canvas); font-size: .86rem; font-weight: 600; text-decoration: none; }
-  .id-links a:hover, .id-links button:hover { background: var(--hl); }
-  .id-links button { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border-radius: 8px; background: var(--canvas); font: 600 .86rem var(--sans); color: var(--ink); border: 0; cursor: pointer; }
-  .id-links { flex-wrap: wrap; }
-
-  /* Statystyki dokumentu */
-  .stats { margin-top: 20px; display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border-radius: 12px; border: 1px solid var(--line); overflow: hidden; }
-  .stats { list-style: none; padding: 0; margin-left: 0; margin-right: 0; }
-  .stats li { border-right: 1px solid var(--line); }
-  .stats li:last-child { border-right: 0; }
-  .stats a { display: block; height: 100%; padding: 18px 20px; text-decoration: none; transition: background .2s; }
-  .stats a:hover { background: #FFFBE0; }
-  .stats a:focus-visible { outline: 3px solid var(--ink); outline-offset: -3px; border-radius: 0; }
-  .stats em { display: block; font: 500 .75rem var(--mono); font-style: normal; color: var(--muted); margin-top: 10px; transition: color .2s; }
-  .stats a:hover em { color: var(--ink); }
-  .stats small { display: block; font: 500 .72rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-  .stats b { display: block; font: 800 2.2rem/1.1 var(--display); letter-spacing: -.03em; margin-top: 6px; }
-  .stats span { display: block; font-size: .88rem; color: var(--ink-2); line-height: 1.4; margin-top: 4px; }
+  /* Liczby */
+  .stats { list-style: none; margin: 64px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); }
+  .stats a { display: block; padding: 22px 20px 6px 0; text-decoration: none; border-radius: 0; transition: color .2s; }
+  .stats b { display: block; font: 700 2.1rem/1.05 var(--display); letter-spacing: -.03em; }
+  .stats span { display: block; font-size: .9rem; color: var(--muted); margin-top: 4px; }
+  .stats em { display: block; font: 500 .74rem var(--mono); font-style: normal; color: var(--muted); margin-top: 8px; opacity: 0; transform: translateY(-4px); transition: opacity .2s, transform .2s; }
+  .stats a:hover b { color: var(--accent); }
+  .stats a:hover em, .stats a:focus-visible em { opacity: 1; transform: none; }
 
   /* Sekcje */
-  section { padding: 96px 0 0; scroll-margin-top: 80px; }
-  .sec-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 28px; flex-wrap: wrap; }
-  .sec-head .mono { font-size: .8rem; color: var(--muted); display: block; margin-bottom: 10px; }
-  h2 { font-weight: 800; font-size: clamp(2.2rem, 4.6vw, 3.4rem); line-height: 1.02; }
-  .sec-head p { max-width: 420px; margin: 0; color: var(--ink-2); }
+  section { padding: 120px 0 0; scroll-margin-top: 80px; }
+  .head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
+  .eyebrow { font: 500 .8rem var(--mono); color: var(--accent); margin: 0 0 12px; display: block; }
+  h2 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); line-height: 1.02; }
+  .head p { max-width: 420px; color: var(--text-2); margin: 0; }
 
-  /* Bento projektów */
+  /* Projekty */
   .bento { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
-  .tile { grid-column: span 3; background: #fff; border-radius: 18px; border: 1px solid var(--line); padding: 12px 12px 22px; display: flex; flex-direction: column; position: relative; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
-  .tile:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -26px rgba(16,24,40,.45); }
-  .tile.wide { grid-column: span 4; }
-  .tile.narrow { grid-column: span 2; }
-  .tile.wide { display: grid; grid-template-columns: 1.05fr 1fr; gap: 6px; align-items: stretch; padding: 12px; }
-  .tile.wide .thumb { aspect-ratio: auto; min-height: 100%; }
-  .tile.wide .body { padding: 14px 12px 10px; }
-  .tile .thumb { border-radius: 12px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16/10; background: #fff; }
-  .tile .thumb svg { display: block; width: 100%; height: 100%; transition: transform .6s var(--ease); }
-  .tile:hover .thumb svg { transform: scale(1.03); }
-  .tile .body { padding: 18px 10px 0; display: flex; flex-direction: column; flex: 1; }
-  .tile .fname { font: 500 .78rem var(--mono); color: var(--muted); margin: 0 0 8px; display: flex; gap: 8px; align-items: center; }
-  .tile .fname i { font-style: normal; background: var(--canvas); padding: 2px 7px; border-radius: 5px; color: var(--ink-2); }
-  .tile h3 { font-weight: 700; font-size: 1.55rem; line-height: 1.1; margin: 0 0 8px; }
-  .tile p { margin: 0 0 14px; color: var(--ink-2); font-size: .97rem; }
-  .tile .metric { font-weight: 600; font-size: .92rem; margin: 0 0 14px; }
-  .tile .metric mark { font-weight: 700; }
-  .tile a { margin-top: auto; align-self: flex-start; font-weight: 600; text-decoration: none; display: inline-flex; gap: 6px; align-items: center; }
-  .tile a::after { content: ""; position: absolute; inset: 0; border-radius: 18px; }
-  .tile a span { transition: transform .25s var(--ease); }
-  .tile:hover a span { transform: translateX(4px); }
-  .tile:focus-within { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .tile { position: relative; grid-column: span 3; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 12px; display: flex; flex-direction: column; transition: transform .35s var(--ease), border-color .35s, box-shadow .35s; --mx: 50%; --my: 0%; overflow: hidden; }
+  .tile::before { content: ""; position: absolute; inset: 0; background: radial-gradient(420px circle at var(--mx) var(--my), rgba(226,104,60,.10), transparent 45%); opacity: 0; transition: opacity .3s; pointer-events: none; }
+  .tile:hover { transform: translateY(-4px); border-color: var(--line-2); box-shadow: 0 30px 60px -36px rgba(0,0,0,.9); }
+  .tile:hover::before { opacity: 1; }
+  .tile:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
   .tile a:focus-visible { outline: none; }
-  .ext { font-size: .85em; }
-  .tile.quote { background: var(--ink); color: #fff; border-color: var(--ink); justify-content: space-between; padding: 26px; }
-  .tile.quote .mono { font-size: .78rem; color: #A9AFB8; }
-  .tile.quote p.q { font: 700 1.6rem/1.15 var(--display); letter-spacing: -.02em; color: #fff; margin: 14px 0 0; }
-  .tile.quote p.q del { color: #FF9C92; background: rgba(200,55,43,.25); }
-  .tile.quote p.q ins { color: #7CE0A8; background: rgba(11,122,69,.3); }
+  .tile.wide { grid-column: span 4; display: grid; grid-template-columns: 1.05fr 1fr; gap: 6px; }
+  .tile.narrow { grid-column: span 2; }
+  .thumb { border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: #1A1E14; aspect-ratio: 16/10; }
+  .tile.wide .thumb { aspect-ratio: auto; min-height: 100%; }
+  .thumb svg { display: block; width: 100%; height: 100%; transition: transform .6s var(--ease); }
+  .tile:hover .thumb svg { transform: scale(1.04); }
+  .tile .body { padding: 18px 10px 12px; display: flex; flex-direction: column; flex: 1; }
+  .tile.wide .body { padding: 14px 12px 10px; }
+  .meta { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 10px; }
+  .meta span { font: 500 .74rem var(--mono); padding: 3px 8px; border-radius: 6px; background: var(--surface-2); color: var(--text-2); }
+  .meta span:first-child { background: rgba(226,104,60,.14); color: #F0A285; }
+  .tile h3 { font-size: 1.5rem; line-height: 1.1; margin: 0 0 8px; }
+  .tile p { margin: 0 0 14px; color: var(--text-2); font-size: .97rem; }
+  .tile .num { font: 500 .88rem var(--mono); color: var(--sage-text); margin: 0 0 14px; }
+  .tile .num b { color: var(--text); font-family: var(--display); font-size: 1.1rem; }
+  .tile a.go { margin-top: auto; align-self: flex-start; font-weight: 600; text-decoration: none; display: inline-flex; gap: 6px; align-items: center; }
+  .tile a.go::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+  .tile a.go span { transition: transform .25s var(--ease); color: var(--accent); }
+  .tile:hover a.go span { transform: translate(3px, -3px); }
+  .tile.quote { background: linear-gradient(160deg, #262B1C, #1A1E14); justify-content: space-between; padding: 24px; gap: 18px; }
+  .tile.quote small { font: 500 .76rem var(--mono); color: var(--muted); }
+  .tile.quote p.q { font: 700 1.45rem/1.2 var(--display); letter-spacing: -.02em; color: var(--text); margin: 0; }
+  .tile.quote s { color: #C98A70; text-decoration-color: var(--accent); text-decoration-thickness: 2px; font-size: .8em; }
+  .tile.quote u { color: var(--sage-text); text-decoration-color: var(--sage); text-underline-offset: 4px; }
 
-  /* Historia wersji */
-  .versions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .vcard { background: #fff; border-radius: 18px; border: 1px solid var(--line); padding: 24px; }
-  .vcard h3 { font-weight: 700; font-size: 1.35rem; margin: 0 0 16px; }
-  .vlist { list-style: none; margin: 0; padding: 0; position: relative; }
-  .vlist::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
-  .vlist li { position: relative; padding: 6px 0 6px 28px; font-size: .96rem; color: var(--ink-2); display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
-  .vlist li::before { content: ""; position: absolute; left: 1px; top: 13px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 2px solid #BCC1C8; }
-  .vlist li.ai::after { content: "AI"; font: 500 .7rem var(--mono); color: var(--muted); border: 1px solid var(--line); padding: 1px 6px; border-radius: 5px; }
-  .vlist li.me { color: var(--ink); font-weight: 600; }
-  .vlist li.me::before { background: var(--hl); border-color: var(--ink); }
-  .vlist li.me::after { content: "Anna"; font: 500 .7rem var(--mono); background: var(--hl); color: var(--ink); padding: 1px 6px; border-radius: 5px; }
-  .vtabs { display: flex; gap: 4px; padding: 4px; background: #fff; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; overflow-x: auto; }
-  .vtabs button { flex: 1; min-height: 44px; border: 0; background: none; border-radius: 9px; font: 600 .9rem var(--sans); color: var(--ink-2); cursor: pointer; white-space: nowrap; padding: 0 10px; }
-  .vtabs button[aria-selected="true"] { background: var(--ink); color: #fff; }
-  .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: .88rem; color: var(--muted); margin-top: 16px; }
+  /* Proces */
+  .flows { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .flow { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
+  .flow h3 { font-size: 1.35rem; margin: 0 0 4px; }
+  .flow .sub { font: 400 .78rem var(--mono); color: var(--muted); margin: 0 0 16px; }
+  .steps { list-style: none; margin: 0; padding: 0; position: relative; }
+  .steps::before { content: ""; position: absolute; left: 9px; top: 12px; bottom: 12px; width: 2px; background: var(--line); }
+  .steps li { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0 8px 32px; font-size: .96rem; color: var(--text-2); }
+  .steps li::before { content: ""; position: absolute; left: 2px; top: 50%; width: 16px; height: 16px; margin-top: -8px; border-radius: 50%; background: var(--surface); border: 2px solid var(--line-2); }
+  .steps li b { font: 500 .72rem var(--mono); padding: 2px 8px; border-radius: 6px; background: var(--surface-2); color: var(--muted); }
+  .steps li.me { color: var(--text); font-weight: 600; }
+  .steps li.me::before { background: var(--accent); border-color: var(--accent); }
+  .steps li.me b { background: rgba(226,104,60,.16); color: #F0A285; }
+  .vtabs[hidden] { display: none; }
+  .vtabs { display: flex; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; background: var(--surface); }
+  .vtabs button { flex: 1; min-height: 44px; border: 0; background: none; border-radius: 9px; font: 600 .9rem var(--sans); color: var(--text-2); cursor: pointer; white-space: nowrap; padding: 0 8px; }
+  .vtabs button[aria-selected="true"] { background: var(--text); color: var(--accent-ink); }
+  .legend { display: flex; gap: 20px; flex-wrap: wrap; font-size: .88rem; color: var(--muted); margin-top: 16px; }
   .legend span { display: inline-flex; gap: 8px; align-items: center; }
-  .legend i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #BCC1C8; display: inline-block; }
-  .legend i.me { background: var(--hl); border-color: var(--ink); }
+  .legend i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--line-2); }
+  .legend i.me { background: var(--accent); border-color: var(--accent); }
 
   /* O mnie */
-  .about { display: grid; grid-template-columns: 1.1fr .9fr; gap: 16px; }
-  .about .sheet { padding: 40px 44px; }
-  .about .sheet p { color: var(--ink-2); font-size: 1.06rem; margin: 0 0 14px; }
-  .about .sheet p strong { color: var(--ink); }
-  .skills { background: #fff; border-radius: 18px; border: 1px solid var(--line); padding: 28px; display: grid; gap: 20px; align-content: start; }
-  .skills summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; font: 700 1.2rem var(--display); cursor: pointer; list-style: none; min-height: 44px; }
+  .about { display: grid; grid-template-columns: 1.1fr .9fr; gap: 16px; align-items: start; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 32px; }
+  .me-row { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+  .avatar { width: 72px; height: 72px; border-radius: 18px; background: linear-gradient(140deg, var(--accent), #B4522E); display: grid; place-items: center; font: 700 1.5rem var(--display); color: var(--accent-ink); flex: none; object-fit: cover; }
+  .me-row b { display: block; font: 700 1.25rem var(--display); letter-spacing: -.02em; }
+  .me-row div span { color: var(--muted); font-size: .92rem; }
+  .card p { color: var(--text-2); font-size: 1.04rem; margin: 0 0 14px; }
+  .card p strong { color: var(--text); font-weight: 600; }
+  .me-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; list-style: none; padding: 0; }
+  .me-links a, .me-links button { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); color: var(--text); font: 600 .9rem var(--sans); text-decoration: none; cursor: pointer; transition: border-color .2s; }
+  .me-links a:hover, .me-links button:hover { border-color: var(--text-2); }
+  .skills summary { display: flex; align-items: center; gap: 10px; font: 700 1.25rem var(--display); cursor: pointer; list-style: none; min-height: 44px; letter-spacing: -.02em; }
   .skills summary::-webkit-details-marker { display: none; }
-  .skills summary .count { font: 500 .78rem var(--mono); background: var(--canvas); padding: 3px 8px; border-radius: 6px; }
-  .skills summary::after { content: "+"; font: 400 1.4rem var(--sans); margin-left: auto; transition: transform .2s; }
+  .skills summary .count { font: 500 .76rem var(--mono); background: var(--surface-2); padding: 3px 8px; border-radius: 6px; color: var(--muted); letter-spacing: 0; }
+  .skills summary::after { content: "+"; margin-left: auto; font: 400 1.5rem var(--sans); color: var(--muted); transition: transform .2s; }
   .skills[open] summary::after { transform: rotate(45deg); }
-  .skills[open] > div:first-of-type { margin-top: 4px; }
-  .skills h3 { font: 500 .78rem var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; }
+  .skills h3 { font: 500 .76rem var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 18px 0 10px; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
-  .tags li { border: 1px solid var(--line); background: var(--canvas); border-radius: 8px; padding: 5px 11px; font-size: .9rem; font-weight: 500; }
+  .tags li { border: 1px solid var(--line); background: var(--bg); border-radius: 8px; padding: 6px 12px; font-size: .9rem; color: var(--text-2); transition: border-color .2s, color .2s; }
+  .tags li:hover { border-color: var(--sage); color: var(--sage-text); }
 
-  /* Kontakt jako pole komentarza */
-  .reply { margin-top: 96px; background: #fff; border-radius: 22px; border: 1px solid var(--line); box-shadow: 0 20px 50px -30px rgba(16,24,40,.35); padding: 40px; display: grid; grid-template-columns: auto 1fr; gap: 22px; }
-  .reply .avatar { width: 52px; height: 52px; font-size: 1rem; }
-  .reply h2 { font-size: clamp(2rem, 4.4vw, 3.2rem); }
-  .reply p { color: var(--ink-2); margin: 14px 0 0; max-width: 600px; font-size: 1.08rem; }
-  .form { margin-top: 24px; display: grid; gap: 14px; max-width: 760px; }
-  .form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  /* Kontakt */
+  .contact { margin-top: 120px; position: relative; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: 56px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; }
+  .contact::before { content: ""; position: absolute; width: 520px; height: 520px; left: -200px; bottom: -260px; border-radius: 50%; background: radial-gradient(closest-side, rgba(226,104,60,.22), transparent); pointer-events: none; }
+  .contact h2 { font-size: clamp(2.2rem, 4.2vw, 3.3rem); }
+  .contact h2 .acc { color: var(--accent); }
+  .contact .intro p { color: var(--text-2); margin: 18px 0 0; font-size: 1.06rem; }
+  .direct { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 10px; }
+  .direct a, .direct button { display: flex; justify-content: space-between; align-items: center; gap: 10px; width: 100%; min-height: 54px; padding: 0 18px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); font: 600 .98rem var(--sans); text-decoration: none; cursor: pointer; transition: border-color .2s; }
+  .direct a:hover, .direct button:hover { border-color: var(--text-2); }
+  .direct span { font: 400 .8rem var(--mono); color: var(--muted); }
+  .form { display: grid; gap: 14px; position: relative; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .fld { display: grid; gap: 6px; }
-  .fld > span { font-weight: 600; font-size: .92rem; }
+  .fld > span { font-weight: 600; font-size: .9rem; }
   .fld em { font-style: normal; font-weight: 400; color: var(--muted); }
-  .fld input, .fld textarea { font: 400 1rem var(--sans); color: var(--ink); background: #fff; border: 1.5px solid #C3C8CF; border-radius: 12px; padding: 12px 14px; min-height: 48px; width: 100%; transition: border-color .2s, box-shadow .2s; }
-  .fld textarea { resize: vertical; min-height: 120px; }
-  .fld input:focus, .fld textarea:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 4px var(--hl); }
-  .fld [aria-invalid="true"] { border-color: var(--del); background: var(--del-bg); }
-  .err { color: var(--del); font-size: .86rem; min-height: 0; }
+  .fld input, .fld textarea { font: 400 1rem var(--sans); color: var(--text); background: var(--bg); border: 1px solid var(--line-2); border-radius: 12px; padding: 12px 14px; min-height: 50px; width: 100%; transition: border-color .2s, box-shadow .2s; }
+  .fld textarea { resize: vertical; min-height: 130px; }
+  .fld input::placeholder, .fld textarea::placeholder { color: #7A7F70; }
+  .fld input:focus, .fld textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(226,104,60,.25); }
+  .fld [aria-invalid="true"] { border-color: #F08A73; }
+  .err { color: #F5A38E; font-size: .86rem; }
   .err:empty { display: none; }
-  .hint { margin: 0 !important; font-size: .88rem !important; color: var(--muted) !important; }
-  .copy-msg { min-height: 1.4em; font: 400 .85rem var(--mono); color: var(--ins); margin: 10px 0 0 !important; }
+  .hint { margin: 0; font-size: .86rem; color: var(--muted); }
+  .status-msg { min-height: 1.3em; margin: 0; font: 400 .86rem var(--mono); color: var(--sage-text); }
 
-  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 28px; padding-bottom: 44px; color: var(--muted); font: 400 .82rem var(--mono); }
-  footer a { color: var(--ink); font-weight: 500; display: inline-block; padding: 6px 0; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 32px; padding-bottom: 44px; color: var(--muted); font: 400 .82rem var(--mono); }
+  footer a { color: var(--text-2); display: inline-block; padding: 6px 0; }
+  .print-only { display: none; }
 
-  /* Ruch */
-  .js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+  /* Wejścia */
+  .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
   .js .reveal.in { opacity: 1; transform: none; }
-  .js .margin .note { opacity: 0; transform: translateX(16px); transition: opacity .5s var(--ease), transform .5s var(--ease); }
-  .js .margin .note.in { opacity: 1; transform: none; }
-  .js h1 del { text-decoration-color: transparent; transition: text-decoration-color .4s var(--ease) .4s; }
-  .js h1.go del { text-decoration-color: var(--del); }
+  .js .bento .reveal:nth-child(2n) { transition-delay: .08s; }
+  .js .flows .reveal:nth-child(2) { transition-delay: .08s; }
+  .js .flows .reveal:nth-child(3) { transition-delay: .16s; }
 
   @media (max-width: 1000px) {
-    .doc { grid-template-columns: 1fr; }
-    .margin { grid-template-columns: repeat(2, 1fr); padding-top: 0; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .stats { grid-template-columns: repeat(2, 1fr); }
-    .stats li:nth-child(2) { border-right: 0; }
-    .stats li:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .stats em { opacity: 1; transform: none; }
     .tile, .tile.wide, .tile.narrow { grid-column: span 3; }
-    .tile.wide { display: flex; padding: 12px 12px 22px; }
+    .tile.wide { display: flex; }
     .tile.wide .thumb { aspect-ratio: 16/10; min-height: 0; }
-    .versions { grid-template-columns: 1fr; }
-    .about { grid-template-columns: 1fr; }
-    .bar .wrap { grid-template-columns: 1fr auto; }
-    .bar nav { grid-column: 1 / -1; grid-row: 2; min-width: 0; overflow-x: auto; }
-    .tabs { width: max-content; }
+    .flows { grid-template-columns: 1fr; }
+    .about, .contact { grid-template-columns: 1fr; }
   }
-  @media (max-width: 680px) {
-    .wrap { padding: 0 16px; }
-    .file small, .share { display: none; }
+  @media (max-width: 720px) {
+    .wrap { padding: 0 18px; }
+    .links { display: none; }
     .menu-btn { display: inline-flex; align-items: center; }
-    .bar nav { display: none; }
-    .bar.open nav { display: block; padding: 4px 0 10px; }
-    .bar.open .tabs { width: 100%; flex-direction: column; background: none; padding: 0; }
-    .bar.open .tabs a { min-height: 48px; font-size: 1.05rem; border-bottom: 1px solid var(--line); border-radius: 0; }
-    .bar .wrap { padding-top: 8px; padding-bottom: 8px; }
-    .tile .thumb, .tile.wide .thumb { aspect-ratio: 5 / 2; }
-    .tile .body { padding-top: 14px; }
-    .skills { padding: 14px 18px; }
-    .skills[open] { padding-bottom: 22px; }
-    .about .sheet p { font-size: 1rem; }
-    .sec-head { margin-bottom: 18px; }
-    .tile.quote p.q { font-size: 1.35rem; }
-    .vtabs:not([hidden]) ~ .versions .vcard[data-hidden] { display: none; }
-    .versions { gap: 0; }
-    .stats a { padding: 14px 14px; }
-    .sheet { padding: 40px 22px 32px; }
-    .margin { grid-template-columns: 1fr; }
-    .margin .note.ok { display: none; }
+    .bar.open .links { display: flex; flex-direction: column; align-items: stretch; position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 18px 16px; gap: 2px; }
+    .bar.open .links a { min-height: 50px; font-size: 1.05rem; }
+    .bar.open .links .cta-nav a { margin: 8px 0 0; justify-content: center; }
+    .hero { padding-top: 40px; }
     .tile, .tile.wide, .tile.narrow { grid-column: span 6; }
-    .about .sheet { padding: 28px 22px; }
-    .reply { grid-template-columns: 1fr; padding: 26px 20px; }
-    .form .row { grid-template-columns: 1fr; }
+    .thumb, .tile.wide .thumb { aspect-ratio: 5/2; }
+    .stats a { padding-right: 10px; }
+    .panel-top .dots { display: none; }
+    .panel-top { font-size: .7rem; }
+    .stats b { font-size: 1.7rem; }
+    .row { grid-template-columns: 1fr; }
+    .contact { padding: 28px 20px; border-radius: 22px; gap: 32px; margin-top: 88px; }
+    .card { padding: 24px 20px; }
     .btn { width: 100%; }
-    section { padding-top: 56px; }
+    section { padding-top: 80px; }
+    .flows[data-tabs] .flow[data-hidden] { display: none; }
   }
-  @media (max-width: 420px) { h1 { font-size: 2.3rem; } .stats b { font-size: 1.8rem; } .stats span { overflow-wrap: anywhere; } }
-  .print-only { display: none; }
+  @media (max-width: 420px) { h1 { font-size: 2.55rem; } .stats span { overflow-wrap: anywhere; } }
   @media print {
-    @page { margin: 14mm 14mm; }
-    body { background: #fff; font-size: 11pt; }
-    .bar, .actions, .form, .id-links, .vtabs, .skip, footer, .margin .note, .tile .thumb, .quote, .legend { display: none !important; }
-    .print-only { display: block; font: 10pt var(--sans); color: var(--ink-2); margin: 0 0 8mm; }
+    @page { margin: 14mm; }
+    :root { --bg: #fff; --surface: #fff; --surface-2: #F1F2EC; --line: #DADCD2; --line-2: #C9CCBF; --text: #14170F; --text-2: #3D4135; --muted: #5F6457; --sage-text: #4F5E35; --accent: #B4522E; }
+    body { background: #fff; font-size: 10.5pt; }
+    .bar, .glow, .hero::before, .actions, .panel, .vtabs, .form, .direct button, .me-links, footer, .skip, .tile.quote, .thumb, .stats em, .contact::before, .tile::before { display: none !important; }
+    .print-only { display: block; font: 9.5pt var(--sans); color: var(--text-2); margin-bottom: 6mm; }
     .wrap { max-width: none; padding: 0; }
-    .stage { padding: 0; }
-    .doc { grid-template-columns: 1fr; gap: 0; }
-    .sheet, .tile, .vcard, .skills, .reply, .card-id { box-shadow: none !important; border: 0 !important; padding: 0 !important; background: none !important; }
-    .margin { display: block; padding: 0; }
-    .card-id { display: none !important; }
-    h1 { font-size: 26pt; }
-    h1 del { display: none; }
-    h1 ins, mark { background: none !important; color: var(--ink) !important; text-decoration: none; }
-    h2 { font-size: 17pt; margin-top: 4mm; }
-    section { padding-top: 7mm; }
-    h1 ins:empty::before { content: attr(aria-label); }
-    h1 ins::after { display: none !important; }
-    .sec-head, h2 { break-after: avoid; page-break-after: avoid; }
-    .sec-head + * { break-before: avoid; }
-    .tile a { display: inline; font-size: 9.5pt; }
-    .tile a .ext, .skills summary::after, .skills summary .count { display: none; }
-    .tile p { font-size: 10pt; margin-bottom: 2mm; }
-    .tile h3 { font-size: 14pt; }
-    .vlist li { padding-top: 2px; padding-bottom: 2px; font-size: 10pt; }
-    .about .sheet p { font-size: 10.5pt; }
-    .sec-head { margin-bottom: 4mm; }
-    .sec-head p { font-size: 10pt; }
-    .stats { margin-top: 6mm; border: 1px solid var(--line); }
-    .stats em { display: none; }
-    .bento { grid-template-columns: 1fr 1fr; gap: 6mm; }
-    .tile, .tile.wide, .tile.narrow { grid-column: auto; display: block; break-inside: avoid; }
+    .hero { padding: 0; } .hero-grid { display: block; }
+    h1 { font-size: 26pt; } h2 { font-size: 17pt; } .head, h2 { break-after: avoid; }
+    section { padding-top: 8mm; }
+    .stats { margin-top: 6mm; }
+    .bento { grid-template-columns: 1fr 1fr; gap: 5mm; }
+    .tile, .tile.wide, .tile.narrow { grid-column: auto; display: block; border: 1px solid var(--line); break-inside: avoid; box-shadow: none; padding: 4mm; }
     .tile .body { padding: 0; }
-    .tile a::after { content: " (" attr(href) ")"; position: static; font-weight: 400; font-size: 8.5pt; color: var(--muted); word-break: break-all; }
-    .versions { grid-template-columns: repeat(3, 1fr); }
-    .vcard { display: block !important; }
+    .tile a.go { display: inline; }
+    .skills summary::after, .skills summary .count, .meta { display: none; }
+    .flow .sub { display: none; }
+    .tile a.go::after { content: " (" attr(href) ")"; position: static; font: 400 8pt var(--mono); color: var(--muted); word-break: break-all; }
+    .flows { grid-template-columns: repeat(3, 1fr); } .flow { display: block !important; break-inside: avoid; }
     .about { grid-template-columns: 1.2fr 1fr; }
-    .reply { margin-top: 8mm; display: block; }
-    .reply .avatar { display: none; }
-    .js .reveal, .js .margin .note { opacity: 1 !important; transform: none !important; }
+    .contact { display: block; border: 1px solid var(--line); padding: 5mm; margin-top: 8mm; }
+    .js .reveal { opacity: 1 !important; transform: none !important; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none !important; animation: none !important; }
-    .js .reveal, .js .margin .note { opacity: 1; transform: none; }
-    .js h1 del { text-decoration-color: var(--del); }
+    .js .reveal { opacity: 1; transform: none; }
   }
 </style>
 <script>document.documentElement.classList.add('js')</script>
@@ -349,321 +305,317 @@
 <body>
 <a class="skip" href="#main">Przejdź do treści</a>
 
-<header class="bar">
+<header class="bar" id="bar">
   <div class="wrap">
-    <a class="file" href="#top"><span class="ic" aria-hidden="true"></span><span><b>Anna Ziółkowska</b><small>portfolio · tryb sugestii</small></span></a>
-    <nav aria-label="Główna" id="menu"><ul class="tabs">
-      <li><a href="#projekty">Projekty</a></li>
-      <li><a href="#proces">Proces</a></li>
-      <li><a href="#o-mnie">O mnie</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul></nav>
-    <div class="who"><a class="share" href="#kontakt">Napisz do mnie</a><button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button></div>
+    <a class="brand" href="#top"><i aria-hidden="true"></i>Anna Ziółkowska</a>
+    <nav aria-label="Główna">
+      <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="links">Menu</button>
+      <ul class="links" id="links">
+        <li><a href="#projekty">Projekty</a></li>
+        <li><a href="#proces">Proces</a></li>
+        <li><a href="#o-mnie">O mnie</a></li>
+        <li class="cta-nav"><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
 <main id="main">
   <p class="print-only wrap">Anna Ziółkowska · treści, UX writing i AI w marketingu · aiprosciej@gmail.com · linkedin.com/in/anna-ziolkowska-ai · anna-content-ai.github.io/anna-content-ai</p>
   <div class="wrap">
-    <div class="stage" id="top">
-      <div class="doc">
-        <article class="sheet">
-          <p class="status"><i aria-hidden="true"></i>Otwarta na nową rolę w zespole marketingu</p>
-          <p class="crumb">Treści · UX writing · AI w marketingu · Warszawa</p>
-          <h1 id="h1">Twoja strona mówi <del id="d1">„innowacyjne rozwiązania”</del> <ins id="ins">to, czego klient naprawdę szuka.</ins></h1>
-          <p class="lead">Jestem Anna. Od ponad 9 lat pracuję w marketingu i social mediach. Czytam treści tak jak Twój klient, <mark id="m1">zaznaczam to, co nie działa</mark>, i proponuję konkretne poprawki. AI pomaga mi w szkicach, decyzje podejmuję sama.</p>
+    <div class="hero" id="top">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div>
+          <span class="pill"><i aria-hidden="true"></i>otwarta na nową rolę · Warszawa</span>
+          <h1>Poprawiam treści, żeby <span class="acc">sprzedawały jasno.</span></h1>
+          <p class="lead">Marketing, UX writing i AI w jednym procesie. Ponad 9 lat doświadczenia, studia podyplomowe z AI na SGH i własne narzędzia do pracy z treścią.</p>
           <div class="actions">
-            <a class="btn btn-main" href="#projekty">Zobacz projekty <span aria-hidden="true">↓</span></a>
-            <a class="btn btn-line" href="#kontakt">Napisz do mnie</a>
+            <a class="btn btn-main" href="#projekty">Zobacz projekty <span aria-hidden="true">→</span></a>
+            <a class="btn btn-line" href="#proces">Jak pracuję</a>
           </div>
-        </article>
-        <aside class="margin" aria-label="Komentarze">
-          <!-- ZDJĘCIE: wstaw plik photo.jpg (pionowe 4:5, min. 1200×1500 px) i zamień <span class="mono-av"> na:
-               <img class="pic" src="photo.jpg" alt="Anna Ziółkowska" width="1200" height="1500"> -->
-          <div class="card-id">
-            <span class="mono-av" aria-hidden="true">AZ</span>
-            <div><b>Anna Ziółkowska</b><span>Treści, UX writing i AI w marketingu</span></div>
-            <ul class="id-links">
-              <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn</a></li>
-              <li><a href="https://github.com/anna-content-ai">GitHub</a></li>
-              <li><button type="button" class="pdf" id="pdf">Zapisz jako PDF</button></li>
-            </ul>
+        </div>
+        <figure class="panel" aria-label="Przykład mojej pracy: przegląd nagłówka strony" style="margin:0">
+          <div class="panel-top"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>przegląd treści · nagłówek strony</span><span class="live"><i aria-hidden="true"></i>na żywo</span></div>
+          <div class="copy">
+            <span class="old">Innowacyjne rozwiązania dla Twojego biznesu</span>
+            <span class="new" id="new" data-text="Strona gotowa w 5 dni. Sprawdź cennik.">Strona gotowa w 5 dni. Sprawdź cennik.</span>
           </div>
-          <div class="note" data-for="d1">
-            <header><span class="avatar" aria-hidden="true">AZ</span><span><b>Anna Ziółkowska</b><small>komentarz do nagłówka</small></span></header>
-            <p>„Innowacyjne rozwiązania” nic nie mówi klientowi. Konkret zamiast przymiotnika.</p>
-          </div>
-          <div class="note ok" data-for="m1">
-            <header><span class="avatar" aria-hidden="true">AZ</span><span><b>Anna Ziółkowska</b><small>sprawdzone przed publikacją</small></span></header>
-            <p>Fakty, jasność i dostępność zweryfikowane. Tekst gotowy dla klienta.</p>
-            <span class="resolve">✓ rozwiązano</span>
-          </div>
-        </aside>
+          <ul class="checks" id="checks">
+            <li class="done">Jasność komunikatu<b>✓ poprawione</b></li>
+            <li class="done">Weryfikacja faktów<b>✓ sprawdzone</b></li>
+            <li class="done">Dostępność<b>✓ WCAG AA</b></li>
+            <li class="done human">Ostatnie słowo<b>człowiek</b></li>
+          </ul>
+          <figcaption class="panel-caption">Przykładowa poprawka. AI podpowiada, decyzję podejmuję ja.</figcaption>
+        </figure>
       </div>
 
       <ul class="stats reveal" aria-label="W liczbach">
-        <li><a href="#o-mnie"><small>Doświadczenie</small><b>9+ lat</b><span>w marketingu i social mediach</span><em>O mnie →</em></a></li>
-        <li><a href="#o-mnie"><small>Wykształcenie</small><b>SGH</b><span>podyplomowe: AI i automatyzacja w marketingu</span><em>O mnie →</em></a></li>
-        <li><a href="https://github.com/anna-content-ai/AI-Prompt-Library"><small>Narzędzia</small><b>4</b><span>własne Claude Skills</span><em>Biblioteka na GitHubie ↗</em></a></li>
-        <li><a href="case-studies/social-media-producent-materialow.html"><small>Analiza kanału</small><b>98,8%</b><span>wyświetleń od nieobserwujących</span><em>Case study →</em></a></li>
+        <li><a href="#o-mnie"><b>9+ lat</b><span>w marketingu i social mediach</span><em>O mnie →</em></a></li>
+        <li><a href="#o-mnie"><b>SGH</b><span>podyplomowe: AI i automatyzacja</span><em>O mnie →</em></a></li>
+        <li><a href="https://github.com/anna-content-ai/AI-Prompt-Library"><b>4</b><span>własne Claude Skills</span><em>Biblioteka na GitHubie ↗</em></a></li>
+        <li><a href="case-studies/social-media-producent-materialow.html"><b>98,8%</b><span>wyświetleń od nieobserwujących</span><em>Case study →</em></a></li>
       </ul>
     </div>
 
     <section id="projekty">
-      <div class="sec-head reveal">
-        <div><h2>Pliki, nad którymi pracowałam</h2></div>
-        <p>Każdy projekt to inny rodzaj pracy: interfejs, narzędzia AI, redakcja i dane.</p>
+      <div class="head reveal">
+        <div><span class="eyebrow">01 · projekty</span><h2>Wybrane projekty</h2></div>
+        <p>Interfejs, narzędzia AI, redakcja i dane. Każdy projekt pokazuje inny kawałek mojej pracy.</p>
       </div>
       <div class="bento">
         <article class="tile wide reveal">
           <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <rect x="20" y="22" width="280" height="30" rx="15" fill="#15171A"/>
-  <text x="36" y="42" font-size="11.5" fill="#FFFFFF" font-family="ui-monospace, Menlo, Consolas, monospace">claude-skills/content-review/SKILL.md</text>
-  <text x="20" y="80" font-size="11" fill="#6A6F78" font-family="ui-monospace, Menlo, Consolas, monospace">name: content-review</text>
-  <text x="20" y="104" font-size="11" font-weight="600" fill="#6A6F78" letter-spacing="1">URUCHAMIA SIĘ NA</text>
-  <g font-size="12" font-weight="600" fill="#101722">
-    <rect x="20" y="114" width="132" height="28" rx="14" fill="#F1F2F4"/><text x="86" y="132" text-anchor="middle">„sprawdź ten tekst”</text>
-    <rect x="160" y="114" width="140" height="28" rx="14" fill="#F1F2F4"/><text x="230" y="132" text-anchor="middle">„review this copy”</text>
+  <rect width="320" height="200" fill="#1A1E14"/>
+  <rect x="20" y="22" width="280" height="30" rx="15" fill="#E2683C"/>
+  <text x="36" y="42" font-size="11.5" fill="#14170F" font-family="ui-monospace, Menlo, Consolas, monospace">claude-skills/content-review/SKILL.md</text>
+  <text x="20" y="80" font-size="11" fill="#8C9180" font-family="ui-monospace, Menlo, Consolas, monospace">name: content-review</text>
+  <text x="20" y="104" font-size="11" font-weight="600" fill="#8C9180" letter-spacing="1">URUCHAMIA SIĘ NA</text>
+  <g font-size="12" font-weight="600" fill="#ECEBE4">
+    <rect x="20" y="114" width="132" height="28" rx="14" fill="#2A3022"/><text x="86" y="132" text-anchor="middle">„sprawdź ten tekst”</text>
+    <rect x="160" y="114" width="140" height="28" rx="14" fill="#2A3022"/><text x="230" y="132" text-anchor="middle">„review this copy”</text>
   </g>
-  <text x="20" y="168" font-size="22" font-weight="800" fill="#101722">4 Claude Skills</text>
-  <text x="20" y="188" font-size="11.5" fill="#6A6F78">+ 9 promptów i workflow</text>
+  <text x="20" y="168" font-size="22" font-weight="800" fill="#ECEBE4">4 Claude Skills</text>
+  <text x="20" y="188" font-size="11.5" fill="#8C9180">+ 9 promptów i workflow</text>
 </svg></div>
           <div class="body">
-            <p class="fname"><i>GitHub</i>AI · automatyzacja</p>
+            <p class="meta"><span>AI · automatyzacja</span><span>GitHub</span></p>
             <h3>AI Prompt Library</h3>
             <p>Prompty i workflow do researchu, edycji, weryfikacji i repurposingu. Cztery działają jako gotowe Claude Skills, każdy z kryteriami jakości i przeglądem przez człowieka.</p>
-            <p class="metric"><mark>4 Claude Skills</mark> + 9 promptów i workflow</p>
-            <a href="https://github.com/anna-content-ai/AI-Prompt-Library">Otwórz bibliotekę na GitHubie <span class="ext" aria-hidden="true">↗</span></a>
+            <p class="num"><b>4</b> Claude Skills · <b>9</b> promptów i workflow</p>
+            <a class="go" href="https://github.com/anna-content-ai/AI-Prompt-Library">Zobacz na GitHubie <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="tile narrow quote reveal">
-          <span class="mono">UX writing w praktyce</span>
-          <p class="q"><del>Kliknij tutaj</del><br><ins>Pobierz cennik (PDF)</ins></p>
-          <span class="mono">przycisk mówi, co się stanie</span>
+          <small>UX writing · przycisk</small>
+          <p class="q"><s>Kliknij tutaj</s><br><u>Pobierz cennik (PDF)</u></p>
+          <small>Przycisk mówi, co się stanie.</small>
         </article>
         <article class="tile reveal">
           <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <circle cx="284" cy="38" r="20" fill="none" stroke="#E3E5E8" stroke-width="7"/><circle cx="284" cy="38" r="10" fill="#101722"/>
-  <text x="14" y="34" font-size="11" font-weight="600" fill="#6A6F78" letter-spacing="1">PRZEPŁYW PROTOTYPU</text>
-  <g font-size="11.5" font-weight="600" fill="#101722">
-    <rect x="14" y="96" width="84" height="30" rx="15" fill="#F1F2F4"/><text x="56" y="115" text-anchor="middle">Onboarding</text>
-    <text x="102" y="115" fill="#6A6F78">→</text>
-    <rect x="116" y="96" width="96" height="30" rx="15" fill="#F1F2F4"/><text x="164" y="115" text-anchor="middle">Ekran główny</text>
-    <text x="216" y="115" fill="#6A6F78">→</text>
-    <rect x="230" y="96" width="78" height="30" rx="15" fill="#F1F2F4"/><text x="269" y="115" text-anchor="middle">Oddychanie</text>
-    <rect x="14" y="142" width="86" height="30" rx="15" fill="#F1F2F4"/><text x="57" y="161" text-anchor="middle">Ukończenie</text>
-    <text x="104" y="161" fill="#6A6F78">→</text>
-    <rect x="118" y="142" width="70" height="30" rx="15" fill="#F1F2F4"/><text x="153" y="161" text-anchor="middle">Nawyki</text>
-    <text x="192" y="161" fill="#6A6F78">→</text>
-    <rect x="206" y="142" width="76" height="30" rx="15" fill="#15171A"/><text x="244" y="161" text-anchor="middle" fill="#FFFFFF">Postępy</text>
+  <rect width="320" height="200" fill="#1A1E14"/>
+  <circle cx="284" cy="38" r="20" fill="none" stroke="#30362A" stroke-width="7"/><circle cx="284" cy="38" r="10" fill="#ECEBE4"/>
+  <text x="14" y="34" font-size="11" font-weight="600" fill="#8C9180" letter-spacing="1">PRZEPŁYW PROTOTYPU</text>
+  <g font-size="11.5" font-weight="600" fill="#ECEBE4">
+    <rect x="14" y="96" width="84" height="30" rx="15" fill="#2A3022"/><text x="56" y="115" text-anchor="middle">Onboarding</text>
+    <text x="102" y="115" fill="#8C9180">→</text>
+    <rect x="116" y="96" width="96" height="30" rx="15" fill="#2A3022"/><text x="164" y="115" text-anchor="middle">Ekran główny</text>
+    <text x="216" y="115" fill="#8C9180">→</text>
+    <rect x="230" y="96" width="78" height="30" rx="15" fill="#2A3022"/><text x="269" y="115" text-anchor="middle">Oddychanie</text>
+    <rect x="14" y="142" width="86" height="30" rx="15" fill="#2A3022"/><text x="57" y="161" text-anchor="middle">Ukończenie</text>
+    <text x="104" y="161" fill="#8C9180">→</text>
+    <rect x="118" y="142" width="70" height="30" rx="15" fill="#2A3022"/><text x="153" y="161" text-anchor="middle">Nawyki</text>
+    <text x="192" y="161" fill="#8C9180">→</text>
+    <rect x="206" y="142" width="76" height="30" rx="15" fill="#E2683C"/><text x="244" y="161" text-anchor="middle" fill="#14170F">Postępy</text>
   </g>
 </svg></div>
           <div class="body">
-            <p class="fname"><i>GitHub</i>UX · prototyp aplikacji</p>
+            <p class="meta"><span>UX · prototyp</span><span>GitHub</span></p>
             <h3>Odetchnij Teraz</h3>
             <p>Projekt zespołowy z SGH: przepływy, interfejs i treści UX, sprawdzone heurystykami Nielsena i pod kątem dostępności.</p>
-            <a href="https://github.com/anna-content-ai/odetchnij-teraz">Zobacz projekt na GitHubie <span class="ext" aria-hidden="true">↗</span></a>
+            <a class="go" href="https://github.com/anna-content-ai/odetchnij-teraz">Zobacz na GitHubie <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="tile reveal">
           <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <text x="20" y="32" font-size="11" font-weight="600" fill="#6A6F78" letter-spacing="1">PRZED</text>
-  <text x="20" y="54" font-size="14" fill="#6A6F78">Build the perfect website instantly</text>
-  <line x1="20" y1="49" x2="247" y2="49" stroke="#C8372B" stroke-width="2"/>
-  <text x="20" y="88" font-size="11" font-weight="600" fill="#101722" letter-spacing="1">PO</text>
-  <text x="20" y="110" font-size="14" font-weight="700" fill="#101722">Create your first website draft with AI</text>
-  <rect x="20" y="138" width="92" height="36" rx="18" fill="#F1F2F4"/><text x="66" y="161" font-size="13" fill="#6A6F78" text-anchor="middle">Continue</text>
-  <line x1="36" y1="156" x2="96" y2="156" stroke="#C8372B" stroke-width="2"/>
-  <text x="118" y="161" font-size="14" fill="#6A6F78">→</text>
-  <rect x="136" y="138" width="172" height="36" rx="18" fill="#15171A"/><text x="222" y="161" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Create my website draft</text>
+  <rect width="320" height="200" fill="#1A1E14"/>
+  <text x="20" y="32" font-size="11" font-weight="600" fill="#8C9180" letter-spacing="1">PRZED</text>
+  <text x="20" y="54" font-size="14" fill="#8C9180">Build the perfect website instantly</text>
+  <line x1="20" y1="49" x2="247" y2="49" stroke="#E2683C" stroke-width="2"/>
+  <text x="20" y="88" font-size="11" font-weight="600" fill="#ECEBE4" letter-spacing="1">PO</text>
+  <text x="20" y="110" font-size="14" font-weight="700" fill="#ECEBE4">Create your first website draft with AI</text>
+  <rect x="20" y="138" width="92" height="36" rx="18" fill="#2A3022"/><text x="66" y="161" font-size="13" fill="#8C9180" text-anchor="middle">Continue</text>
+  <line x1="36" y1="156" x2="96" y2="156" stroke="#E2683C" stroke-width="2"/>
+  <text x="118" y="161" font-size="14" fill="#8C9180">→</text>
+  <rect x="136" y="138" width="172" height="36" rx="18" fill="#E2683C"/><text x="222" y="161" font-size="12.5" font-weight="600" fill="#14170F" text-anchor="middle">Create my website draft</text>
 </svg></div>
           <div class="body">
-            <p class="fname"><i>case study</i>Content · UX writing</p>
+            <p class="meta"><span>Content · UX writing</span><span>case study</span></p>
             <h3>Analiza treści na www</h3>
             <p>Przegląd strony pod kątem faktów, jasności i nieuzasadnionych twierdzeń. Porównanie wyników dwóch modeli AI i gotowe poprawki.</p>
-            <a href="https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md">Czytaj case study na GitHubie <span class="ext" aria-hidden="true">↗</span></a>
+            <a class="go" href="https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md">Czytaj na GitHubie <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="tile wide reveal">
           <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <rect x="20" y="20" width="10" height="10" fill="#15171A"/><text x="36" y="29" font-size="11" fill="#3B4048">wyświetlenia</text>
-  <rect x="120" y="20" width="10" height="10" fill="#FFD43B"/><text x="136" y="29" font-size="11" fill="#3B4048">interakcje</text>
-  <g font-size="12" font-weight="600" fill="#101722">
-    <text x="20" y="64">Rolki</text><rect x="86" y="52" width="122" height="11" rx="3" fill="#15171A"/><rect x="86" y="66" width="95" height="11" rx="3" fill="#FFD43B"/>
-    <text x="20" y="110">Posty</text><rect x="86" y="98" width="63" height="11" rx="3" fill="#15171A"/><rect x="86" y="112" width="107" height="11" rx="3" fill="#FFD43B"/>
-    <text x="20" y="156">Relacje</text><rect x="86" y="144" width="30" height="11" rx="3" fill="#15171A"/><rect x="86" y="158" width="12" height="11" rx="3" fill="#FFD43B"/>
+  <rect width="320" height="200" fill="#1A1E14"/>
+  <rect x="20" y="20" width="10" height="10" fill="#E2683C"/><text x="36" y="29" font-size="11" fill="#B9BCAE">wyświetlenia</text>
+  <rect x="120" y="20" width="10" height="10" fill="#A3B18A"/><text x="136" y="29" font-size="11" fill="#B9BCAE">interakcje</text>
+  <g font-size="12" font-weight="600" fill="#ECEBE4">
+    <text x="20" y="64">Rolki</text><rect x="86" y="52" width="122" height="11" rx="3" fill="#E2683C"/><rect x="86" y="66" width="95" height="11" rx="3" fill="#A3B18A"/>
+    <text x="20" y="110">Posty</text><rect x="86" y="98" width="63" height="11" rx="3" fill="#E2683C"/><rect x="86" y="112" width="107" height="11" rx="3" fill="#A3B18A"/>
+    <text x="20" y="156">Relacje</text><rect x="86" y="144" width="30" height="11" rx="3" fill="#E2683C"/><rect x="86" y="158" width="12" height="11" rx="3" fill="#A3B18A"/>
   </g>
-  <text x="20" y="190" font-size="10.5" fill="#6A6F78">Udział typów treści, 90 dni (w procentach)</text>
+  <text x="20" y="190" font-size="10.5" fill="#8C9180">Udział typów treści, 90 dni (w procentach)</text>
 </svg></div>
           <div class="body">
-            <p class="fname"><i>case study</i>Social media · dane</p>
+            <p class="meta"><span>Social media · dane</span><span>case study</span></p>
             <h3>Analiza kanału marki budowlanej</h3>
             <p>90 dni danych z kanału producenta materiałów budowlanych: zasięg od nieobserwujących, rola rolek i postów, wnioski i plan testów. Praca w zespole z agencją.</p>
-            <p class="metric"><mark>98,8%</mark> wyświetleń od nieobserwujących · <mark>50,2%</mark> interakcji z postów</p>
-            <a href="case-studies/social-media-producent-materialow.html">Czytaj case study <span aria-hidden="true">→</span></a>
+            <p class="num"><b>98,8%</b> wyświetleń od nieobserwujących · <b>50,2%</b> interakcji z postów</p>
+            <a class="go" href="case-studies/social-media-producent-materialow.html">Czytaj case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <article class="tile narrow quote reveal">
-          <span class="mono">komunikat o błędzie</span>
-          <p class="q"><del>Błąd 404</del><br><ins>Tej strony już nie ma. Sprawdź nasze aktualne oferty</ins></p>
-          <span class="mono">mów, co się stało i co dalej</span>
+          <small>UX writing · komunikat o błędzie</small>
+          <p class="q"><s>Błąd 404</s><br><u>Tej strony już nie ma. Sprawdź aktualne oferty.</u></p>
+          <small>Co się stało i co dalej.</small>
         </article>
       </div>
     </section>
 
     <section id="proces">
-      <div class="sec-head reveal">
-        <div><h2>Jak powstaje dobra wersja</h2></div>
-        <p>Trzy procesy, które stosuję na co dzień. Na żółto etapy, które zawsze robię sama.</p>
+      <div class="head reveal">
+        <div><span class="eyebrow">02 · proces</span><h2>Jak pracuję z AI</h2></div>
+        <p>AI przyspiesza szkice i analizę. Etapy oznaczone na pomarańczowo zawsze wykonuję sama.</p>
       </div>
       <div class="vtabs" role="tablist" aria-label="Procesy" hidden>
         <button role="tab" type="button" id="vt-0" aria-controls="vp-0" aria-selected="true">Treści</button>
         <button role="tab" type="button" id="vt-1" aria-controls="vp-1" aria-selected="false" tabindex="-1">Prototypy</button>
         <button role="tab" type="button" id="vt-2" aria-controls="vp-2" aria-selected="false" tabindex="-1">Audio i wideo</button>
       </div>
-      <div class="versions">
-        <div class="vcard reveal" id="vp-0"><h3>Treści</h3><ol class="vlist">
-          <li class="ai">Research i brief</li><li class="ai">Prompt i szkic</li><li class="me">Edycja</li><li class="me">Fact-checking</li><li class="ai">Adaptacja do kanału</li><li class="me">Publikacja</li></ol></div>
-        <div class="vcard reveal" id="vp-1"><h3>Prototypy interfejsów</h3><ol class="vlist">
-          <li class="ai">Koncept</li><li class="ai">Prototyp z promptów</li><li class="me">Przegląd UX</li><li class="me">Ewaluacja heurystyczna</li><li class="me">Dostępność</li><li class="ai">Poprawki i akceptacja</li></ol></div>
-        <div class="vcard reveal" id="vp-2"><h3>Audio i wideo</h3><ol class="vlist">
-          <li class="me">Temat i scenariusz</li><li class="ai">Wybór głosu</li><li class="ai">Lektor AI</li><li class="me">Montaż</li><li class="me">Publikacja na YouTube</li></ol></div>
+      <div class="flows">
+        <div class="flow reveal" id="vp-0"><h3>Treści</h3><p class="sub">artykuły · posty · strony</p><ol class="steps">
+          <li>Research i brief<b>AI</b></li><li>Prompt i szkic<b>AI</b></li><li class="me">Edycja<b>Anna</b></li><li class="me">Fact-checking<b>Anna</b></li><li>Adaptacja do kanału<b>AI</b></li><li class="me">Publikacja<b>Anna</b></li></ol></div>
+        <div class="flow reveal" id="vp-1"><h3>Prototypy interfejsów</h3><p class="sub">ekrany · przepływy · teksty UI</p><ol class="steps">
+          <li>Koncept<b>AI</b></li><li>Prototyp z promptów<b>AI</b></li><li class="me">Przegląd UX<b>Anna</b></li><li class="me">Ewaluacja heurystyczna<b>Anna</b></li><li class="me">Dostępność<b>Anna</b></li><li>Poprawki i akceptacja<b>AI</b></li></ol></div>
+        <div class="flow reveal" id="vp-2"><h3>Audio i wideo</h3><p class="sub">nagrania · YouTube</p><ol class="steps">
+          <li class="me">Temat i scenariusz<b>Anna</b></li><li>Wybór głosu<b>AI</b></li><li>Lektor AI<b>AI</b></li><li class="me">Montaż<b>Anna</b></li><li class="me">Publikacja na YouTube<b>Anna</b></li></ol></div>
       </div>
-      <div class="legend"><span><i aria-hidden="true"></i>etap z pomocą AI</span><span><i class="me" aria-hidden="true"></i>etap, który robię sama</span></div>
+      <div class="legend"><span><i aria-hidden="true"></i>z pomocą AI</span><span><i class="me" aria-hidden="true"></i>robię sama</span></div>
     </section>
 
     <section id="o-mnie">
-      <div class="sec-head reveal"><div><h2>O mnie</h2></div></div>
+      <div class="head reveal"><div><span class="eyebrow">03 · o mnie</span><h2>O mnie</h2></div></div>
       <div class="about">
-        <div class="sheet reveal">
+        <div class="card reveal">
+          <div class="me-row">
+            <!-- ZDJĘCIE: wstaw photo.jpg (kwadrat lub 4:5, min. 600 px) i zamień <span class="avatar"> na:
+                 <img class="avatar" src="photo.jpg" alt="Anna Ziółkowska" width="600" height="600"> -->
+            <span class="avatar" aria-hidden="true">AZ</span>
+            <div><b>Anna Ziółkowska</b><span>Treści, UX writing i AI w marketingu · Warszawa</span></div>
+          </div>
           <p>Od ponad 9 lat pracuję w marketingu i social mediach. Na co dzień koordynuję kanały <strong>producenta materiałów budowlanych</strong> na Facebooku, Instagramie, YouTube, TikToku i LinkedInie, we współpracy z agencją social media.</p>
-          <p>Ukończyłam studia podyplomowe <strong>„AI i automatyzacja w marketingu” na SGH</strong> i mam warsztat UX/UI. Moja specjalność to tekst, który klient rozumie od pierwszego czytania.</p>
-          <p>Narzędzia AI buduję i testuję sama: od promptów po gotowe Claude Skills, które opisuję i udostępniam na GitHubie.</p>
+          <p>Ukończyłam studia podyplomowe <strong>„AI i automatyzacja w marketingu” na SGH</strong> i mam warsztat UX/UI. Narzędzia AI buduję i testuję sama: od promptów po gotowe Claude Skills, które udostępniam na GitHubie.</p>
+          <ul class="me-links">
+            <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn ↗</a></li>
+            <li><a href="https://github.com/anna-content-ai">GitHub ↗</a></li>
+            <li><button type="button" id="pdf">Zapisz jako PDF</button></li>
+          </ul>
         </div>
-        <details class="skills reveal" id="skills" open>
-          <summary><span>Kompetencje</span><span class="count">14</span></summary>
-          <div><h3>Treści</h3><ul class="tags"><li>Analiza treści na www</li><li>Strategia treści</li><li>Fact-checking</li><li>Repurposing</li><li>SEO i WordPress</li></ul></div>
-          <div><h3>UX</h3><ul class="tags"><li>UX writing</li><li>Projektowanie interfejsów</li><li>Heurystyki Nielsena</li><li>Dostępność</li></ul></div>
-          <div><h3>AI i dane</h3><ul class="tags"><li>Claude Skills i prompty</li><li>Automatyzacje</li><li>Analiza social media</li><li>GA4</li><li>GetResponse</li></ul></div>
+        <details class="card skills reveal" id="skills" open>
+          <summary>Kompetencje <span class="count">14</span></summary>
+          <h3>Treści</h3><ul class="tags"><li>Analiza treści na www</li><li>Strategia treści</li><li>Fact-checking</li><li>Repurposing</li><li>SEO i WordPress</li></ul>
+          <h3>UX</h3><ul class="tags"><li>UX writing</li><li>Projektowanie interfejsów</li><li>Heurystyki Nielsena</li><li>Dostępność</li></ul>
+          <h3>AI i dane</h3><ul class="tags"><li>Claude Skills i prompty</li><li>Automatyzacje</li><li>Analiza social media</li><li>GA4</li><li>GetResponse</li></ul>
         </details>
       </div>
     </section>
 
-    <section id="kontakt" class="reply reveal">
-      <span class="avatar" aria-hidden="true">AZ</span>
-      <div>
-        <h2>Szukasz osoby od treści, UX i AI w marketingu?</h2>
+    <section id="kontakt" class="contact reveal">
+      <div class="intro">
+        <span class="eyebrow">04 · kontakt</span>
+        <h2>Szukasz osoby od <span class="acc">treści, UX i AI</span>?</h2>
         <p>Napisz albo zaproś mnie na LinkedInie. Chętnie opowiem, jak pracuję z AI i jak mogę pomóc Twojemu zespołowi.</p>
-        <form class="form" id="form" novalidate>
-          <div class="row">
-            <label class="fld"><span>Imię i nazwisko</span><input name="name" autocomplete="name" required aria-describedby="e-name"><small class="err" id="e-name"></small></label>
-            <label class="fld"><span>E-mail</span><input name="email" type="email" autocomplete="email" required aria-describedby="e-email"><small class="err" id="e-email"></small></label>
-          </div>
-          <label class="fld"><span>Firma <em>(opcjonalnie)</em></span><input name="company" autocomplete="organization"></label>
-          <label class="fld"><span>Wiadomość</span><textarea name="msg" rows="4" required aria-describedby="e-msg" placeholder="Np. mamy w zespole rolę, która może Cię zainteresować…"></textarea><small class="err" id="e-msg"></small></label>
-          <div class="actions">
-            <button class="btn btn-main" type="submit">Przygotuj wiadomość</button>
-            <a class="btn btn-line" href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn</a>
-            <button class="btn btn-line" type="button" id="copy">Kopiuj adres e-mail</button>
-          </div>
-          <p class="hint">Formularz otworzy Twój program pocztowy z gotową wiadomością do <b>aiprosciej@gmail.com</b>. Wiadomość dotrze, gdy ją tam wyślesz.</p>
-          <p class="copy-msg" id="copy-msg" role="status" aria-live="polite"></p>
-        </form>
+        <ul class="direct">
+          <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn <span>↗</span></a></li>
+          <li><button type="button" id="copy">aiprosciej@gmail.com <span id="copy-label">kopiuj</span></button></li>
+        </ul>
       </div>
+      <form class="form" id="form" novalidate>
+        <div class="row">
+          <label class="fld"><span>Imię i nazwisko</span><input name="name" autocomplete="name" required aria-describedby="e-name"><small class="err" id="e-name"></small></label>
+          <label class="fld"><span>E-mail</span><input name="email" type="email" autocomplete="email" required aria-describedby="e-email"><small class="err" id="e-email"></small></label>
+        </div>
+        <label class="fld"><span>Firma <em>(opcjonalnie)</em></span><input name="company" autocomplete="organization"></label>
+        <label class="fld"><span>Wiadomość</span><textarea name="msg" required aria-describedby="e-msg" placeholder="Np. mamy w zespole rolę, która może Cię zainteresować…"></textarea><small class="err" id="e-msg"></small></label>
+        <button class="btn btn-main" type="submit">Przygotuj wiadomość <span aria-hidden="true">→</span></button>
+        <p class="hint">Formularz otworzy Twój program pocztowy z gotową wiadomością. Dotrze do mnie, gdy ją tam wyślesz.</p>
+        <p class="status-msg" id="status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </div>
 </main>
 
-<footer><div class="wrap"><span>© Anna Ziółkowska · ostatnia zmiana: listopad 2026</span><a href="#top">↑ Wróć na górę</a></div></footer>
+<footer><div class="wrap"><span>© Anna Ziółkowska · 2026</span><a href="#top">↑ Wróć na górę</a></div></footer>
 
 <script>
 (function () {
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var h1 = document.getElementById('h1'), ins = document.getElementById('ins');
-  // Skreślenie, potem „wpisywanie” poprawki
-  if (!reduce) {
-    var full = ins.textContent; ins.textContent = '';
-    ins.setAttribute('aria-label', full);
-    setTimeout(function () { h1.classList.add('go'); }, 100);
-    h1.classList.add('typing');
-    var i = 0; setTimeout(function t() { ins.textContent = full.slice(0, ++i); if (i < full.length) setTimeout(t, 38); else setTimeout(function () { h1.classList.remove('typing'); }, 1200); }, 900);
-  } else h1.classList.add('go');
-  // Komentarze wjeżdżają po kolei
-  document.querySelectorAll('.margin .note').forEach(function (n, k) { setTimeout(function () { n.classList.add('in'); }, reduce ? 0 : 700 + k * 900); });
-  // Pasek: menu na telefonie i chowanie przy przewijaniu w dół
-  var bar = document.querySelector('.bar'), mb = document.getElementById('menu-btn'), lastY = scrollY;
+  var bar = document.getElementById('bar'), mb = document.getElementById('menu-btn'), lastY = scrollY;
+  // Menu na telefonie
   mb.addEventListener('click', function () { var o = bar.classList.toggle('open'); mb.setAttribute('aria-expanded', o); mb.textContent = o ? 'Zamknij' : 'Menu'; });
-  document.querySelectorAll('#menu a').forEach(function (a) { a.addEventListener('click', function () { bar.classList.remove('open'); mb.setAttribute('aria-expanded', 'false'); mb.textContent = 'Menu'; }); });
+  document.querySelectorAll('#links a').forEach(function (a) { a.addEventListener('click', function () { a.blur(); bar.classList.remove('open'); mb.setAttribute('aria-expanded', 'false'); mb.textContent = 'Menu'; }); });
+  // Pasek: obramowanie i chowanie przy przewijaniu w dół
   addEventListener('scroll', function () {
-    var y = scrollY;
-    if (!bar.classList.contains('open') && !bar.contains(document.activeElement)) bar.classList.toggle('hide', y > lastY && y > 160);
+    var y = scrollY; bar.classList.toggle('scrolled', y > 8);
+    var down = y > lastY && y > 200;
+    if (!down) bar.classList.remove('hide');
+    else if (!bar.classList.contains('open') && !bar.contains(document.activeElement)) bar.classList.add('hide');
     lastY = y;
   }, { passive: true });
-  // Historia wersji: zakładki na telefonie
-  var vt = document.querySelector('.vtabs'), tabs = [].slice.call(vt.querySelectorAll('[role=tab]')), mq = matchMedia('(max-width: 680px)');
-  function showTab(k, focus) {
-    tabs.forEach(function (t, j) {
-      var on = j === k, panel = document.getElementById(t.getAttribute('aria-controls'));
-      t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
-      if (mq.matches) { panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', t.id); on ? panel.removeAttribute('data-hidden') : panel.setAttribute('data-hidden', ''); }
-      if (on && focus) t.focus();
-    });
+  // Panel: wpisywanie poprawki i odhaczanie listy
+  var nw = document.getElementById('new'), checks = [].slice.call(document.querySelectorAll('#checks li'));
+  if (!reduce) {
+    var full = nw.getAttribute('data-text');
+    function run() {
+      nw.textContent = ''; nw.classList.add('typing');
+      checks.forEach(function (c) { c.classList.remove('done'); c.querySelector('b').dataset.t = c.querySelector('b').dataset.t || c.querySelector('b').textContent; c.querySelector('b').textContent = '…'; });
+      var i = 0;
+      setTimeout(function t() {
+        nw.textContent = full.slice(0, ++i);
+        if (i < full.length) setTimeout(t, 45);
+        else { nw.classList.remove('typing'); checks.forEach(function (c, k) { setTimeout(function () { c.classList.add('done'); c.querySelector('b').textContent = c.querySelector('b').dataset.t; }, 350 + k * 420); }); setTimeout(run, 9000); }
+      }, 700);
+    }
+    run();
   }
-  function setupTabs() {
+  // Wejścia sekcji
+  var els = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) els.forEach(function (e) { e.classList.add('in'); });
+  else { var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' }); els.forEach(function (e) { io.observe(e); }); }
+  // Poświata kart
+  document.querySelectorAll('.tile').forEach(function (c) { c.addEventListener('pointermove', function (e) { var r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); }); });
+  // Aktywna sekcja w menu
+  var links = [].slice.call(document.querySelectorAll('#links a[href^="#"]'));
+  function cur() { var y = scrollY + innerHeight * .35, id = null; links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.getBoundingClientRect().top + scrollY <= y) id = a; }); if (innerHeight + scrollY >= document.body.scrollHeight - 4) id = links[links.length - 1]; links.forEach(function (a) { a === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'); }); }
+  addEventListener('scroll', cur, { passive: true }); cur();
+  // Proces: zakładki na telefonie, kompetencje zwinięte na telefonie
+  var vt = document.querySelector('.vtabs'), flows = document.querySelector('.flows'), tabs = [].slice.call(vt.querySelectorAll('[role=tab]')), mq = matchMedia('(max-width: 720px)');
+  function show(k, focus) { tabs.forEach(function (t, j) { var on = j === k, p = document.getElementById(t.getAttribute('aria-controls')); t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; on ? p.removeAttribute('data-hidden') : p.setAttribute('data-hidden', ''); if (on && focus) t.focus(); }); }
+  function setup() {
     vt.hidden = !mq.matches;
-    if (mq.matches) showTab(tabs.findIndex(function (t) { return t.getAttribute('aria-selected') === 'true'; }));
-    else tabs.forEach(function (t) { var p = document.getElementById(t.getAttribute('aria-controls')); p.removeAttribute('data-hidden'); p.removeAttribute('role'); p.removeAttribute('aria-labelledby'); });
-    var sk = document.getElementById('skills'); if (mq.matches) sk.removeAttribute('open'); else sk.setAttribute('open', '');
+    if (mq.matches) { flows.setAttribute('data-tabs', ''); tabs.forEach(function (t) { var p = document.getElementById(t.getAttribute('aria-controls')); p.setAttribute('role', 'tabpanel'); p.setAttribute('aria-labelledby', t.id); }); show(Math.max(0, tabs.findIndex(function (t) { return t.getAttribute('aria-selected') === 'true'; }))); }
+    else { flows.removeAttribute('data-tabs'); tabs.forEach(function (t) { var p = document.getElementById(t.getAttribute('aria-controls')); p.removeAttribute('role'); p.removeAttribute('aria-labelledby'); p.removeAttribute('data-hidden'); }); }
+    var sk = document.getElementById('skills'); mq.matches ? sk.removeAttribute('open') : sk.setAttribute('open', '');
   }
-  tabs.forEach(function (t, k) {
-    t.addEventListener('click', function () { showTab(k); });
-    t.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); showTab((k + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length, true); } });
-  });
-  setupTabs(); mq.addEventListener('change', setupTabs);
-  // Zapis jako PDF
+  tabs.forEach(function (t, k) { t.addEventListener('click', function () { show(k); }); t.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); show((k + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length, true); } }); });
+  setup(); mq.addEventListener('change', setup);
+  // PDF
   document.getElementById('pdf').addEventListener('click', function () { window.print(); });
-  addEventListener('beforeprint', function () { document.getElementById('skills').setAttribute('open', ''); var f = ins.getAttribute('aria-label'); if (f) ins.textContent = f; });
-  // Komentarz podświetla frazę, której dotyczy
-  document.querySelectorAll('.note[data-for]').forEach(function (n) {
-    var t = document.getElementById(n.getAttribute('data-for'));
-    if (!t) return;
-    ['mouseenter', 'focusin'].forEach(function (ev) { n.addEventListener(ev, function () { t.classList.add('focus'); }); });
-    ['mouseleave', 'focusout'].forEach(function (ev) { n.addEventListener(ev, function () { t.classList.remove('focus'); }); });
+  addEventListener('beforeprint', function () { document.getElementById('skills').setAttribute('open', ''); });
+  // Kopiowanie adresu
+  var mail = 'aiprosciej@gmail.com', st = document.getElementById('status'), cl = document.getElementById('copy-label');
+  document.getElementById('copy').addEventListener('click', function () {
+    function ok() { cl.textContent = 'skopiowano ✓'; st.textContent = 'Skopiowano adres: ' + mail; setTimeout(function () { cl.textContent = 'kopiuj'; }, 2500); }
+    if (navigator.clipboard) navigator.clipboard.writeText(mail).then(ok, function () { st.textContent = 'Adres: ' + mail; }); else st.textContent = 'Adres: ' + mail;
   });
-  // Formularz: walidacja i gotowa wiadomość e-mail
+  // Formularz
   var form = document.getElementById('form');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var f = form.elements, bad = null;
-    function check(el, ok, txt) {
-      var err = document.getElementById('e-' + el.name);
-      if (ok) { el.removeAttribute('aria-invalid'); err.textContent = ''; }
-      else { el.setAttribute('aria-invalid', 'true'); err.textContent = txt; bad = bad || el; }
-    }
+    function check(el, ok, txt) { var err = document.getElementById('e-' + el.name); if (ok) { el.removeAttribute('aria-invalid'); err.textContent = ''; } else { el.setAttribute('aria-invalid', 'true'); err.textContent = txt; bad = bad || el; } }
     check(f.name, f.name.value.trim().length > 1, 'Podaj imię i nazwisko.');
     check(f.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim()), 'Podaj adres e-mail w formacie nazwa@domena.pl.');
     check(f.msg, f.msg.value.trim().length > 9, 'Napisz kilka słów (min. 10 znaków).');
     if (bad) { bad.focus(); return; }
     var subj = 'Portfolio: wiadomość od ' + f.name.value.trim() + (f.company.value.trim() ? ' (' + f.company.value.trim() + ')' : '');
     var body = f.msg.value.trim() + '\n\n' + f.name.value.trim() + '\n' + f.email.value.trim();
-    location.href = 'mailto:aiprosciej@gmail.com?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
-    document.getElementById('copy-msg').textContent = 'Otworzyłam Twój program pocztowy z gotową wiadomością. Wyślij ją stamtąd, wtedy do mnie dotrze.';
+    location.href = 'mailto:' + mail + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+    st.textContent = 'Otworzyłam Twój program pocztowy z gotową wiadomością. Wyślij ją stamtąd, wtedy do mnie dotrze.';
   });
-  // Wejście sekcji
-  var els = document.querySelectorAll('.reveal');
-  if (reduce || !('IntersectionObserver' in window)) els.forEach(function (e) { e.classList.add('in'); });
-  else { var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' }); els.forEach(function (e) { io.observe(e); }); }
-  // Aktywna zakładka
-  var links = [].slice.call(document.querySelectorAll('.tabs a'));
-  function cur() { var y = scrollY + innerHeight * .35, id = null; links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.offsetTop <= y) id = a; }); if (innerHeight + scrollY >= document.body.scrollHeight - 4) id = links[links.length - 1]; links.forEach(function (a) { a === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'); }); }
-  addEventListener('scroll', cur, { passive: true }); cur();
-  // Kopiowanie adresu
-  var btn = document.getElementById('copy'), msg = document.getElementById('copy-msg'), mail = 'aiprosciej@gmail.com';
-  btn.addEventListener('click', function () { if (navigator.clipboard) navigator.clipboard.writeText(mail).then(function () { msg.textContent = '✓ skopiowano: ' + mail; }, function () { msg.textContent = 'Adres: ' + mail; }); else msg.textContent = 'Adres: ' + mail; });
 })();
 </script>
 </body>

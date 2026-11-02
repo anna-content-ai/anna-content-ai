@@ -6,6 +6,7 @@
 <base href="/anna-content-ai/">
 <title>Tej strony już nie ma – Anna Ziółkowska</title>
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#14170F">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
   @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("fonts/inter-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
@@ -16,49 +17,45 @@
   @font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/inter-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 700; font-display: swap; src: url("fonts/bricolage-grotesque-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 700; font-display: swap; src: url("fonts/bricolage-grotesque-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 800; font-display: swap; src: url("fonts/bricolage-grotesque-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-  @font-face { font-family: "Bricolage Grotesque"; font-weight: 800; font-display: swap; src: url("fonts/bricolage-grotesque-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 500; font-display: swap; src: url("fonts/space-grotesk-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 500; font-display: swap; src: url("fonts/space-grotesk-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 700; font-display: swap; src: url("fonts/space-grotesk-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Space Grotesk"; font-weight: 700; font-display: swap; src: url("fonts/space-grotesk-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url("fonts/ibm-plex-mono-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url("fonts/ibm-plex-mono-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url("fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-  :root { --canvas:#EEF0F2; --line:#E3E5E8; --ink:#15171A; --ink-2:#3B4048; --muted:#646A73; --hl:#FFE45C; --ins:#0B7A45; --ins-bg:#E2F5EA; --del:#C8372B; --del-bg:#FBE6E3; --display:"Bricolage Grotesque","Inter",system-ui,sans-serif; --sans:"Inter",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace; }
   * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--canvas); color: var(--ink); font: 17px/1.6 var(--sans); padding: 24px; }
-  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
-  .doc { display: grid; grid-template-columns: minmax(0, 620px) 260px; gap: 24px; align-items: start; max-width: 920px; width: 100%; }
-  .sheet { background: #fff; border-radius: 6px; box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 20px 50px -24px rgba(16,24,40,.25); padding: 48px 52px; }
-  .code { font: 500 .8rem var(--mono); color: var(--muted); margin: 0 0 16px; }
-  h1 { font: 800 clamp(2.2rem, 6vw, 3.4rem)/1.05 var(--display); letter-spacing: -.03em; margin: 0; }
-  del { display: inline-block; font-size: .55em; color: var(--del); background: var(--del-bg); text-decoration-thickness: .08em; border-radius: .12em; padding: 0 .08em; margin-bottom: .2em; }
-  ins { color: var(--ins); background: var(--ins-bg); text-decoration-thickness: .07em; text-underline-offset: .1em; -webkit-box-decoration-break: clone; box-decoration-break: clone; padding: 0 .06em; border-radius: .12em; }
-  p.lead { color: var(--ink-2); margin: 20px 0 0; font-size: 1.1rem; }
-  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-  .btn { display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 12px; font-weight: 600; text-decoration: none; border: 1px solid #C3C8CF; color: var(--ink); background: #fff; }
-  .btn.main { background: var(--ink); color: #fff; border-color: var(--ink); }
-  .note { background: #fff; border-radius: 12px; padding: 14px 16px; border-left: 3px solid var(--hl); box-shadow: 0 10px 26px -18px rgba(16,24,40,.35); margin-top: 40px; }
-  .note header { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
-  .av { width: 22px; height: 22px; border-radius: 50%; background: var(--hl); display: grid; place-items: center; font: 700 .58rem var(--sans); }
-  .note b { font-size: .86rem; } .note small { font: 400 .72rem var(--mono); color: var(--muted); margin-left: auto; }
-  .note p { margin: 0; font-size: .93rem; color: var(--ink-2); line-height: 1.5; }
-  @media (max-width: 760px) { .doc { grid-template-columns: 1fr; } .sheet { padding: 32px 22px; } .note { margin-top: 0; } .btn { width: 100%; justify-content: center; } }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #14170F; color: #ECEBE4; font: 17px/1.6 Inter, system-ui, sans-serif; padding: 24px; position: relative; overflow: hidden; }
+  body::before { content: ""; position: fixed; inset: 0; background-image: linear-gradient(rgba(236,235,228,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(236,235,228,.045) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 70%); mask-image: radial-gradient(ellipse at center, #000 20%, transparent 70%); }
+  body::after { content: ""; position: fixed; width: 600px; height: 600px; right: -200px; top: -200px; border-radius: 50%; background: radial-gradient(closest-side, rgba(226,104,60,.3), transparent); }
+  a:focus-visible { outline: 2px solid #E2683C; outline-offset: 3px; border-radius: 8px; }
+  main { position: relative; z-index: 1; max-width: 640px; width: 100%; }
+  .code { font: 500 .82rem "IBM Plex Mono", monospace; color: #E2683C; margin: 0 0 18px; }
+  .panel { background: #1D2116; border: 1px solid #30362A; border-radius: 18px; padding: 18px; margin-bottom: 28px; box-shadow: 0 40px 90px -40px rgba(0,0,0,.85); }
+  .copy { background: #14170F; border: 1px solid #30362A; border-radius: 12px; padding: 16px; font-size: 1.05rem; }
+  .copy s { color: #C98A70; text-decoration-color: #E2683C; text-decoration-thickness: 2px; }
+  .copy u { display: block; color: #C3CEA9; text-decoration-color: #A3B18A; text-underline-offset: 4px; margin-top: 6px; }
+  h1 { font: 700 clamp(2.2rem, 6vw, 3.4rem)/1.02 "Space Grotesk", sans-serif; letter-spacing: -.035em; margin: 0; }
+  h1 span { color: #E2683C; }
+  p.lead { color: #B9BCAE; margin: 18px 0 0; font-size: 1.1rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .btn { display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 12px; font-weight: 600; text-decoration: none; border: 1px solid #3A4030; color: #ECEBE4; }
+  .btn.main { background: #E2683C; color: #14170F; border-color: #E2683C; }
+  @media (max-width: 560px) { .btn { width: 100%; justify-content: center; } }
 </style>
 </head>
 <body>
-<main class="doc">
-  <article class="sheet">
-    <p class="code">404 · nie znaleziono strony</p>
-    <h1><del>Błąd 404</del><br><ins>Tej strony już nie ma.</ins> Ale portfolio jest na miejscu.</h1>
-    <p class="lead">Link mógł się zmienić albo zawierać literówkę. Wybierz, dokąd chcesz przejść:</p>
-    <div class="actions">
-      <a class="btn main" href="index.html">Strona główna portfolio</a>
-      <a class="btn" href="index.html#projekty">Projekty</a>
-      <a class="btn" href="index.html#kontakt">Kontakt</a>
-    </div>
-  </article>
-  <aside class="note"><header><span class="av" aria-hidden="true">AZ</span><b>Anna</b><small>komentarz</small></header><p>Dobry komunikat o błędzie mówi, co się stało i co możesz zrobić dalej. Ten też próbuje.</p></aside>
+<main>
+  <p class="code">404 · nie znaleziono strony</p>
+  <div class="panel" aria-hidden="true"><div class="copy"><s>Błąd 404</s><u>Tej strony już nie ma. Portfolio jest na miejscu.</u></div></div>
+  <h1>Tej strony już nie ma. <span>Wybierz, dokąd dalej.</span></h1>
+  <p class="lead">Link mógł się zmienić albo zawierać literówkę. Dobry komunikat o błędzie mówi, co się stało i co możesz zrobić. Ten też próbuje.</p>
+  <div class="actions">
+    <a class="btn main" href="index.html">Strona główna portfolio</a>
+    <a class="btn" href="index.html#projekty">Projekty</a>
+    <a class="btn" href="index.html#kontakt">Kontakt</a>
+  </div>
 </main>
 </body>
 </html>

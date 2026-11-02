@@ -1,45 +1,37 @@
 # DESIGN.md – portfolio Anny Ziółkowskiej
 
-**Idea przewodnia:** tryb sugestii. Strona wygląda jak dokument w edytorze, w którym Anna poprawia tekst: skreśla puste frazy, wpisuje konkret i zostawia komentarze na marginesie. Portfolio pokazuje sposób pracy, zamiast go opisywać.
+**Idea przewodnia:** „Oliwka nocą”. Nowoczesny styl technologiczny w ziemistych kolorach. Strona wygląda jak produkt: hero z panelem „przeglądu treści”, który pokazuje sposób pracy Anny (skreślona pusta fraza → konkret → lista kontrolna z ostatnim słowem człowieka).
 
 ## Paleta
 | Rola | Kolor |
 |---|---|
-| Tło (blat) | `#EEF0F2` |
-| Arkusz, karty | `#FFFFFF` |
-| Linia | `#E3E5E8` |
-| Tekst | `#15171A` |
-| Tekst pomocniczy | `#3B4048` |
-| Wyciszony | `#646A73` |
-| Zakreślacz (wyróżnienia, inicjały) | `#FFE45C` |
-| Wstawienie (poprawka, status) | `#0B7A45` na `#E2F5EA` |
-| Usunięcie (skreślenie) | `#C8372B` na `#FBE6E3` |
+| Tło | `#14170F` (prawie czarna oliwka) |
+| Powierzchnia (karty, panele) | `#1D2116` |
+| Powierzchnia 2 (etykiety) | `#252A1D` |
+| Linia | `#30362A` / `#3A4030` |
+| Tekst | `#ECEBE4` |
+| Tekst pomocniczy | `#B9BCAE` |
+| Wyciszony | `#8F9483` |
+| Akcent – terakota | `#E2683C` (tekst na niej: `#14170F`) |
+| Drugi akcent – szałwia | `#A3B18A`, tekst `#C3CEA9` |
 
-Czerwony i zielony zawsze razem z drugim sygnałem (skreślenie / podkreślenie), nigdy jako jedyna informacja.
+Terakota: główne przyciski, wyróżnione słowa, etapy „robię sama”, logo. Szałwia: status „otwarta na nową rolę”, odhaczone punkty, poprawiony tekst. Bez kremowych teł i szeryfów (zbyt podobne do stylu Claude).
 
 ## Typografia
-- **Bricolage Grotesque** (700, 800) – nagłówki i liczby.
+- **Space Grotesk** (500, 700) – nagłówki i liczby.
 - **Inter** – tekst, przyciski, formularz.
-- **IBM Plex Mono** – drobne etykiety (nazwy źródeł, podpisy statystyk, komentarze).
+- **IBM Plex Mono** – drobne etykiety, numery sekcji, statusy.
 - Fonty hostowane lokalnie w `fonts/`.
 
 ## Elementy
-- Arkusz dokumentu z cieniem jako hero i sekcja „O mnie”.
-- Komentarze na marginesie; najechanie na komentarz podświetla frazę, której dotyczy.
-- Wizytówka z inicjałami (miejsce na zdjęcie 4:5, instrukcja w komentarzu HTML).
-- Projekty w siatce kafelków o różnej szerokości; ciemne kafelki z przykładami UX writingu (przed → po).
-- „Historia wersji”: żółte punkty = etapy, które Anna robi sama; szare = z pomocą AI.
-- Liczby w hero prowadzą do dowodów (case study, biblioteka, O mnie).
-- Linki zewnętrzne oznaczone ↗ i nazwą serwisu.
-- Telefon: jednorzędowy pasek z przyciskiem Menu, chowany przy przewijaniu w dół; zakładki w „Historii wersji”; zwijane kompetencje.
-- Druk / „Zapisz jako PDF”: czysty dokument na 3 strony A4 z danymi kontaktowymi.
-- Case study i strona 404 w tym samym stylu.
-- Kontakt: prawdziwy formularz z walidacją, który przygotowuje wiadomość e-mail, z uczciwą informacją, że trzeba ją wysłać z programu pocztowego.
+- Delikatna siatka w tle hero i ciepła poświata terakoty.
+- Panel przeglądu treści: wpisywana poprawka i odhaczana lista (pętla co ok. 9 s).
+- Liczby pod hero prowadzą do dowodów (O mnie, biblioteka, case study).
+- Projekty w siatce kafelków; ciemne kafelki z przykładami UX writingu; poświata za kursorem.
+- Proces: trzy ścieżki z etapami „AI” i „Anna”; na telefonie zakładki.
+- O mnie: karta z inicjałami (miejsce na zdjęcie opisane w komentarzu HTML), linki, „Zapisz jako PDF”; kompetencje zwijane na telefonie.
+- Kontakt: LinkedIn, kopiowanie adresu i prawdziwy formularz z walidacją (przygotowuje wiadomość e-mail).
+- Case study i strona 404 w tym samym stylu; wersja do druku na jasnym tle.
 
 ## Ruch
-- Skreślenie i wpisywanie poprawki w nagłówku, komentarze pojawiają się po kolei.
-- Pulsujący status „Otwarta na nową rolę”, łagodne wejście sekcji, podniesienie kafelków przy najechaniu.
-- Wszystko wyłączone przy `prefers-reduced-motion`.
-
-## Czego unikać
-Etykiet sugerujących nieistniejące pliki, powtarzania tej samej zasady w kilku miejscach, elementów udających pola formularza, zmyślonych liczb i opinii, beżów i szeryfów w stylu Claude.
+Wpisywanie poprawki, odhaczanie listy, pulsujący status, dryfująca poświata, łagodne wejście sekcji, chowany pasek przy przewijaniu w dół. Wszystko wyłączone przy `prefers-reduced-motion`.
