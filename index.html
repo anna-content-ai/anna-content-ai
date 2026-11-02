@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anna Ziółkowska – analiza treści, UX/UI i AI</title>
-<meta name="description" content="Portfolio Anny Ziółkowskiej: analiza treści w sieci, UX/UI, AI i automatyzacje oraz analiza kanałów social media.">
+<title>Anna Ziółkowska – treści, UX writing i AI w marketingu</title>
+<meta name="description" content="Portfolio Anny Ziółkowskiej: ponad 9 lat w marketingu, analiza i poprawa treści na www i w social mediach, UX writing oraz workflow z AI.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F5F0E6">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Anna Ziółkowska – analiza treści, UX/UI i AI">
-<meta property="og:description" content="Analizuję treści w sieci i poprawiam to, co nie działa. Marketing, UX/UI, AI i automatyzacje.">
+<meta property="og:title" content="Anna Ziółkowska – treści, UX writing i AI w marketingu">
+<meta property="og:description" content="Poprawiam treści tak, żeby klient od razu wiedział, co dostanie. Marketing, UX writing i AI z człowiekiem na końcu.">
 <meta property="og:image" content="https://anna-content-ai.github.io/anna-content-ai/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
   @font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/inter-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
   @font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/inter-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
@@ -24,325 +26,433 @@
   @font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   @font-face { font-family: "Inter"; font-style: normal; font-weight: 800; font-display: swap; src: url("fonts/inter-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/instrument-serif-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url("fonts/instrument-serif-latin-ext-400-italic.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url("fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
   :root {
-    --bg: #FFFFFF;
-    --panel: #F4F4F2;
-    --line: #E4E4E0;
-    --ink: #0E0E0E;
-    --ink-2: #3A3A38;
-    --muted: #6B6B67;
+    --paper: #F5F0E6;
+    --paper-2: #EDE6D8;
+    --card: #FBF8F2;
+    --line: #D9D0BF;
+    --ink: #1A1814;
+    --ink-2: #46423A;
+    --muted: #6B6456;
+    --red: #C23B22;
+    --red-soft: #F3D9CF;
+    --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
     --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --ease: cubic-bezier(.2,.7,.2,1);
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
-
-  .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--bg); padding: 8px 12px; border-radius: 8px; }
-  .skip:focus { left: 8px; z-index: 10; }
+  html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+  img, svg { max-width: 100%; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 6px; }
+  ::selection { background: var(--red-soft); }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--paper); padding: 8px 12px; border-radius: 8px; }
+  .skip:focus { left: 8px; z-index: 20; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
 
   /* Nawigacja */
-  .nav {
-    position: sticky; top: 0; z-index: 5;
-    background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
+  .nav { position: sticky; top: 0; z-index: 10; background: rgba(245,240,230,.9); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .3s; }
+  .nav.scrolled { border-color: var(--line); }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 10px; padding-bottom: 10px; }
+  .brand { font-family: var(--serif); font-size: 1.6rem; text-decoration: none; letter-spacing: -.01em; line-height: 1; }
+  .nav-links { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; font-size: .95rem; }
+  .nav-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border-radius: 999px; text-decoration: none; color: var(--ink-2); white-space: nowrap; transition: background .2s, color .2s; }
+  .nav-links a:hover { background: var(--paper-2); color: var(--ink); }
+  .nav-links a[aria-current="true"] { background: var(--ink); color: var(--paper); }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(260px,.55fr); gap: 56px; align-items: center; padding: 72px 0 56px; }
+  .eyebrow { font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 18px; }
+  .status { display: inline-flex; align-items: center; gap: 10px; font-size: .9rem; font-weight: 500; background: var(--card); border: 1px solid var(--line); padding: 7px 14px 7px 12px; border-radius: 999px; margin-bottom: 26px; }
+  .status i { width: 9px; height: 9px; border-radius: 50%; background: #2E8B57; box-shadow: 0 0 0 4px rgba(46,139,87,.15); }
+  h1, h2, .serif { font-family: var(--serif); font-weight: 400; letter-spacing: -.012em; margin: 0; }
+  h1 { font-size: clamp(2.9rem, 6.6vw, 5.6rem); line-height: .98; }
+  h1 .old { color: #8C8476; text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: .07em; }
+  h1 .fix { display: block; font-style: italic; color: var(--red); font-size: .5em; line-height: 1.15; margin-top: .25em; }
+  .lead { font-size: 1.15rem; color: var(--ink-2); max-width: 600px; margin: 28px 0 0; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; font-weight: 600; text-decoration: none; transition: transform .2s var(--ease), background .2s; }
+  .btn-dark { background: var(--ink); color: var(--paper); }
+  .btn-dark:hover { background: #000; transform: translateY(-2px); }
+  .btn-line { border: 1.5px solid var(--ink); }
+  .btn-line:hover { background: var(--ink); color: var(--paper); }
+  .photo { position: relative; width: 100%; aspect-ratio: 4/5; border-radius: 999px 999px 24px 24px; overflow: hidden; background: repeating-linear-gradient(45deg, #ECE5D8 0 10px, #E6DECE 10px 20px); border: 1.5px dashed #B3A890; display: grid; place-items: center; text-align: center; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .photo-note { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%) rotate(-3deg); background: var(--ink); color: var(--paper); font-family: var(--serif); font-style: italic; font-size: 1.15rem; padding: 6px 16px; border-radius: 999px; white-space: nowrap; }
+
+  /* Dowody */
+  .proof { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; list-style: none; padding: 0; margin: 0 0 24px; }
+  .proof li { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px 22px 20px; }
+  .proof li:first-child { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .proof li:first-child span { color: #CFC7B8; }
+  .proof b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(2.4rem, 4vw, 3.2rem); line-height: 1; }
+  .proof span { display: block; margin-top: 10px; font-size: .92rem; color: var(--ink-2); line-height: 1.45; }
+
+  /* Sekcje */
+  section { padding: 96px 0 0; scroll-margin-top: 88px; }
+  .head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 36px; flex-wrap: wrap; }
+  h2 { font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1; }
+  h2 em { color: var(--red); }
+  .head p { max-width: 420px; color: var(--ink-2); margin: 0; }
+
+  /* Projekty */
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .card { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: 14px 14px 26px; display: flex; flex-direction: column; transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -22px rgba(26,24,20,.45); border-color: #BDB29C; }
+  .thumb { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16/10; background: #FBF8F2; }
+  .thumb svg { display: block; width: 100%; height: 100%; transition: transform .6s var(--ease); }
+  .card:hover .thumb svg { transform: scale(1.03); }
+  .card .body { padding: 22px 12px 0; display: flex; flex-direction: column; flex: 1; }
+  .role { font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--red); margin: 0 0 8px; }
+  .card h3 { font-family: var(--serif); font-weight: 400; font-size: 2rem; line-height: 1.05; margin: 0 0 10px; }
+  .card p { margin: 0 0 16px; color: var(--ink-2); font-size: .98rem; }
+  .chip { align-self: flex-start; background: var(--red-soft); color: #7A2414; font-weight: 600; font-size: .88rem; padding: 6px 12px; border-radius: 10px; margin: 0 0 18px; }
+  .card a { margin-top: auto; align-self: flex-start; font-weight: 600; text-decoration: none; border-bottom: 1.5px solid var(--ink); padding-bottom: 2px; }
+  .card a::after { content: ""; position: absolute; inset: 0; border-radius: 26px; }
+  .card a span { display: inline-block; transition: transform .25s var(--ease); }
+  .card:hover a span { transform: translateX(4px); }
+
+  /* Jak pracuję */
+  .flows { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .flow { background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: 28px; }
+  .flow .n { font-family: var(--serif); font-style: italic; color: var(--red); font-size: 1.4rem; }
+  .flow h3 { font-family: var(--serif); font-weight: 400; font-size: 1.9rem; margin: 4px 0 18px; line-height: 1.05; }
+  .flow ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; counter-reset: s; }
+  .flow li { counter-increment: s; display: flex; gap: 12px; align-items: baseline; padding: 9px 0; border-top: 1px dashed var(--line); font-size: .97rem; }
+  .flow li::before { content: counter(s, decimal-leading-zero); font-size: .75rem; font-weight: 600; color: var(--muted); min-width: 20px; }
+  .flow li.human { font-weight: 600; }
+  .flow li.human::after { content: "człowiek"; margin-left: auto; font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #7A2414; background: var(--red-soft); padding: 2px 8px; border-radius: 6px; }
+
+  /* Kompetencje + O mnie */
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+  .about p { color: var(--ink-2); font-size: 1.08rem; margin: 0 0 16px; }
+  .about p strong { color: var(--ink); }
+  .skills { display: grid; gap: 22px; }
+  .skills h3 { font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+  .tags li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 7px 15px; font-size: .93rem; font-weight: 500; }
+
+  /* Kontakt */
+  .contact { margin-top: 112px; background: var(--ink); color: var(--paper); border-radius: 36px; padding: 72px 64px; position: relative; overflow: hidden; }
+  .contact .eyebrow { color: #B9B1A2; }
+  .contact h2 { font-size: clamp(2.6rem, 6vw, 4.8rem); max-width: 900px; }
+  .contact h2 em { color: #F08A73; }
+  .contact p { color: #D8D1C3; max-width: 560px; font-size: 1.1rem; margin: 22px 0 0; }
+  .contact .actions .btn-dark { background: var(--paper); color: var(--ink); }
+  .contact .actions .btn-dark:hover { background: #fff; }
+  .contact .btn-line { border-color: #6B6456; color: var(--paper); }
+  .contact .btn-line:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .copy-msg { min-height: 1.5em; font-size: .92rem; color: #B9B1A2; margin-top: 12px; }
+
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 32px; padding-bottom: 48px; color: var(--muted); font-size: .9rem; }
+  footer a { font-weight: 600; color: var(--ink); display: inline-block; padding: 6px 0; }
+
+  /* Animacje wejścia */
+  .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+  .js .reveal.in { opacity: 1; transform: none; }
+  .js h1 .old { text-decoration-color: transparent; transition: text-decoration-color .6s var(--ease) .5s, color .6s var(--ease) .5s; }
+  .js h1.go .old { text-decoration-color: var(--red); }
+  .js h1 .fix { opacity: 0; transform: translateY(8px); transition: opacity .6s var(--ease) 1.05s, transform .6s var(--ease) 1.05s; }
+  .js h1.go .fix { opacity: 1; transform: none; }
+
+  @media (max-width: 980px) {
+    .hero { grid-template-columns: 1fr; gap: 36px; padding-top: 40px; }
+    .photo { width: min(220px, 56%); order: -1; }
+    .proof { grid-template-columns: repeat(2, 1fr); }
+    .flows { grid-template-columns: 1fr; }
+    .about { grid-template-columns: 1fr; gap: 36px; }
   }
-  .nav-inner {
-    max-width: 1040px; margin: 0 auto; padding: 12px 24px;
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  }
-  .brand { font-weight: 700; font-size: 1rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
-  .nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; font-size: 0.95rem; overflow-x: auto; }
-  .nav-links a {
-    display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 999px;
-    color: var(--ink-2); text-decoration: none; white-space: nowrap;
-  }
-  .nav-links a:hover { color: var(--ink); background: var(--panel); }
-  .nav-links a[aria-current="true"] { background: var(--ink); color: var(--bg); font-weight: 600; }
-
-  main { max-width: 880px; margin: 0 auto; padding: 0 24px; }
-  .hero { padding: 104px 0 24px; }
-  h1, h2, h3 { font-weight: 700; line-height: 1.08; margin: 0; letter-spacing: -0.03em; }
-  h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); }
-  h2 { font-size: clamp(1.7rem, 3.5vw, 2.3rem); margin-bottom: 28px; }
-  h3 { font-size: 1.15rem; margin-bottom: 10px; letter-spacing: -0.01em; }
-
-  .eyebrow {
-    color: var(--muted); font-size: 0.8rem; font-weight: 600;
-    letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 16px;
-  }
-  .lead { color: var(--ink-2); max-width: 620px; margin: 26px 0 0; font-size: 1.1rem; }
-  .name { margin-top: 16px; color: var(--muted); font-size: 0.95rem; font-weight: 500; }
-
-  .cta {
-    display: inline-flex; align-items: center; gap: 10px; margin-top: 32px;
-    padding: 14px 24px; border-radius: 999px;
-    background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 600;
-    transition: background 0.2s ease;
-  }
-  .cta:hover { background: var(--ink-2); }
-
-  .entry { margin-top: 56px; }
-  .entry-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-  .entry-list li { display: flex; }
-  .entry-list a {
-    flex: 1; display: flex; flex-direction: column; gap: 6px; padding: 20px 22px;
-    background: var(--panel); border-radius: 16px; text-decoration: none; color: var(--ink);
-    border: 1px solid transparent; transition: border-color 0.2s ease;
-  }
-  .entry-list a:hover { border-color: var(--ink); }
-  .entry-list strong { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.01em; }
-  .entry-list span { color: var(--ink-2); font-size: 0.92rem; }
-
-  section { margin-top: 104px; scroll-margin-top: 96px; }
-  .panel { background: var(--panel); border-radius: 20px; padding: 32px; }
-
-  .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
-  .tags li {
-    background: var(--bg); border: 1px solid var(--line); border-radius: 999px;
-    padding: 8px 16px; font-size: 0.92rem; font-weight: 500; color: var(--ink-2);
-  }
-
-  .grid { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
-  .card {
-    background: var(--panel); border-radius: 20px; padding: 28px;
-    display: flex; flex-direction: column; border: 1px solid transparent;
-    transition: border-color 0.2s ease, transform 0.2s ease;
-  }
-  .card:hover { border-color: var(--ink); transform: translateY(-2px); }
-  .card p { color: var(--ink-2); margin: 0 0 20px; font-size: 0.97rem; }
-  .thumb { margin: -10px -10px 22px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #fff; aspect-ratio: 16 / 10; }
-  .thumb svg { display: block; width: 100%; height: 100%; }
-  .card .metric { font-size: .92rem; margin-top: -8px; }
-  .card .metric strong { color: var(--ink); font-weight: 800; }
-  .card a { margin-top: auto; color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; font-size: 0.95rem; align-self: flex-start; }
-  .card a:hover { text-decoration-thickness: 2px; }
-
-  .flow-group + .flow-group { margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line); }
-  .flow { color: var(--ink-2); font-size: 0.98rem; margin: 0; }
-
-  .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; list-style: none; }
-  .contact-links a {
-    display: inline-block; padding: 12px 20px; border-radius: 999px;
-    border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 600;
-  }
-  .contact-links a:hover { border-color: var(--ink); }
-
-  footer {
-    max-width: 880px; margin: 120px auto 0; padding: 24px 24px 48px;
-    border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem;
-  }
-  footer a { color: var(--ink); font-weight: 600; }
-  .foot-note { margin: 0 0 12px; }
-
-  @media (max-width: 640px) {
-    .nav-inner { flex-direction: column; align-items: flex-start; gap: 6px; padding: 10px 20px; }
-    .nav-links { width: 100%; }
+  @media (max-width: 720px) {
+    .wrap { padding: 0 20px; }
+    .nav .wrap { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .nav-links { width: 100%; overflow-x: auto; margin-left: -14px; }
     .grid { grid-template-columns: 1fr; }
-    .hero { padding-top: 60px; }
-    section { margin-top: 72px; }
-    .panel { padding: 24px; }
+    .proof li { padding: 18px; }
+    section { padding-top: 72px; }
+    .contact { border-radius: 26px; padding: 48px 24px; margin-top: 80px; }
+    .btn { width: 100%; justify-content: center; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .card, .entry-list a, .cta { transition: none; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+    .js .reveal { opacity: 1; transform: none; }
+    .js h1 .old { text-decoration-color: var(--red); }
+    .js h1 .fix { opacity: 1; transform: none; }
   }
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <a class="skip" href="#main">Przejdź do treści</a>
 
-<header class="nav">
-  <div class="nav-inner">
+<header class="nav" id="nav">
+  <div class="wrap">
     <a class="brand" href="#top">Anna Ziółkowska</a>
-    <ul class="nav-links">
-      <li><a href="#obszary">Obszary</a></li>
-      <li><a href="#projekty">Projekty</a></li>
-      <li><a href="#workflow">Workflow</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
+    <nav aria-label="Główna">
+      <ul class="nav-links">
+        <li><a href="#projekty">Projekty</a></li>
+        <li><a href="#jak-pracuje">Jak pracuję</a></li>
+        <li><a href="#o-mnie">O mnie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
 <main id="main">
-  <div class="hero" id="top">
-    <p class="eyebrow">Marketing · analiza treści · UX/UI · AI · Warszawa</p>
-    <h1>Analizuję treści w sieci i poprawiam to, co nie działa.</h1>
-    <p class="lead">Ponad 9 lat w marketingu i social mediach. Mam warsztat UX/UI, ukończone studia podyplomowe z AI i automatyzacji w marketingu na SGH oraz praktykę w pracy z AI. Sprawdzam jasność, wiarygodność i użyteczność treści na stronach i w kanałach social media, a potem proponuję konkretne poprawki.</p>
-    <p class="name">Anna Ziółkowska</p>
-    <a class="cta" href="#kontakt">Napisz do mnie <span aria-hidden="true">↓</span></a>
+  <div class="wrap">
+    <div class="hero" id="top">
+      <div>
+        <p class="status"><i aria-hidden="true"></i>Otwarta na nową rolę w zespole marketingu</p>
+        <p class="eyebrow">Treści · UX writing · AI w marketingu</p>
+        <h1 id="h1">Twoja strona mówi <span class="old">„innowacyjne rozwiązania”</span><span class="fix">a klient chce wiedzieć, co dostanie.</span></h1>
+        <p class="lead">Ponad 9 lat w marketingu i social mediach. Analizuję treści na stronach i w kanałach marki, poprawiam to, co nie działa, a AI używam tam, gdzie naprawdę oszczędza czas, zawsze z człowiekiem na końcu.</p>
+        <div class="actions">
+          <a class="btn btn-dark" href="#projekty">Zobacz projekty <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-line" href="#kontakt">Napisz do mnie</a>
+        </div>
+      </div>
+      <!-- ZDJĘCIE: wstaw plik photo.jpg (pionowe 4:5, min. 1200×1500 px) i odkomentuj <img> poniżej -->
+      <div class="photo" role="img" aria-label="Miejsce na zdjęcie Anny Ziółkowskiej">
+        <!-- <img src="photo.jpg" alt="Anna Ziółkowska" width="1200" height="1500"> -->
+        <span aria-hidden="true">Miejsce na zdjęcie<br>pionowe 4:5<br>min. 1200 × 1500 px</span>
+        <span class="photo-note" aria-hidden="true">cześć, to ja</span>
+      </div>
+    </div>
 
-    <nav class="entry" aria-label="Zacznij od">
-      <p class="eyebrow">Zacznij od</p>
-      <ul class="entry-list">
-        <li><a href="#projekty"><strong>Projektów</strong><span>Prompty, case studies i prototyp aplikacji</span></a></li>
-        <li><a href="#workflow"><strong>Workflow</strong><span>Jak łączę strategię, AI i redakcję</span></a></li>
-        <li><a href="#obszary"><strong>Kompetencji</strong><span>Co robię i w czym jestem dobra</span></a></li>
-      </ul>
-    </nav>
+    <ul class="proof reveal" aria-label="W liczbach">
+      <li><b>9+ lat</b><span>w marketingu i social mediach</span></li>
+      <li><b>SGH</b><span>studia podyplomowe: AI i automatyzacja w marketingu</span></li>
+      <li><b>4</b><span>własne Claude Skills do recenzji, fact-checkingu i repurposingu</span></li>
+      <li><b>98,8%</b><span>wyświetleń od nieobserwujących w analizowanym kanale marki</span></li>
+    </ul>
+
+    <section id="projekty">
+      <div class="head reveal">
+        <h2>Wybrane <em>projekty</em></h2>
+        <p>Każdy pokazuje inny kawałek mojej pracy: od tekstów w interfejsie, przez narzędzia AI, po analizę danych z social mediów.</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#FBF8F2"/>
+  <circle cx="284" cy="38" r="20" fill="none" stroke="#E4E4E0" stroke-width="7"/><circle cx="284" cy="38" r="10" fill="#1A1814"/>
+  <text x="14" y="34" font-size="11" font-weight="600" fill="#6E6759" letter-spacing="1">PRZEPŁYW PROTOTYPU</text>
+  <g font-size="11.5" font-weight="600" fill="#1A1814">
+    <rect x="14" y="96" width="84" height="30" rx="15" fill="#EDE6D8"/><text x="56" y="115" text-anchor="middle">Onboarding</text>
+    <text x="102" y="115" fill="#6E6759">→</text>
+    <rect x="116" y="96" width="96" height="30" rx="15" fill="#EDE6D8"/><text x="164" y="115" text-anchor="middle">Ekran główny</text>
+    <text x="216" y="115" fill="#6E6759">→</text>
+    <rect x="230" y="96" width="78" height="30" rx="15" fill="#EDE6D8"/><text x="269" y="115" text-anchor="middle">Oddychanie</text>
+    <rect x="14" y="142" width="86" height="30" rx="15" fill="#EDE6D8"/><text x="57" y="161" text-anchor="middle">Ukończenie</text>
+    <text x="104" y="161" fill="#6E6759">→</text>
+    <rect x="118" y="142" width="70" height="30" rx="15" fill="#EDE6D8"/><text x="153" y="161" text-anchor="middle">Nawyki</text>
+    <text x="192" y="161" fill="#6E6759">→</text>
+    <rect x="206" y="142" width="76" height="30" rx="15" fill="#1A1814"/><text x="244" y="161" text-anchor="middle" fill="#FBF8F2">Postępy</text>
+  </g>
+</svg></div>
+          <div class="body">
+            <p class="role">UX · prototyp aplikacji</p>
+            <h3>Odetchnij Teraz</h3>
+            <p>Projekt zespołowy z SGH. Przełożyłam koncept na przepływy i interfejs, napisałam treści UX i sprawdziłam je heurystykami Nielsena oraz pod kątem dostępności.</p>
+            <a href="https://github.com/anna-content-ai/odetchnij-teraz">Zobacz projekt <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#FBF8F2"/>
+  <rect x="20" y="22" width="280" height="30" rx="15" fill="#1A1814"/>
+  <text x="36" y="42" font-size="11.5" fill="#FBF8F2" font-family="ui-monospace, Menlo, Consolas, monospace">claude-skills/content-review/SKILL.md</text>
+  <text x="20" y="80" font-size="11" fill="#6E6759" font-family="ui-monospace, Menlo, Consolas, monospace">name: content-review</text>
+  <text x="20" y="104" font-size="11" font-weight="600" fill="#6E6759" letter-spacing="1">URUCHAMIA SIĘ NA</text>
+  <g font-size="12" font-weight="600" fill="#1A1814">
+    <rect x="20" y="114" width="132" height="28" rx="14" fill="#EDE6D8"/><text x="86" y="132" text-anchor="middle">„sprawdź ten tekst”</text>
+    <rect x="160" y="114" width="140" height="28" rx="14" fill="#EDE6D8"/><text x="230" y="132" text-anchor="middle">„review this copy”</text>
+  </g>
+  <text x="20" y="168" font-size="22" font-weight="800" fill="#1A1814">4 Claude Skills</text>
+  <text x="20" y="188" font-size="11.5" fill="#6E6759">+ 9 promptów i workflow</text>
+</svg></div>
+          <div class="body">
+            <p class="role">AI · automatyzacja</p>
+            <h3>AI Prompt Library</h3>
+            <p>Prompty i workflow do researchu, edycji, weryfikacji i repurposingu. Cztery z nich działają jako gotowe Claude Skills. Każdy ma kryteria jakości i etap przeglądu przez człowieka.</p>
+            <p class="chip">4 Claude Skills + 9 promptów i workflow</p>
+            <a href="https://github.com/anna-content-ai/AI-Prompt-Library">Zobacz bibliotekę <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#FBF8F2"/>
+  <text x="20" y="32" font-size="11" font-weight="600" fill="#6E6759" letter-spacing="1">PRZED</text>
+  <text x="20" y="54" font-size="14" fill="#6E6759">Build the perfect website instantly</text>
+  <line x1="20" y1="49" x2="247" y2="49" stroke="#C23B22" stroke-width="2"/>
+  <text x="20" y="88" font-size="11" font-weight="600" fill="#1A1814" letter-spacing="1">PO</text>
+  <text x="20" y="110" font-size="14" font-weight="700" fill="#1A1814">Create your first website draft with AI</text>
+  <rect x="20" y="138" width="92" height="36" rx="18" fill="#EDE6D8"/><text x="66" y="161" font-size="13" fill="#6E6759" text-anchor="middle">Continue</text>
+  <line x1="36" y1="156" x2="96" y2="156" stroke="#C23B22" stroke-width="2"/>
+  <text x="118" y="161" font-size="14" fill="#6E6759">→</text>
+  <rect x="136" y="138" width="172" height="36" rx="18" fill="#1A1814"/><text x="222" y="161" font-size="12.5" font-weight="600" fill="#FBF8F2" text-anchor="middle">Create my website draft</text>
+</svg></div>
+          <div class="body">
+            <p class="role">Content · UX writing</p>
+            <h3>Analiza treści na www</h3>
+            <p>Przegląd strony pod kątem faktów, jasności, UX writingu i nieuzasadnionych twierdzeń. Case study porównuje wyniki dwóch modeli AI i pokazuje gotowe poprawki.</p>
+            <a href="https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md">Zobacz case study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#FBF8F2"/>
+  <rect x="20" y="20" width="10" height="10" fill="#1A1814"/><text x="36" y="29" font-size="11" fill="#46423A">wyświetlenia</text>
+  <rect x="120" y="20" width="10" height="10" fill="#D2402A"/><text x="136" y="29" font-size="11" fill="#46423A">interakcje</text>
+  <g font-size="12" font-weight="600" fill="#1A1814">
+    <text x="20" y="64">Rolki</text><rect x="86" y="52" width="122" height="11" rx="3" fill="#1A1814"/><rect x="86" y="66" width="95" height="11" rx="3" fill="#D2402A"/>
+    <text x="20" y="110">Posty</text><rect x="86" y="98" width="63" height="11" rx="3" fill="#1A1814"/><rect x="86" y="112" width="107" height="11" rx="3" fill="#D2402A"/>
+    <text x="20" y="156">Relacje</text><rect x="86" y="144" width="30" height="11" rx="3" fill="#1A1814"/><rect x="86" y="158" width="12" height="11" rx="3" fill="#D2402A"/>
+  </g>
+  <text x="20" y="190" font-size="10.5" fill="#6E6759">Udział typów treści, 90 dni (w procentach)</text>
+</svg></div>
+          <div class="body">
+            <p class="role">Social media · analiza danych</p>
+            <h3>Analiza kanału marki budowlanej</h3>
+            <p>90 dni danych z kanału producenta materiałów budowlanych: zasięg od nieobserwujących, rola rolek i postów, wnioski i plan testów. Praca w zespole z agencją.</p>
+            <p class="chip">98,8% wyświetleń od nieobserwujących · 50,2% interakcji z postów</p>
+            <a href="case-studies/social-media-producent-materialow.html">Zobacz case study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="jak-pracuje">
+      <div class="head reveal">
+        <h2>Jak pracuję: <em>AI robi szkic,</em> człowiek decyduje</h2>
+        <p>Trzy procesy, które stosuję na co dzień. Etapy oznaczone jako „człowiek” zawsze robię sama.</p>
+      </div>
+      <div class="flows">
+        <div class="flow reveal">
+          <span class="n">01</span>
+          <h3>Treści</h3>
+          <ol>
+            <li>Research i brief</li>
+            <li>Prompt i szkic z AI</li>
+            <li class="human">Edycja</li>
+            <li class="human">Fact-checking</li>
+            <li>Adaptacja do kanału</li>
+            <li class="human">Publikacja</li>
+          </ol>
+        </div>
+        <div class="flow reveal">
+          <span class="n">02</span>
+          <h3>Prototypy interfejsów</h3>
+          <ol>
+            <li>Koncept</li>
+            <li>Prototyp z promptów</li>
+            <li class="human">Przegląd UX</li>
+            <li class="human">Ewaluacja heurystyczna</li>
+            <li class="human">Dostępność</li>
+            <li>Poprawki i akceptacja</li>
+          </ol>
+        </div>
+        <div class="flow reveal">
+          <span class="n">03</span>
+          <h3>Audio i wideo</h3>
+          <ol>
+            <li class="human">Temat i scenariusz</li>
+            <li>Wybór głosu</li>
+            <li>Lektor AI</li>
+            <li class="human">Montaż</li>
+            <li class="human">Publikacja na YouTube</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-mnie">
+      <div class="about">
+        <div class="reveal">
+          <h2>O <em>mnie</em></h2>
+          <p style="margin-top:28px">Od ponad 9 lat pracuję w marketingu i social mediach. Na co dzień koordynuję kanały <strong>producenta materiałów budowlanych</strong> na Facebooku, Instagramie, YouTube, TikToku i LinkedInie, we współpracy z agencją social media.</p>
+          <p>Ukończyłam studia podyplomowe <strong>„AI i automatyzacja w marketingu” na SGH</strong> i mam warsztat UX/UI. Najbardziej lubię moment, w którym niejasny tekst zamienia się w taki, który klient rozumie od pierwszego czytania.</p>
+          <p>Narzędzia AI buduję i testuję sama, ale każdy wynik przechodzi przez moją redakcję, zanim trafi do odbiorcy.</p>
+        </div>
+        <div class="skills reveal">
+          <div>
+            <h3>Treści</h3>
+            <ul class="tags"><li>Analiza treści na www</li><li>Strategia treści</li><li>Fact-checking</li><li>Repurposing</li><li>SEO i WordPress</li></ul>
+          </div>
+          <div>
+            <h3>UX</h3>
+            <ul class="tags"><li>UX writing</li><li>Projektowanie interfejsów</li><li>Heurystyki Nielsena</li><li>Dostępność</li></ul>
+          </div>
+          <div>
+            <h3>AI i dane</h3>
+            <ul class="tags"><li>Claude Skills i prompty</li><li>Automatyzacje</li><li>Analiza kanałów social media</li><li>Analityka (GA4)</li><li>E-mail marketing (GetResponse)</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact reveal">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Szukasz osoby od <em>treści, UX i AI</em> w marketingu?</h2>
+      <p>Napisz albo zaproś mnie na LinkedInie. Chętnie opowiem, jak pracuję z AI i jak mogę pomóc Twojemu zespołowi.</p>
+      <div class="actions">
+        <a class="btn btn-dark" href="mailto:aiprosciej@gmail.com">Napisz e-mail</a>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn</a>
+        <button class="btn btn-line" type="button" id="copy" style="background:none;font:inherit;font-weight:600;cursor:pointer">Kopiuj adres e-mail</button>
+      </div>
+      <p class="copy-msg" id="copy-msg" role="status" aria-live="polite"></p>
+    </section>
   </div>
-
-  <section id="obszary">
-    <p class="eyebrow">Co robię</p>
-    <h2>Obszary, w których pracuję</h2>
-    <ul class="tags">
-      <li>Analiza treści na www</li>
-      <li>UX writing i UI</li>
-      <li>AI i automatyzacje</li>
-      <li>Analiza kanałów social media</li>
-      <li>Repurposing treści</li>
-      <li>Fact-checking</li>
-      <li>Strategia treści</li>
-      <li>SEO i WordPress</li>
-      <li>E-mail marketing (GetResponse)</li>
-      <li>Analityka (GA4)</li>
-    </ul>
-  </section>
-
-  <section id="projekty">
-    <p class="eyebrow">Wybrane projekty</p>
-    <h2>Najważniejsze realizacje</h2>
-    <div class="grid">
-      <article class="card">
-        <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <circle cx="284" cy="38" r="20" fill="none" stroke="#E4E4E0" stroke-width="7"/><circle cx="284" cy="38" r="10" fill="#0E0E0E"/>
-  <text x="14" y="34" font-size="11" font-weight="600" fill="#6B6B67" letter-spacing="1">PRZEPŁYW PROTOTYPU</text>
-  <g font-size="11.5" font-weight="600" fill="#0E0E0E">
-    <rect x="14" y="96" width="84" height="30" rx="15" fill="#F4F4F2"/><text x="56" y="115" text-anchor="middle">Onboarding</text>
-    <text x="102" y="115" fill="#6B6B67">→</text>
-    <rect x="116" y="96" width="96" height="30" rx="15" fill="#F4F4F2"/><text x="164" y="115" text-anchor="middle">Ekran główny</text>
-    <text x="216" y="115" fill="#6B6B67">→</text>
-    <rect x="230" y="96" width="78" height="30" rx="15" fill="#F4F4F2"/><text x="269" y="115" text-anchor="middle">Oddychanie</text>
-    <rect x="14" y="142" width="86" height="30" rx="15" fill="#F4F4F2"/><text x="57" y="161" text-anchor="middle">Ukończenie</text>
-    <text x="104" y="161" fill="#6B6B67">→</text>
-    <rect x="118" y="142" width="70" height="30" rx="15" fill="#F4F4F2"/><text x="153" y="161" text-anchor="middle">Nawyki</text>
-    <text x="192" y="161" fill="#6B6B67">→</text>
-    <rect x="206" y="142" width="76" height="30" rx="15" fill="#0E0E0E"/><text x="244" y="161" text-anchor="middle" fill="#FFFFFF">Postępy</text>
-  </g>
-</svg></div>
-        <h3>Odetchnij Teraz</h3>
-        <p>Projekt zespołowy z SGH: przełożyłam koncept na przepływy i interfejs, napisałam treści UX i sprawdziłam je heurystykami Nielsena oraz dostępnością.</p>
-        <a href="https://github.com/anna-content-ai/odetchnij-teraz">Zobacz projekt →</a>
-      </article>
-      <article class="card">
-        <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <rect x="20" y="22" width="280" height="30" rx="15" fill="#0E0E0E"/>
-  <text x="36" y="42" font-size="11.5" fill="#FFFFFF" font-family="ui-monospace, Menlo, Consolas, monospace">claude-skills/content-review/SKILL.md</text>
-  <text x="20" y="80" font-size="11" fill="#6B6B67" font-family="ui-monospace, Menlo, Consolas, monospace">name: content-review</text>
-  <text x="20" y="104" font-size="11" font-weight="600" fill="#6B6B67" letter-spacing="1">URUCHAMIA SIĘ NA</text>
-  <g font-size="12" font-weight="600" fill="#0E0E0E">
-    <rect x="20" y="114" width="132" height="28" rx="14" fill="#F4F4F2"/><text x="86" y="132" text-anchor="middle">„sprawdź ten tekst”</text>
-    <rect x="160" y="114" width="140" height="28" rx="14" fill="#F4F4F2"/><text x="230" y="132" text-anchor="middle">„review this copy”</text>
-  </g>
-  <text x="20" y="168" font-size="22" font-weight="800" fill="#0E0E0E">4 Claude Skills</text>
-  <text x="20" y="188" font-size="11.5" fill="#6B6B67">+ 9 promptów i workflow</text>
-</svg></div>
-        <h3>AI Prompt Library</h3>
-        <p>Prompty i workflow do researchu, edycji, weryfikacji i repurposingu, a cztery z nich także jako gotowe Claude Skills. Każdy ma kryteria jakości i etap przeglądu przez człowieka.</p>
-        <a href="https://github.com/anna-content-ai/AI-Prompt-Library">Zobacz bibliotekę →</a>
-      </article>
-      <article class="card">
-        <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <text x="20" y="32" font-size="11" font-weight="600" fill="#6B6B67" letter-spacing="1">PRZED</text>
-  <text x="20" y="54" font-size="14" fill="#6B6B67">Build the perfect website instantly</text>
-  <line x1="20" y1="49" x2="247" y2="49" stroke="#0E0E0E" stroke-width="2"/>
-  <text x="20" y="88" font-size="11" font-weight="600" fill="#0E0E0E" letter-spacing="1">PO</text>
-  <text x="20" y="110" font-size="14" font-weight="700" fill="#0E0E0E">Create your first website draft with AI</text>
-  <rect x="20" y="138" width="92" height="36" rx="18" fill="#F4F4F2"/><text x="66" y="161" font-size="13" fill="#6B6B67" text-anchor="middle">Continue</text>
-  <line x1="36" y1="156" x2="96" y2="156" stroke="#0E0E0E" stroke-width="2"/>
-  <text x="118" y="161" font-size="14" fill="#6B6B67">→</text>
-  <rect x="136" y="138" width="172" height="36" rx="18" fill="#0E0E0E"/><text x="222" y="161" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Create my website draft</text>
-</svg></div>
-        <h3>Analiza treści na www</h3>
-        <p>Przegląd strony lub posta pod kątem faktów, jasności, UX writingu i nieuzasadnionych twierdzeń. Case study porównuje wyniki dwóch modeli.</p>
-        <a href="https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md">Zobacz case study →</a>
-      </article>
-      <article class="card">
-        <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#FFFFFF"/>
-  <rect x="20" y="20" width="10" height="10" fill="#0E0E0E"/><text x="36" y="29" font-size="11" fill="#3A3A38">wyświetlenia</text>
-  <rect x="120" y="20" width="10" height="10" fill="#B8B8B2"/><text x="136" y="29" font-size="11" fill="#3A3A38">interakcje</text>
-  <g font-size="12" font-weight="600" fill="#0E0E0E">
-    <text x="20" y="64">Rolki</text><rect x="86" y="52" width="122" height="11" rx="3" fill="#0E0E0E"/><rect x="86" y="66" width="95" height="11" rx="3" fill="#B8B8B2"/>
-    <text x="20" y="110">Posty</text><rect x="86" y="98" width="63" height="11" rx="3" fill="#0E0E0E"/><rect x="86" y="112" width="107" height="11" rx="3" fill="#B8B8B2"/>
-    <text x="20" y="156">Relacje</text><rect x="86" y="144" width="30" height="11" rx="3" fill="#0E0E0E"/><rect x="86" y="158" width="12" height="11" rx="3" fill="#B8B8B2"/>
-  </g>
-  <text x="20" y="190" font-size="10.5" fill="#6B6B67">Udział typów treści, 90 dni (w procentach)</text>
-</svg></div>
-        <h3>Analiza kanałów social media</h3>
-        <p>Analiza 90 dni kanału marki budowlanej: zasięg od nieobserwujących, rola rolek i postów, wnioski i plan testów. Praca w zespole agencji.</p>
-        <p class="metric"><strong>98,8%</strong> wyświetleń od osób nieobserwujących, <strong>50,2%</strong> interakcji z postów</p>
-        <a href="case-studies/social-media-producent-materialow.html">Zobacz case study →</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="workflow">
-    <p class="eyebrow">Jak pracuję</p>
-    <h2>Workflow z AI, z człowiekiem na końcu</h2>
-    <div class="panel">
-      <div class="flow-group">
-        <h3>Content</h3>
-        <p class="flow">Research → Brief → Prompt → Draft → Edycja → Fact-checking → Adaptacja do kanału → Publikacja</p>
-      </div>
-      <div class="flow-group">
-        <h3>Prototypy interfejsów</h3>
-        <p class="flow">Koncept → Prototyp z promptów → Przegląd UX → Ewaluacja heurystyczna → Dostępność → Poprawki → Akceptacja</p>
-      </div>
-      <div class="flow-group">
-        <h3>Audio</h3>
-        <p class="flow">Temat → Scenariusz → Wybór głosu → Lektor AI → Montaż → Publikacja na YouTube</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="kontakt">
-    <p class="eyebrow">Kontakt</p>
-    <h2>Szukasz osoby od treści, UX i AI w marketingu?</h2>
-    <p class="lead" style="margin:-8px 0 24px">Napisz albo zaproś mnie na LinkedInie. Chętnie opowiem, jak pracuję z AI i jak mogę pomóc Twojemu zespołowi.</p>
-    <ul class="contact-links">
-      <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn</a></li>
-      <li><a href="mailto:aiprosciej@gmail.com">aiprosciej@gmail.com</a></li>
-    </ul>
-  </section>
 </main>
 
 <footer>
-  <p class="foot-note">© Anna Ziółkowska · Każdy wynik AI przechodzi przegląd przed publikacją.</p>
-  <a href="#top">↑ Wróć na górę</a>
+  <div class="wrap">
+    <p style="margin:0">© Anna Ziółkowska · Każdy wynik AI przechodzi przegląd przed publikacją.</p>
+    <a href="#top">↑ Wróć na górę</a>
+  </div>
 </footer>
 
 <script>
-  // Stan systemu: podświetla sekcję, w której jest czytelniczka
-  (function () {
-    var links = document.querySelectorAll('.nav-links a');
-    var map = {};
-    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
-    if (!('IntersectionObserver' in window)) return;
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting && map[e.target.id]) {
-          links.forEach(function (a) { a.removeAttribute('aria-current'); });
-          map[e.target.id].setAttribute('aria-current', 'true');
-        }
-      });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    Object.keys(map).forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) io.observe(el);
-    });
-  })();
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Nagłówek: skreślenie i poprawka
+  requestAnimationFrame(function () { document.getElementById('h1').classList.add('go'); });
+  // Pasek nawigacji po przewinięciu
+  var nav = document.getElementById('nav');
+  addEventListener('scroll', function () { nav.classList.toggle('scrolled', scrollY > 8); }, { passive: true });
+  // Wejście sekcji
+  var els = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function (en) {
+      en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  }
+  // Bieżąca sekcja w menu
+  var links = [].slice.call(document.querySelectorAll('.nav-links a'));
+  function current() {
+    var y = scrollY + innerHeight * 0.35, id = null;
+    links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.offsetTop <= y) id = a; });
+    if (innerHeight + scrollY >= document.body.scrollHeight - 4) id = links[links.length - 1];
+    links.forEach(function (a) { a === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'); });
+  }
+  addEventListener('scroll', current, { passive: true }); current();
+  // Kopiowanie adresu
+  var btn = document.getElementById('copy'), msg = document.getElementById('copy-msg');
+  btn.addEventListener('click', function () {
+    var mail = 'aiprosciej@gmail.com';
+    function ok() { msg.textContent = 'Skopiowano: ' + mail; }
+    if (navigator.clipboard) navigator.clipboard.writeText(mail).then(ok, function () { msg.textContent = 'Nie udało się skopiować. Adres: ' + mail; });
+    else msg.textContent = 'Adres: ' + mail;
+  });
+})();
 </script>
 </body>
 </html>
