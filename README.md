@@ -23,7 +23,7 @@ Analizuję treści w sieci i poprawiam to, co nie działa. Mam ponad 9 lat dośw
 | Projekt | Co pokazuje |
 |---|---|
 | [Odetchnij Teraz – prototyp aplikacji well-being](https://github.com/anna-content-ai/odetchnij-teraz) | Projekt zespołowy SGH: projekt interfejsu z pomocą AI (vibe coding), UX writing, architekturę informacji, heurystyki Nielsena, dostępność i priorytetyzację MVP |
-| [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library) | Sprawdzone prompty i udokumentowane workflow do contentu, edycji, researchu i QA |
+| [AI Prompt Library](https://github.com/anna-content-ai/AI-Prompt-Library) | Sprawdzone prompty i udokumentowane workflow do contentu, edycji, researchu i QA, a cztery z nich także jako gotowe Claude Skills (SKILL.md) |
 | [AI Content Review – landing page SaaS i UX writing](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md) | Redakcyjną weryfikację treści, wykrywanie nieprawdziwych twierdzeń i bezpieczniejszy copy w interfejsie |
 | [ChatGPT vs Claude – porównanie w review treści](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/chatgpt-vs-claude-content-review.md) | Ocenę wyników modeli, testy promptów, ostrożność faktograficzną i decyzje redakcyjne po stronie człowieka |
 | [Repurposing newslettera – AI Prościej](https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/newsletter-content-repurposing-example.md) | Adaptację jednego źródła edukacyjnego na LinkedIn, Instagram, e-mail i krótkie wideo |
