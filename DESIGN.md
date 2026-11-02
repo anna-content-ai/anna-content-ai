@@ -1,39 +1,40 @@
 # DESIGN.md – portfolio Anny Ziółkowskiej
 
-**Idea przewodnia:** dowody i energia. Ciemne tło, jeden mocny limonkowy akcent i ruch, który prowadzi wzrok do liczb i projektów.
+**Idea przewodnia:** tryb sugestii. Strona wygląda jak dokument w edytorze, w którym Anna poprawia tekst: skreśla puste frazy, wpisuje konkret i zostawia komentarze na marginesie. Portfolio pokazuje sposób pracy, zamiast go opisywać.
 
 ## Paleta
 | Rola | Kolor |
 |---|---|
-| Tło | `#0E0F12` |
-| Powierzchnia (karty) | `#16181D` |
-| Powierzchnia 2 (etykiety, pigułki) | `#1E2128` |
-| Linia | `#2A2D35` |
-| Tekst | `#EDEDEA` |
-| Tekst pomocniczy | `#BDBDB7` |
-| Wyciszony | `#9A9A94` |
-| Akcent – limonka | `#D7FF3A` |
-| Tekst na limonce | `#0E0F12` |
+| Tło (blat) | `#EEF0F2` |
+| Arkusz, karty | `#FFFFFF` |
+| Linia | `#E3E5E8` |
+| Tekst | `#15171A` |
+| Tekst pomocniczy | `#3B4048` |
+| Wyciszony | `#646A73` |
+| Zakreślacz (wyróżnienia, inicjały) | `#FFE45C` |
+| Wstawienie (poprawka, status) | `#0B7A45` na `#E2F5EA` |
+| Usunięcie (skreślenie) | `#C8372B` na `#FBE6E3` |
 
-Limonka tylko do: wyróżnionego słowa w nagłówku, głównych przycisków, liczb, etykiet ról, etykiety „człowiek” i sekcji kontaktu. Jeden akcent, bez dodatkowych kolorów.
+Czerwony i zielony zawsze razem z drugim sygnałem (skreślenie / podkreślenie), nigdy jako jedyna informacja.
 
 ## Typografia
-- **Space Grotesk** (500, 700) – nagłówki, liczby, nazwa w menu, pasek umiejętności.
-- **Inter** – tekst, przyciski, etykiety.
+- **Bricolage Grotesque** (700, 800) – nagłówki i liczby.
+- **Inter** – tekst, przyciski, formularz.
+- **IBM Plex Mono** – drobne etykiety (nazwy źródeł, podpisy statystyk, komentarze).
 - Fonty hostowane lokalnie w `fonts/`.
 
 ## Elementy
-- Karty: zaokrąglenie 22–26 px, cienka linia, poświata podążająca za kursorem.
-- Przyciski: pigułki min. 52 px wysokości; limonka = główna akcja, obrys = druga.
-- Zdjęcie: ramka 4:5 lekko obrócona, z plakietką „hej, to ja”.
-- Etykieta „człowiek” w procesach = etap wykonywany przez Annę.
+- Arkusz dokumentu z cieniem jako hero i sekcja „O mnie”.
+- Komentarze na marginesie; najechanie na komentarz podświetla frazę, której dotyczy.
+- Wizytówka z inicjałami (miejsce na zdjęcie 4:5, instrukcja w komentarzu HTML).
+- Projekty w siatce kafelków o różnej szerokości; ciemne kafelki z przykładami UX writingu (przed → po).
+- „Historia wersji”: żółte punkty = etapy, które Anna robi sama; szare = z pomocą AI.
+- Kontakt: prawdziwy formularz z walidacją, który przygotowuje wiadomość e-mail, z uczciwą informacją, że trzeba ją wysłać z programu pocztowego.
 
 ## Ruch
-- Rotujące słowo w nagłówku: działały / były jasne / budziły zaufanie.
-- Przesuwający się pasek umiejętności (pauza po najechaniu).
-- Pulsujący punkt przy statusie „otwarta na nową rolę”.
-- Pasek postępu czytania u góry, łagodne wejście sekcji.
+- Skreślenie i wpisywanie poprawki w nagłówku, komentarze pojawiają się po kolei.
+- Pulsujący status „Otwarta na nową rolę”, łagodne wejście sekcji, podniesienie kafelków przy najechaniu.
 - Wszystko wyłączone przy `prefers-reduced-motion`.
 
 ## Czego unikać
-Ciepłych beżów i szeryfów (zbyt podobne do stylu Claude), gradientów fiolet–niebieski, ikonek w kółkach, emoji, zmyślonych liczb i opinii.
+Etykiet sugerujących nieistniejące pliki, powtarzania tej samej zasady w kilku miejscach, elementów udających pola formularza, zmyślonych liczb i opinii, beżów i szeryfów w stylu Claude.
