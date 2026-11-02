@@ -29,6 +29,11 @@ Czerwony i zielony zawsze razem z drugim sygnałem (skreślenie / podkreślenie)
 - Wizytówka z inicjałami (miejsce na zdjęcie 4:5, instrukcja w komentarzu HTML).
 - Projekty w siatce kafelków o różnej szerokości; ciemne kafelki z przykładami UX writingu (przed → po).
 - „Historia wersji”: żółte punkty = etapy, które Anna robi sama; szare = z pomocą AI.
+- Liczby w hero prowadzą do dowodów (case study, biblioteka, O mnie).
+- Linki zewnętrzne oznaczone ↗ i nazwą serwisu.
+- Telefon: jednorzędowy pasek z przyciskiem Menu, chowany przy przewijaniu w dół; zakładki w „Historii wersji”; zwijane kompetencje.
+- Druk / „Zapisz jako PDF”: czysty dokument na 3 strony A4 z danymi kontaktowymi.
+- Case study i strona 404 w tym samym stylu.
 - Kontakt: prawdziwy formularz z walidacją, który przygotowuje wiadomość e-mail, z uczciwą informacją, że trzeba ją wysłać z programu pocztowego.
 
 ## Ruch

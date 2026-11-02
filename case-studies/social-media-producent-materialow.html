@@ -3,89 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Case study: analiza kanałów social media producenta materiałów budowlanych</title>
+<title>Case study: analiza kanału marki budowlanej – Anna Ziółkowska</title>
+<meta name="description" content="Analiza 90 dni kanału producenta materiałów budowlanych: zasięg od nieobserwujących, rola rolek i postów, wnioski i plan testów.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#EEF0F2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Case study: analiza kanału marki budowlanej">
+<meta property="og:description" content="98,8% wyświetleń od osób nieobserwujących. Rolki dają zasięg, posty zaangażowanie. Wnioski i plan testów.">
+<meta property="og:image" content="https://anna-content-ai.github.io/anna-content-ai/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-  :root { --bg:#FFFFFF; --panel:#F4F4F2; --line:#E4E4E0; --ink:#0E0E0E; --ink-2:#3A3A38; --muted:#6B6B67; --sans:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif; }
+  @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("../fonts/inter-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("../fonts/inter-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Inter"; font-weight: 500; font-display: swap; src: url("../fonts/inter-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Inter"; font-weight: 500; font-display: swap; src: url("../fonts/inter-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("../fonts/inter-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("../fonts/inter-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("../fonts/inter-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("../fonts/inter-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Bricolage Grotesque"; font-weight: 700; font-display: swap; src: url("../fonts/bricolage-grotesque-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Bricolage Grotesque"; font-weight: 700; font-display: swap; src: url("../fonts/bricolage-grotesque-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "Bricolage Grotesque"; font-weight: 800; font-display: swap; src: url("../fonts/bricolage-grotesque-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Bricolage Grotesque"; font-weight: 800; font-display: swap; src: url("../fonts/bricolage-grotesque-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 500; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  :root { --canvas:#EEF0F2; --line:#E3E5E8; --ink:#15171A; --ink-2:#3B4048; --muted:#646A73; --hl:#FFE45C; --ins:#0B7A45; --ins-bg:#E2F5EA; --del:#C8372B; --del-bg:#FBE6E3;
+    --display:"Bricolage Grotesque","Inter",system-ui,sans-serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; --ease:cubic-bezier(.2,.7,.2,1); }
   * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:17px; line-height:1.6; }
-  a:focus-visible { outline:2px solid var(--ink); outline-offset:3px; border-radius:4px; }
-  main { max-width:820px; margin:0 auto; padding:72px 24px 96px; }
-  .draft { display:inline-block; background:var(--ink); color:var(--bg); padding:6px 12px; border-radius:999px; font-size:0.8rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
-  h1 { font-size:clamp(2.2rem,5vw,3.4rem); font-weight:800; letter-spacing:-.03em; line-height:1.08; margin:22px 0 0; }
-  h2 { font-size:1.6rem; font-weight:700; letter-spacing:-.02em; margin:64px 0 18px; }
-  p, li { color:var(--ink-2); }
-  .lead { font-size:1.1rem; margin-top:22px; }
-  .eyebrow { color:var(--muted); font-size:.8rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; margin:28px 0 12px; }
-  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:28px 0 0; padding:0; list-style:none; }
-  .kpis li { background:var(--panel); border-radius:16px; padding:20px; }
-  .kpis strong { display:block; font-size:1.8rem; font-weight:800; letter-spacing:-.02em; color:var(--ink); }
-  .kpis span { font-size:.9rem; color:var(--ink-2); }
-  figure { margin:28px 0 0; }
-  figure img { width:100%; height:auto; border:1px solid var(--line); border-radius:16px; display:block; }
-  figcaption { color:var(--muted); font-size:.9rem; margin-top:10px; }
-  ol, ul { padding-left:20px; }
-  li + li { margin-top:8px; }
-  .role { background:var(--panel); border-radius:20px; padding:28px; }
-  .note { border-top:1px solid var(--line); margin-top:64px; padding-top:20px; color:var(--muted); font-size:.92rem; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--canvas); color: var(--ink); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+  ::selection { background: var(--hl); }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: #fff; padding: 8px 12px; border-radius: 8px; }
+  .skip:focus { left: 8px; z-index: 20; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  mark { background: var(--hl); color: inherit; border-radius: .15em; padding: 0 .08em; transition: background .25s; }
+  mark.focus { background: #FFD21A; }
+  ins { color: var(--ins); text-decoration: none; }
+
+  .bar { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 8px; padding-bottom: 8px; }
+  .file { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; }
+  .file .ic { width: 26px; height: 32px; border-radius: 3px 9px 3px 3px; background: #fff; border: 1.5px solid var(--ink); position: relative; flex: none; }
+  .file .ic::before { content: ""; position: absolute; right: -1.5px; top: -1.5px; width: 9px; height: 9px; background: var(--hl); border-left: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); border-radius: 0 9px 0 3px; }
+  .file .ic::after { content: ""; position: absolute; left: 5px; width: 11px; top: 13px; height: 2px; background: var(--ink); box-shadow: 0 5px 0 var(--ink), 0 10px 0 var(--del); }
+  .file b { display: block; font-size: .95rem; line-height: 1.2; }
+  .file small { display: block; font: 400 .75rem var(--mono); color: var(--muted); }
+  .back { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 600; font-size: .92rem; text-decoration: none; white-space: nowrap; }
+
+  .crumbs { font: 500 .8rem var(--mono); color: var(--muted); padding: 28px 0 14px; }
+  .crumbs a { text-decoration: none; border-bottom: 1px solid #C3C8CF; display: inline-block; padding: 3px 0; }
+  .doc { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 28px; align-items: start; }
+  .sheet { background: #fff; border-radius: 6px; box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 20px 50px -24px rgba(16,24,40,.25); padding: 52px 64px; }
+  .tagline { display: inline-flex; gap: 8px; flex-wrap: wrap; margin: 0 0 18px; }
+  .tagline span { font: 500 .78rem var(--mono); background: var(--canvas); padding: 3px 8px; border-radius: 6px; color: var(--ink-2); }
+  h1, h2, h3 { font-family: var(--display); letter-spacing: -.03em; margin: 0; }
+  h1 { font-weight: 800; font-size: clamp(2.2rem, 4.6vw, 3.6rem); line-height: 1.04; }
+  .lead { font-size: 1.15rem; color: var(--ink-2); margin: 22px 0 0; }
+  .tldr { margin-top: 28px; border-left: 3px solid var(--ins); background: var(--ins-bg); border-radius: 0 12px 12px 0; padding: 16px 20px; }
+  .tldr b { font: 600 .78rem var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--ins); display: block; margin-bottom: 4px; }
+  .tldr p { margin: 0; color: var(--ink); }
+
+  .margin { display: grid; gap: 14px; padding-top: 40px; }
+  .note { background: #fff; border-radius: 12px; padding: 14px 16px; box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 10px 26px -18px rgba(16,24,40,.35); border-left: 3px solid var(--hl); transition: transform .25s var(--ease); }
+  .note:hover { transform: translateX(-4px); }
+  .note header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .av { width: 22px; height: 22px; border-radius: 50%; background: var(--hl); display: grid; place-items: center; font: 700 .58rem var(--sans); }
+  .note b { font-size: .86rem; }
+  .note small { font: 400 .72rem var(--mono); color: var(--muted); margin-left: auto; }
+  .note p { margin: 0; font-size: .93rem; color: var(--ink-2); line-height: 1.5; }
+  .note.ok { border-left-color: var(--ins); }
+
+  .kpis { margin: 20px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .kpis li { padding: 18px 20px; border-right: 1px solid var(--line); }
+  .kpis li:last-child { border-right: 0; }
+  .kpis small { display: block; font: 500 .72rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .kpis b { display: block; font: 800 2.2rem/1.1 var(--display); letter-spacing: -.03em; margin-top: 6px; }
+  .kpis span { display: block; font-size: .88rem; color: var(--ink-2); line-height: 1.4; margin-top: 4px; }
+
+  .body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 28px; margin-top: 28px; align-items: start; }
+  .block { background: #fff; border-radius: 18px; border: 1px solid var(--line); padding: 32px 36px; }
+  .block + .block { margin-top: 16px; }
+  .block h2 { font-weight: 800; font-size: 1.8rem; margin-bottom: 14px; }
+  .block p, .block li { color: var(--ink-2); }
+  .block ul, .block ol { padding-left: 22px; margin: 0; }
+  .block li + li { margin-top: 8px; }
+  .block li strong { color: var(--ink); }
+
+  .chart { margin-top: 6px; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: .9rem; color: var(--ink-2); margin: 0 0 18px; padding: 0; list-style: none; }
+  .legend li { display: inline-flex; gap: 8px; align-items: center; margin: 0 !important; }
+  .legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .row { display: grid; grid-template-columns: 90px 1fr; gap: 14px; align-items: center; padding: 10px 0; border-top: 1px dashed var(--line); }
+  .row > b { font-size: .98rem; }
+  .bars { display: grid; gap: 6px; }
+  .bar-line { display: grid; grid-template-columns: 1fr 58px; gap: 10px; align-items: center; }
+  .track { height: 16px; background: var(--canvas); border-radius: 5px; overflow: hidden; }
+  .fill { height: 100%; border-radius: 5px; width: var(--w); transform-origin: left; }
+  .js .chart .fill { transform: scaleX(0); transition: transform 1s var(--ease); }
+  .js .chart.in .fill { transform: scaleX(1); }
+  .fill.v { background: var(--ink); }
+  .fill.i { background: #F2C200; }
+  .val { font: 600 .9rem var(--mono); text-align: right; }
+  .chart figcaption { font-size: .86rem; color: var(--muted); margin-top: 12px; }
+
+  .role-list { list-style: none; padding: 0 !important; }
+  .role-list li { position: relative; padding-left: 26px; }
+  .role-list li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 12px; height: 12px; border-radius: 50%; background: var(--hl); border: 2px solid var(--ink); }
+  .recs { list-style: none; padding: 0 !important; counter-reset: r; }
+  .recs li { counter-increment: r; display: grid; grid-template-columns: 34px 1fr; gap: 10px; padding: 12px 0; border-top: 1px dashed var(--line); margin: 0 !important; }
+  .recs li::before { content: counter(r); width: 28px; height: 28px; border-radius: 8px; background: var(--ins-bg); color: var(--ins); font: 700 .9rem var(--mono); display: grid; place-items: center; }
+  .side { position: sticky; top: 76px; display: grid; gap: 14px; }
+  .toc { background: #fff; border-radius: 14px; border: 1px solid var(--line); padding: 18px; }
+  .toc b { font: 500 .75rem var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .toc ol { list-style: none; margin: 10px 0 0; padding: 0; }
+  .toc a { display: block; padding: 7px 10px; border-radius: 8px; text-decoration: none; font-size: .93rem; color: var(--ink-2); }
+  .toc a:hover { background: var(--canvas); }
+  .toc a[aria-current="true"] { background: var(--hl); color: var(--ink); font-weight: 600; }
+  .limits { border-left: 3px solid var(--del); background: var(--del-bg); border-radius: 0 12px 12px 0; padding: 16px 20px; font-size: .93rem; }
+  .limits b { font: 600 .75rem var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #A12A20; display: block; margin-bottom: 6px; }
+  .limits ul { margin: 0; padding-left: 18px; color: var(--ink-2); }
+
+  .next { margin: 56px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .next a { display: block; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px 24px; text-decoration: none; transition: transform .25s var(--ease), box-shadow .25s; }
+  .next a:hover { transform: translateY(-3px); box-shadow: 0 18px 36px -24px rgba(16,24,40,.45); }
+  .next small { font: 500 .75rem var(--mono); color: var(--muted); display: block; }
+  .next b { font: 700 1.3rem var(--display); letter-spacing: -.02em; display: block; margin-top: 6px; }
+  .next .dark { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .next .dark small { color: #A9AFB8; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 28px; padding-bottom: 44px; color: var(--muted); font: 400 .82rem var(--mono); }
+  footer a { color: var(--ink); display: inline-block; padding: 6px 0; }
+  .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+  .js .reveal.in { opacity: 1; transform: none; }
+
+  @media (max-width: 1000px) {
+    .doc, .body { grid-template-columns: 1fr; }
+    .margin { grid-template-columns: 1fr 1fr; padding-top: 0; }
+    .side { position: static; grid-template-columns: 1fr 1fr; }
+    .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .kpis li:nth-child(2) { border-right: 0; }
+    .kpis li:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 680px) {
+    .wrap { padding: 0 16px; }
+    .file small { display: none; }
+    .sheet { padding: 32px 22px; }
+    .block { padding: 24px 20px; }
+    .margin, .side, .next { grid-template-columns: 1fr; }
+    .toc { display: none; }
+    .row { grid-template-columns: 1fr; gap: 6px; }
+  }
+  @media (max-width: 420px) { .kpis b { font-size: 1.8rem; } .kpis span { overflow-wrap: anywhere; } }
+  @media print {
+    .bar, .crumbs, .side .toc, .next, footer, .skip { display: none !important; }
+    body { background: #fff; font-size: 11pt; }
+    .sheet, .block, .note { box-shadow: none; border: 1px solid var(--line); }
+    .doc, .body { grid-template-columns: 1fr; }
+    .js .reveal { opacity: 1 !important; transform: none !important; }
+    .js .chart .fill { transform: none !important; }
+    .block { break-inside: avoid; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+    .js .reveal { opacity: 1; transform: none; }
+    .js .chart .fill { transform: none; }
+  }
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<main>
-  <p class="eyebrow">Case study · Social media</p>
-  <h1>Analiza kanałów social media producenta materiałów budowlanych</h1>
-  <p class="lead">Dane z 90 dni pokazują, że treści docierają głównie do osób spoza listy obserwujących. Rolki dają zasięg, a posty zaangażowanie. Na tej podstawie zaproponowałam kolejne testy.</p>
-
-  <h2>Kontekst</h2>
-  <p>Marka producenta materiałów budowlanych prowadzi kanały w kilku serwisach społecznościowych. Analiza obejmuje jeden z nich za ostatnie 90 dni. Celem było sprawdzenie, czy treści docierają do nowych osób, czy zamieniają się w społeczność obserwujących i które formaty działają najlepiej.</p>
-
-  <h2>Moja rola</h2>
-  <div class="role">
-    <p>Koordynatorka po stronie marki we współpracy z agencją social media, od 1 lipca 2026. Zakres:</p>
-    <ul>
-      <li>akceptacja postów przed publikacją,</li>
-      <li>przekazywanie pomysłów na treści i kierunku komunikacji,</li>
-      <li>pilnowanie jakości usług i zgodności contentu z brandbookiem,</li>
-      <li>zarządzanie budżetem i decyzje o dodatkowych działaniach,</li>
-      <li>koordynacja pracy agencji przy nagraniach materiałów edukacyjnych marki, w tym akceptacja scenariuszy we współpracy z project managerem.</li>
-    </ul>
+<a class="skip" href="#main">Przejdź do treści</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="file" href="../index.html"><span class="ic" aria-hidden="true"></span><span><b>Anna Ziółkowska</b><small>case study · social media</small></span></a>
+    <a class="back" href="../index.html#projekty">← Wszystkie projekty</a>
   </div>
+</header>
 
-  <h2>Wyniki (90 dni)</h2>
-  <ul class="kpis">
-    <li><strong>98,8%</strong><span>wyświetleń od osób nieobserwujących</span></li>
-    <li><strong>85,8%</strong><span>interakcji od osób nieobserwujących</span></li>
-    <li><strong>56,9%</strong><span>wyświetleń przypada na rolki</span></li>
-    <li><strong>50,2%</strong><span>interakcji przypada na posty</span></li>
-  </ul>
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Okruszki"><a href="../index.html">Portfolio</a> / <a href="../index.html#projekty">Projekty</a> / Analiza kanału marki budowlanej</nav>
 
-  <figure>
-    <img src="social-media-chart.svg" alt="Słupkowy wykres: rolki 56,9% wyświetleń i 44,3% interakcji, posty 29,4% wyświetleń i 50,2% interakcji, relacje 13,8% wyświetleń i 5,5% interakcji.">
-    <figcaption>Udział typów treści w wyświetleniach i interakcjach, 90 dni.</figcaption>
-  </figure>
+    <div class="doc">
+      <article class="sheet">
+        <p class="tagline"><span>case study</span><span>social media · dane</span><span>90 dni</span></p>
+        <h1>Analiza kanału marki budowlanej</h1>
+        <p class="lead">Dane z 90 dni pokazują, że <mark id="m1">treści docierają głównie do osób spoza listy obserwujących</mark>. <mark id="m2">Rolki dają zasięg, a posty zaangażowanie.</mark> Na tej podstawie zaproponowałam kolejne testy.</p>
+        <div class="tldr"><b>W skrócie</b><p>Kanał świetnie dociera do nowych osób, ale nie zamienia ich jeszcze w obserwujących. Rekomendacja: łączyć zasięg rolek z zaangażowaniem postów i testować po jednej zmianie.</p></div>
+      </article>
+      <aside class="margin" aria-label="Komentarze">
+        <div class="note" data-for="m1"><header><span class="av" aria-hidden="true">AZ</span><b>Anna</b><small>wniosek 1</small></header><p>Zasięg pochodzi z odkrywania, nie ze społeczności. To szansa i zadanie zarazem.</p></div>
+        <div class="note ok" data-for="m2"><header><span class="av" aria-hidden="true">AZ</span><b>Anna</b><small>wniosek 2</small></header><p>Każdy format ma inną rolę. Rolki przyciągają, posty angażują.</p></div>
+      </aside>
+    </div>
 
-  <h2>Wnioski</h2>
-  <ol>
-    <li><strong>Zasięg pochodzi z odkrywania, nie ze społeczności.</strong> Prawie wszystkie wyświetlenia i interakcje to osoby spoza listy obserwujących.</li>
-    <li><strong>Rolki dają zasięg, posty dają zaangażowanie.</strong> Rolki mają ponad połowę wyświetleń, a posty więcej interakcji niż rolki.</li>
-    <li><strong>Najmocniejsze materiały to wideo z osobą w terenie i poradniki oraz grafiki z konkretnymi cechami produktów.</strong></li>
-    <li><strong>Relacje są najsłabszym formatem</strong> pod względem zaangażowania.</li>
-  </ol>
+    <ul class="kpis reveal" aria-label="Wyniki z 90 dni">
+      <li><small>Zasięg</small><b>98,8%</b><span>wyświetleń od osób nieobserwujących</span></li>
+      <li><small>Interakcje</small><b>85,8%</b><span>interakcji od osób nieobserwujących</span></li>
+      <li><small>Rolki</small><b>56,9%</b><span>wszystkich wyświetleń</span></li>
+      <li><small>Posty</small><b>50,2%</b><span>wszystkich interakcji</span></li>
+    </ul>
 
-  <h2>Rekomendacje do przetestowania</h2>
-  <ol>
-    <li>Dodać w rolkach wezwanie do posta lub karuzeli z dłuższą wersją tematu i zmierzyć udział interakcji od obserwujących oraz liczbę nowych obserwujących.</li>
-    <li>Zachować serię grafik z zaletami produktów i rozwijać ją w kolejnych tematach.</li>
-    <li>Ograniczyć relacje albo zmienić ich format, np. na krótkie pytania do społeczności.</li>
-    <li>Przez dwa tygodnie testować jedną zmianę naraz.</li>
-  </ol>
+    <div class="body">
+      <div>
+        <section class="block reveal" id="kontekst">
+          <h2>Kontekst</h2>
+          <p>Marka producenta materiałów budowlanych prowadzi kanały w kilku serwisach społecznościowych. Analiza obejmuje jeden z nich (Instagram) za ostatnie 90 dni. Celem było sprawdzenie, czy treści docierają do nowych osób, czy zamieniają się w społeczność obserwujących i które formaty działają najlepiej.</p>
+        </section>
 
-  <h2>Ograniczenia</h2>
-  <ul>
-    <li>Dane obejmują 90 dni, a nie cały okres działania kanału.</li>
-    <li>Brak danych o promocji płatnej i o publikacjach poza panelem.</li>
-    <li>Wnioski opisują zachowanie kanału. Przyczyny wymagają testów.</li>
-  </ul>
+        <section class="block reveal" id="rola">
+          <h2>Moja rola</h2>
+          <p>Koordynatorka po stronie marki we współpracy z agencją social media, od 1 lipca 2026.</p>
+          <ul class="role-list">
+            <li>akceptacja postów przed publikacją,</li>
+            <li>przekazywanie pomysłów na treści i kierunku komunikacji,</li>
+            <li>pilnowanie jakości usług i zgodności contentu z brandbookiem,</li>
+            <li>zarządzanie budżetem i decyzje o dodatkowych działaniach,</li>
+            <li>koordynacja pracy agencji przy nagraniach materiałów edukacyjnych marki, w tym akceptacja scenariuszy we współpracy z project managerem.</li>
+          </ul>
+        </section>
 
+        <section class="block reveal" id="dane">
+          <h2>Co pokazały dane</h2>
+          <figure class="chart reveal" style="margin:0">
+            <ul class="legend" aria-hidden="true"><li><i style="background:#15171A"></i>wyświetlenia</li><li><i style="background:#F2C200"></i>interakcje</li></ul>
+            <div class="row"><b>Rolki</b><div class="bars">
+              <div class="bar-line"><div class="track"><div class="fill v" style="--w:56.9%"></div></div><span class="val">56,9%</span></div>
+              <div class="bar-line"><div class="track"><div class="fill i" style="--w:44.3%"></div></div><span class="val">44,3%</span></div></div></div>
+            <div class="row"><b>Posty</b><div class="bars">
+              <div class="bar-line"><div class="track"><div class="fill v" style="--w:29.4%"></div></div><span class="val">29,4%</span></div>
+              <div class="bar-line"><div class="track"><div class="fill i" style="--w:50.2%"></div></div><span class="val">50,2%</span></div></div></div>
+            <div class="row"><b>Relacje</b><div class="bars">
+              <div class="bar-line"><div class="track"><div class="fill v" style="--w:13.8%"></div></div><span class="val">13,8%</span></div>
+              <div class="bar-line"><div class="track"><div class="fill i" style="--w:5.5%"></div></div><span class="val">5,5%</span></div></div></div>
+            <figcaption>Udział typów treści w wyświetleniach (górny pasek) i interakcjach (dolny pasek), 90 dni. Wyświetlenia: rolki 56,9%, posty 29,4%, relacje 13,8%. Interakcje: posty 50,2%, rolki 44,3%, relacje 5,5%.</figcaption>
+          </figure>
+        </section>
+
+        <section class="block reveal" id="wnioski">
+          <h2>Wnioski</h2>
+          <ol>
+            <li><strong>Zasięg pochodzi z odkrywania, nie ze społeczności.</strong> Prawie wszystkie wyświetlenia i interakcje to osoby spoza listy obserwujących.</li>
+            <li><strong>Rolki dają zasięg, posty dają zaangażowanie.</strong> Rolki mają ponad połowę wyświetleń, a posty więcej interakcji niż rolki.</li>
+            <li><strong>Najmocniejsze materiały</strong> to wideo z osobą w terenie i poradniki oraz grafiki z konkretnymi cechami produktów.</li>
+            <li><strong>Relacje są najsłabszym formatem</strong> pod względem zaangażowania.</li>
+          </ol>
+        </section>
+
+        <section class="block reveal" id="testy">
+          <h2>Rekomendacje do przetestowania</h2>
+          <ol class="recs">
+            <li><span>Dodać w rolkach wezwanie do posta lub karuzeli z dłuższą wersją tematu i zmierzyć <ins>udział interakcji od obserwujących</ins> oraz liczbę nowych obserwujących.</span></li>
+            <li><span>Zachować serię grafik z zaletami produktów i rozwijać ją w kolejnych tematach.</span></li>
+            <li><span>Ograniczyć relacje albo zmienić ich format, np. na krótkie pytania do społeczności.</span></li>
+            <li><span>Przez dwa tygodnie testować <ins>jedną zmianę naraz</ins>.</span></li>
+          </ol>
+        </section>
+      </div>
+
+      <aside class="side">
+        <nav class="toc" aria-label="Spis treści"><b>Spis treści</b><ol>
+          <li><a href="#kontekst">Kontekst</a></li><li><a href="#rola">Moja rola</a></li><li><a href="#dane">Co pokazały dane</a></li><li><a href="#wnioski">Wnioski</a></li><li><a href="#testy">Rekomendacje</a></li>
+        </ol></nav>
+        <div class="limits"><b>Ograniczenia</b><ul>
+          <li>Dane obejmują 90 dni, a nie cały okres działania kanału.</li>
+          <li>Brak danych o promocji płatnej i o publikacjach poza panelem.</li>
+          <li>Wnioski opisują zachowanie kanału. Przyczyny wymagają testów.</li>
+        </ul></div>
+      </aside>
+    </div>
+
+    <nav class="next" aria-label="Dalej">
+      <a href="../index.html#projekty"><small>← wróć</small><b>Wszystkie projekty</b></a>
+      <a class="dark" href="../index.html#kontakt"><small>porozmawiajmy</small><b>Napisz do mnie →</b></a>
+    </nav>
+  </div>
 </main>
+<footer><div class="wrap"><span>© Anna Ziółkowska · nazwa marki pominięta celowo</span><a href="#main">↑ Wróć na górę</a></div></footer>
+<script>
+(function () {
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) els.forEach(function (e) { e.classList.add('in'); });
+  else { var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' }); els.forEach(function (e) { io.observe(e); }); }
+  document.querySelectorAll('.note[data-for]').forEach(function (n) {
+    var t = document.getElementById(n.getAttribute('data-for')); if (!t) return;
+    n.addEventListener('mouseenter', function () { t.classList.add('focus'); });
+    n.addEventListener('mouseleave', function () { t.classList.remove('focus'); });
+  });
+  var links = [].slice.call(document.querySelectorAll('.toc a'));
+  function cur() { var y = scrollY + innerHeight * .3, id = null; links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.getBoundingClientRect().top + scrollY <= y) id = a; }); links.forEach(function (a) { a === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'); }); }
+  addEventListener('scroll', cur, { passive: true }); cur();
+})();
+</script>
 </body>
 </html>
