@@ -6,6 +6,8 @@
 <title>Anna Ziółkowska – treści, UX writing i AI w marketingu</title>
 <meta name="description" content="Portfolio Anny Ziółkowskiej: treści, UX writing i AI w marketingu. Ponad 9 lat doświadczenia.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bricolage-grotesque-latin-ext-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="theme-color" content="#EEF0F2">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Anna Ziółkowska – treści, UX writing i AI w marketingu">
@@ -73,6 +75,9 @@
   .tabs a[aria-current="true"] { background: #fff; color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08); font-weight: 600; }
   .who { justify-self: end; display: flex; align-items: center; gap: 10px; }
   .avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--hl); color: var(--ink); display: grid; place-items: center; font: 700 .8rem var(--sans); border: 2px solid #fff; box-shadow: 0 0 0 1px var(--line); flex: none; }
+  .bar { transition: transform .3s var(--ease); }
+  .bar.hide { transform: translateY(-100%); }
+  .menu-btn { display: none; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid #C3C8CF; background: #fff; font: 600 .92rem var(--sans); color: var(--ink); cursor: pointer; }
   .share { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 600; font-size: .92rem; text-decoration: none; }
 
   /* Arkusz z poprawkami */
@@ -106,7 +111,7 @@
   .margin { display: grid; gap: 14px; padding-top: 40px; }
   .note { background: #fff; border-radius: 12px; padding: 14px 16px; box-shadow: 0 1px 2px rgba(16,24,40,.06), 0 10px 26px -18px rgba(16,24,40,.35); border-left: 3px solid var(--hl); position: relative; }
   .note header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-  .note header .avatar { width: 28px; height: 28px; font-size: .7rem; }
+  .note header .avatar { width: 22px; height: 22px; font-size: .58rem; border-width: 1px; }
   .note b { font-size: .88rem; display: block; line-height: 1.2; }
   .note small { font: 400 .72rem var(--mono); color: var(--muted); }
   .note p { margin: 0; font-size: .93rem; color: var(--ink-2); line-height: 1.5; }
@@ -122,12 +127,20 @@
   .card-id div span { display: block; font-size: .86rem; color: var(--muted); line-height: 1.35; margin-top: 2px; }
   .id-links { grid-column: 1 / -1; display: flex; gap: 6px; list-style: none; margin: 0; padding: 12px 0 0; border-top: 1px solid var(--line); }
   .id-links a { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border-radius: 8px; background: var(--canvas); font-size: .86rem; font-weight: 600; text-decoration: none; }
-  .id-links a:hover { background: var(--hl); }
+  .id-links a:hover, .id-links button:hover { background: var(--hl); }
+  .id-links button { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border-radius: 8px; background: var(--canvas); font: 600 .86rem var(--sans); color: var(--ink); border: 0; cursor: pointer; }
+  .id-links { flex-wrap: wrap; }
 
   /* Statystyki dokumentu */
   .stats { margin-top: 20px; display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border-radius: 12px; border: 1px solid var(--line); overflow: hidden; }
-  .stats div { padding: 18px 20px; border-right: 1px solid var(--line); }
-  .stats div:last-child { border-right: 0; }
+  .stats { list-style: none; padding: 0; margin-left: 0; margin-right: 0; }
+  .stats li { border-right: 1px solid var(--line); }
+  .stats li:last-child { border-right: 0; }
+  .stats a { display: block; height: 100%; padding: 18px 20px; text-decoration: none; transition: background .2s; }
+  .stats a:hover { background: #FFFBE0; }
+  .stats a:focus-visible { outline: 3px solid var(--ink); outline-offset: -3px; border-radius: 0; }
+  .stats em { display: block; font: 500 .75rem var(--mono); font-style: normal; color: var(--muted); margin-top: 10px; transition: color .2s; }
+  .stats a:hover em { color: var(--ink); }
   .stats small { display: block; font: 500 .72rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
   .stats b { display: block; font: 800 2.2rem/1.1 var(--display); letter-spacing: -.03em; margin-top: 6px; }
   .stats span { display: block; font-size: .88rem; color: var(--ink-2); line-height: 1.4; margin-top: 4px; }
@@ -162,6 +175,9 @@
   .tile a::after { content: ""; position: absolute; inset: 0; border-radius: 18px; }
   .tile a span { transition: transform .25s var(--ease); }
   .tile:hover a span { transform: translateX(4px); }
+  .tile:focus-within { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .tile a:focus-visible { outline: none; }
+  .ext { font-size: .85em; }
   .tile.quote { background: var(--ink); color: #fff; border-color: var(--ink); justify-content: space-between; padding: 26px; }
   .tile.quote .mono { font-size: .78rem; color: #A9AFB8; }
   .tile.quote p.q { font: 700 1.6rem/1.15 var(--display); letter-spacing: -.02em; color: #fff; margin: 14px 0 0; }
@@ -180,6 +196,9 @@
   .vlist li.me { color: var(--ink); font-weight: 600; }
   .vlist li.me::before { background: var(--hl); border-color: var(--ink); }
   .vlist li.me::after { content: "Anna"; font: 500 .7rem var(--mono); background: var(--hl); color: var(--ink); padding: 1px 6px; border-radius: 5px; }
+  .vtabs { display: flex; gap: 4px; padding: 4px; background: #fff; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; overflow-x: auto; }
+  .vtabs button { flex: 1; min-height: 44px; border: 0; background: none; border-radius: 9px; font: 600 .9rem var(--sans); color: var(--ink-2); cursor: pointer; white-space: nowrap; padding: 0 10px; }
+  .vtabs button[aria-selected="true"] { background: var(--ink); color: #fff; }
   .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: .88rem; color: var(--muted); margin-top: 16px; }
   .legend span { display: inline-flex; gap: 8px; align-items: center; }
   .legend i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #BCC1C8; display: inline-block; }
@@ -191,6 +210,12 @@
   .about .sheet p { color: var(--ink-2); font-size: 1.06rem; margin: 0 0 14px; }
   .about .sheet p strong { color: var(--ink); }
   .skills { background: #fff; border-radius: 18px; border: 1px solid var(--line); padding: 28px; display: grid; gap: 20px; align-content: start; }
+  .skills summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; font: 700 1.2rem var(--display); cursor: pointer; list-style: none; min-height: 44px; }
+  .skills summary::-webkit-details-marker { display: none; }
+  .skills summary .count { font: 500 .78rem var(--mono); background: var(--canvas); padding: 3px 8px; border-radius: 6px; }
+  .skills summary::after { content: "+"; font: 400 1.4rem var(--sans); margin-left: auto; transition: transform .2s; }
+  .skills[open] summary::after { transform: rotate(45deg); }
+  .skills[open] > div:first-of-type { margin-top: 4px; }
   .skills h3 { font: 500 .78rem var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
   .tags li { border: 1px solid var(--line); background: var(--canvas); border-radius: 8px; padding: 5px 11px; font-size: .9rem; font-weight: 500; }
@@ -229,8 +254,8 @@
     .doc { grid-template-columns: 1fr; }
     .margin { grid-template-columns: repeat(2, 1fr); padding-top: 0; }
     .stats { grid-template-columns: repeat(2, 1fr); }
-    .stats div:nth-child(2) { border-right: 0; }
-    .stats div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .stats li:nth-child(2) { border-right: 0; }
+    .stats li:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
     .tile, .tile.wide, .tile.narrow { grid-column: span 3; }
     .tile.wide { display: flex; padding: 12px 12px 22px; }
     .tile.wide .thumb { aspect-ratio: 16/10; min-height: 0; }
@@ -242,7 +267,23 @@
   }
   @media (max-width: 680px) {
     .wrap { padding: 0 16px; }
-    .file small, .share span.t { display: none; }
+    .file small, .share { display: none; }
+    .menu-btn { display: inline-flex; align-items: center; }
+    .bar nav { display: none; }
+    .bar.open nav { display: block; padding: 4px 0 10px; }
+    .bar.open .tabs { width: 100%; flex-direction: column; background: none; padding: 0; }
+    .bar.open .tabs a { min-height: 48px; font-size: 1.05rem; border-bottom: 1px solid var(--line); border-radius: 0; }
+    .bar .wrap { padding-top: 8px; padding-bottom: 8px; }
+    .tile .thumb, .tile.wide .thumb { aspect-ratio: 5 / 2; }
+    .tile .body { padding-top: 14px; }
+    .skills { padding: 14px 18px; }
+    .skills[open] { padding-bottom: 22px; }
+    .about .sheet p { font-size: 1rem; }
+    .sec-head { margin-bottom: 18px; }
+    .tile.quote p.q { font-size: 1.35rem; }
+    .vtabs:not([hidden]) ~ .versions .vcard[data-hidden] { display: none; }
+    .versions { gap: 0; }
+    .stats a { padding: 14px 14px; }
     .sheet { padding: 40px 22px 32px; }
     .margin { grid-template-columns: 1fr; }
     .margin .note.ok { display: none; }
@@ -251,9 +292,51 @@
     .reply { grid-template-columns: 1fr; padding: 26px 20px; }
     .form .row { grid-template-columns: 1fr; }
     .btn { width: 100%; }
-    section { padding-top: 72px; }
+    section { padding-top: 56px; }
   }
   @media (max-width: 420px) { h1 { font-size: 2.3rem; } .stats b { font-size: 1.8rem; } .stats span { overflow-wrap: anywhere; } }
+  .print-only { display: none; }
+  @media print {
+    @page { margin: 14mm 14mm; }
+    body { background: #fff; font-size: 11pt; }
+    .bar, .actions, .form, .id-links, .vtabs, .skip, footer, .margin .note, .tile .thumb, .quote, .legend { display: none !important; }
+    .print-only { display: block; font: 10pt var(--sans); color: var(--ink-2); margin: 0 0 8mm; }
+    .wrap { max-width: none; padding: 0; }
+    .stage { padding: 0; }
+    .doc { grid-template-columns: 1fr; gap: 0; }
+    .sheet, .tile, .vcard, .skills, .reply, .card-id { box-shadow: none !important; border: 0 !important; padding: 0 !important; background: none !important; }
+    .margin { display: block; padding: 0; }
+    .card-id { display: none !important; }
+    h1 { font-size: 26pt; }
+    h1 del { display: none; }
+    h1 ins, mark { background: none !important; color: var(--ink) !important; text-decoration: none; }
+    h2 { font-size: 17pt; margin-top: 4mm; }
+    section { padding-top: 7mm; }
+    h1 ins:empty::before { content: attr(aria-label); }
+    h1 ins::after { display: none !important; }
+    .sec-head, h2 { break-after: avoid; page-break-after: avoid; }
+    .sec-head + * { break-before: avoid; }
+    .tile a { display: inline; font-size: 9.5pt; }
+    .tile a .ext, .skills summary::after, .skills summary .count { display: none; }
+    .tile p { font-size: 10pt; margin-bottom: 2mm; }
+    .tile h3 { font-size: 14pt; }
+    .vlist li { padding-top: 2px; padding-bottom: 2px; font-size: 10pt; }
+    .about .sheet p { font-size: 10.5pt; }
+    .sec-head { margin-bottom: 4mm; }
+    .sec-head p { font-size: 10pt; }
+    .stats { margin-top: 6mm; border: 1px solid var(--line); }
+    .stats em { display: none; }
+    .bento { grid-template-columns: 1fr 1fr; gap: 6mm; }
+    .tile, .tile.wide, .tile.narrow { grid-column: auto; display: block; break-inside: avoid; }
+    .tile .body { padding: 0; }
+    .tile a::after { content: " (" attr(href) ")"; position: static; font-weight: 400; font-size: 8.5pt; color: var(--muted); word-break: break-all; }
+    .versions { grid-template-columns: repeat(3, 1fr); }
+    .vcard { display: block !important; }
+    .about { grid-template-columns: 1.2fr 1fr; }
+    .reply { margin-top: 8mm; display: block; }
+    .reply .avatar { display: none; }
+    .js .reveal, .js .margin .note { opacity: 1 !important; transform: none !important; }
+  }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none !important; animation: none !important; }
@@ -269,17 +352,18 @@
 <header class="bar">
   <div class="wrap">
     <a class="file" href="#top"><span class="ic" aria-hidden="true"></span><span><b>Anna Ziółkowska</b><small>portfolio · tryb sugestii</small></span></a>
-    <nav aria-label="Główna"><ul class="tabs">
+    <nav aria-label="Główna" id="menu"><ul class="tabs">
       <li><a href="#projekty">Projekty</a></li>
       <li><a href="#proces">Proces</a></li>
       <li><a href="#o-mnie">O mnie</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul></nav>
-    <div class="who"><span class="avatar" aria-hidden="true">AZ</span><a class="share" href="#kontakt">Napisz <span class="t">do mnie</span></a></div>
+    <div class="who"><a class="share" href="#kontakt">Napisz do mnie</a><button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button></div>
   </div>
 </header>
 
 <main id="main">
+  <p class="print-only wrap">Anna Ziółkowska · treści, UX writing i AI w marketingu · aiprosciej@gmail.com · linkedin.com/in/anna-ziolkowska-ai · anna-content-ai.github.io/anna-content-ai</p>
   <div class="wrap">
     <div class="stage" id="top">
       <div class="doc">
@@ -302,7 +386,7 @@
             <ul class="id-links">
               <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn</a></li>
               <li><a href="https://github.com/anna-content-ai">GitHub</a></li>
-              <li><a href="#kontakt">Kontakt</a></li>
+              <li><button type="button" class="pdf" id="pdf">Zapisz jako PDF</button></li>
             </ul>
           </div>
           <div class="note" data-for="d1">
@@ -317,12 +401,12 @@
         </aside>
       </div>
 
-      <div class="stats reveal" role="list" aria-label="Statystyki">
-        <div role="listitem"><small>Doświadczenie</small><b>9+ lat</b><span>w marketingu i social mediach</span></div>
-        <div role="listitem"><small>Wykształcenie</small><b>SGH</b><span>podyplomowe: AI i automatyzacja w marketingu</span></div>
-        <div role="listitem"><small>Narzędzia</small><b>4</b><span>własne Claude Skills</span></div>
-        <div role="listitem"><small>Analiza kanału</small><b>98,8%</b><span>wyświetleń od nieobserwujących</span></div>
-      </div>
+      <ul class="stats reveal" aria-label="W liczbach">
+        <li><a href="#o-mnie"><small>Doświadczenie</small><b>9+ lat</b><span>w marketingu i social mediach</span><em>O mnie →</em></a></li>
+        <li><a href="#o-mnie"><small>Wykształcenie</small><b>SGH</b><span>podyplomowe: AI i automatyzacja w marketingu</span><em>O mnie →</em></a></li>
+        <li><a href="https://github.com/anna-content-ai/AI-Prompt-Library"><small>Narzędzia</small><b>4</b><span>własne Claude Skills</span><em>Biblioteka na GitHubie ↗</em></a></li>
+        <li><a href="case-studies/social-media-producent-materialow.html"><small>Analiza kanału</small><b>98,8%</b><span>wyświetleń od nieobserwujących</span><em>Case study →</em></a></li>
+      </ul>
     </div>
 
     <section id="projekty">
@@ -350,7 +434,7 @@
             <h3>AI Prompt Library</h3>
             <p>Prompty i workflow do researchu, edycji, weryfikacji i repurposingu. Cztery działają jako gotowe Claude Skills, każdy z kryteriami jakości i przeglądem przez człowieka.</p>
             <p class="metric"><mark>4 Claude Skills</mark> + 9 promptów i workflow</p>
-            <a href="https://github.com/anna-content-ai/AI-Prompt-Library">Otwórz bibliotekę <span aria-hidden="true">→</span></a>
+            <a href="https://github.com/anna-content-ai/AI-Prompt-Library">Otwórz bibliotekę na GitHubie <span class="ext" aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="tile narrow quote reveal">
@@ -380,7 +464,7 @@
             <p class="fname"><i>GitHub</i>UX · prototyp aplikacji</p>
             <h3>Odetchnij Teraz</h3>
             <p>Projekt zespołowy z SGH: przepływy, interfejs i treści UX, sprawdzone heurystykami Nielsena i pod kątem dostępności.</p>
-            <a href="https://github.com/anna-content-ai/odetchnij-teraz">Zobacz projekt <span aria-hidden="true">→</span></a>
+            <a href="https://github.com/anna-content-ai/odetchnij-teraz">Zobacz projekt na GitHubie <span class="ext" aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="tile reveal">
@@ -400,7 +484,7 @@
             <p class="fname"><i>case study</i>Content · UX writing</p>
             <h3>Analiza treści na www</h3>
             <p>Przegląd strony pod kątem faktów, jasności i nieuzasadnionych twierdzeń. Porównanie wyników dwóch modeli AI i gotowe poprawki.</p>
-            <a href="https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md">Czytaj case study <span aria-hidden="true">→</span></a>
+            <a href="https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md">Czytaj case study na GitHubie <span class="ext" aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="tile wide reveal">
@@ -436,12 +520,17 @@
         <div><h2>Jak powstaje dobra wersja</h2></div>
         <p>Trzy procesy, które stosuję na co dzień. Na żółto etapy, które zawsze robię sama.</p>
       </div>
+      <div class="vtabs" role="tablist" aria-label="Procesy" hidden>
+        <button role="tab" type="button" id="vt-0" aria-controls="vp-0" aria-selected="true">Treści</button>
+        <button role="tab" type="button" id="vt-1" aria-controls="vp-1" aria-selected="false" tabindex="-1">Prototypy</button>
+        <button role="tab" type="button" id="vt-2" aria-controls="vp-2" aria-selected="false" tabindex="-1">Audio i wideo</button>
+      </div>
       <div class="versions">
-        <div class="vcard reveal"><h3>Treści</h3><ol class="vlist">
+        <div class="vcard reveal" id="vp-0"><h3>Treści</h3><ol class="vlist">
           <li class="ai">Research i brief</li><li class="ai">Prompt i szkic</li><li class="me">Edycja</li><li class="me">Fact-checking</li><li class="ai">Adaptacja do kanału</li><li class="me">Publikacja</li></ol></div>
-        <div class="vcard reveal"><h3>Prototypy interfejsów</h3><ol class="vlist">
+        <div class="vcard reveal" id="vp-1"><h3>Prototypy interfejsów</h3><ol class="vlist">
           <li class="ai">Koncept</li><li class="ai">Prototyp z promptów</li><li class="me">Przegląd UX</li><li class="me">Ewaluacja heurystyczna</li><li class="me">Dostępność</li><li class="ai">Poprawki i akceptacja</li></ol></div>
-        <div class="vcard reveal"><h3>Audio i wideo</h3><ol class="vlist">
+        <div class="vcard reveal" id="vp-2"><h3>Audio i wideo</h3><ol class="vlist">
           <li class="me">Temat i scenariusz</li><li class="ai">Wybór głosu</li><li class="ai">Lektor AI</li><li class="me">Montaż</li><li class="me">Publikacja na YouTube</li></ol></div>
       </div>
       <div class="legend"><span><i aria-hidden="true"></i>etap z pomocą AI</span><span><i class="me" aria-hidden="true"></i>etap, który robię sama</span></div>
@@ -455,11 +544,12 @@
           <p>Ukończyłam studia podyplomowe <strong>„AI i automatyzacja w marketingu” na SGH</strong> i mam warsztat UX/UI. Moja specjalność to tekst, który klient rozumie od pierwszego czytania.</p>
           <p>Narzędzia AI buduję i testuję sama: od promptów po gotowe Claude Skills, które opisuję i udostępniam na GitHubie.</p>
         </div>
-        <div class="skills reveal">
+        <details class="skills reveal" id="skills" open>
+          <summary><span>Kompetencje</span><span class="count">14</span></summary>
           <div><h3>Treści</h3><ul class="tags"><li>Analiza treści na www</li><li>Strategia treści</li><li>Fact-checking</li><li>Repurposing</li><li>SEO i WordPress</li></ul></div>
           <div><h3>UX</h3><ul class="tags"><li>UX writing</li><li>Projektowanie interfejsów</li><li>Heurystyki Nielsena</li><li>Dostępność</li></ul></div>
           <div><h3>AI i dane</h3><ul class="tags"><li>Claude Skills i prompty</li><li>Automatyzacje</li><li>Analiza social media</li><li>GA4</li><li>GetResponse</li></ul></div>
-        </div>
+        </details>
       </div>
     </section>
 
@@ -504,6 +594,39 @@
   } else h1.classList.add('go');
   // Komentarze wjeżdżają po kolei
   document.querySelectorAll('.margin .note').forEach(function (n, k) { setTimeout(function () { n.classList.add('in'); }, reduce ? 0 : 700 + k * 900); });
+  // Pasek: menu na telefonie i chowanie przy przewijaniu w dół
+  var bar = document.querySelector('.bar'), mb = document.getElementById('menu-btn'), lastY = scrollY;
+  mb.addEventListener('click', function () { var o = bar.classList.toggle('open'); mb.setAttribute('aria-expanded', o); mb.textContent = o ? 'Zamknij' : 'Menu'; });
+  document.querySelectorAll('#menu a').forEach(function (a) { a.addEventListener('click', function () { bar.classList.remove('open'); mb.setAttribute('aria-expanded', 'false'); mb.textContent = 'Menu'; }); });
+  addEventListener('scroll', function () {
+    var y = scrollY;
+    if (!bar.classList.contains('open') && !bar.contains(document.activeElement)) bar.classList.toggle('hide', y > lastY && y > 160);
+    lastY = y;
+  }, { passive: true });
+  // Historia wersji: zakładki na telefonie
+  var vt = document.querySelector('.vtabs'), tabs = [].slice.call(vt.querySelectorAll('[role=tab]')), mq = matchMedia('(max-width: 680px)');
+  function showTab(k, focus) {
+    tabs.forEach(function (t, j) {
+      var on = j === k, panel = document.getElementById(t.getAttribute('aria-controls'));
+      t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
+      if (mq.matches) { panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', t.id); on ? panel.removeAttribute('data-hidden') : panel.setAttribute('data-hidden', ''); }
+      if (on && focus) t.focus();
+    });
+  }
+  function setupTabs() {
+    vt.hidden = !mq.matches;
+    if (mq.matches) showTab(tabs.findIndex(function (t) { return t.getAttribute('aria-selected') === 'true'; }));
+    else tabs.forEach(function (t) { var p = document.getElementById(t.getAttribute('aria-controls')); p.removeAttribute('data-hidden'); p.removeAttribute('role'); p.removeAttribute('aria-labelledby'); });
+    var sk = document.getElementById('skills'); if (mq.matches) sk.removeAttribute('open'); else sk.setAttribute('open', '');
+  }
+  tabs.forEach(function (t, k) {
+    t.addEventListener('click', function () { showTab(k); });
+    t.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); showTab((k + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length, true); } });
+  });
+  setupTabs(); mq.addEventListener('change', setupTabs);
+  // Zapis jako PDF
+  document.getElementById('pdf').addEventListener('click', function () { window.print(); });
+  addEventListener('beforeprint', function () { document.getElementById('skills').setAttribute('open', ''); var f = ins.getAttribute('aria-label'); if (f) ins.textContent = f; });
   // Komentarz podświetla frazę, której dotyczy
   document.querySelectorAll('.note[data-for]').forEach(function (n) {
     var t = document.getElementById(n.getAttribute('data-for'));
