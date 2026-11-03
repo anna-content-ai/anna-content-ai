@@ -70,7 +70,10 @@
   .bar.scrolled { border-color: var(--line); }
   .bar.hide { transform: translateY(-100%); }
   .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
-  img.avatar.photo { width: 96px; height: 96px; object-fit: cover; padding: 0; background: var(--surface-2); border: 1px solid var(--line-2); display: block; }
+  img.avatar.photo { width: 176px; height: 176px; border-radius: 24px; object-fit: cover; padding: 0; background: var(--surface-2); border: 1px solid var(--line-2); display: block; }
+  .me-row b { font-size: 1.6rem !important; }
+  @media (max-width: 720px) { img.avatar.photo { width: 132px; height: 132px; border-radius: 20px; } .me-row { gap: 14px; } .me-row b { font-size: 1.3rem !important; } }
+  @media (max-width: 400px) { .me-row { flex-direction: column; align-items: flex-start; } img.avatar.photo { width: 100%; height: auto; aspect-ratio: 1; max-width: 260px; } }
   .brand { display: inline-flex; align-items: center; gap: 10px; font: 700 1.05rem var(--display); letter-spacing: -.02em; text-decoration: none; }
   .brand i { width: 24px; height: 24px; border-radius: 7px; background: var(--accent); position: relative; }
   .brand i::after { content: ""; position: absolute; left: 6px; right: 6px; top: 11px; height: 2px; background: var(--accent-ink); box-shadow: 0 -4px 0 var(--accent-ink); }
@@ -691,7 +694,7 @@
       <div class="about">
         <div class="card reveal">
           <div class="me-row">
-<picture><source srcset="../photo.webp" type="image/webp"><img class="avatar photo" src="../photo.jpg" alt="Portrait of Anna Ziółkowska" width="600" height="600" loading="lazy" decoding="async"></picture>
+<picture><source srcset="../photo.webp" type="image/webp"><img class="avatar photo" src="../photo.jpg" alt="Portrait of Anna Ziółkowska" width="600" height="600" decoding="async"></picture>
             <div><b>Anna Ziółkowska</b><span>Content Marketing & AI Specialist · Warsaw</span></div>
           </div>
           <p>For over 9 years I’ve worked in content marketing and brand communication for B2B and B2C: from content strategy, through campaigns and email marketing, to trade fairs and events. Today I combine this with practical use of AI.</p>
