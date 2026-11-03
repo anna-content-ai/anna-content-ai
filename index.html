@@ -68,7 +68,7 @@
   .bar.scrolled { border-color: var(--line); }
   .bar.hide { transform: translateY(-100%); }
   .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; font: 700 1.05rem var(--display); letter-spacing: -.02em; text-decoration: none; }
   .brand i { width: 24px; height: 24px; border-radius: 7px; background: var(--accent); position: relative; }
   .brand i::after { content: ""; position: absolute; left: 6px; right: 6px; top: 11px; height: 2px; background: var(--accent-ink); box-shadow: 0 -4px 0 var(--accent-ink); }
   .links { display: flex; align-items: center; gap: 4px; list-style: none; margin: 0; padding: 0; }
@@ -443,7 +443,7 @@
 <div class="progress" aria-hidden="true"></div>
 <header class="bar" id="bar">
   <div class="wrap">
-    <a class="brand" href="#top"><i aria-hidden="true"></i>Anna Ziółkowska</a>
+    <a class="brand" href="#top">AI Prościej</a>
     <nav aria-label="Główna">
       <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="links">Menu</button>
       <ul class="links" id="links">
