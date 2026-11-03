@@ -814,13 +814,6 @@
       el.addEventListener('pointermove', function (e) { var r = el.getBoundingClientRect(); m.tgt.ry = ((e.clientX - r.left) / r.width - .5) * 5; m.tgt.rx = -((e.clientY - r.top) / r.height - .5) * 4; m.tgt.y = -4; });
       el.addEventListener('pointerleave', function () { m.tgt.rx = m.tgt.ry = m.tgt.y = 0; });
     });
-    // Przyciski przyciągane do kursora
-    document.querySelectorAll('.btn-main, .btn-line').forEach(function (el) {
-      var m = mover({ x: 0, y: 0 }, function (c) { el.style.transform = (Math.abs(c.x) + Math.abs(c.y) < .05) ? '' : 'translate(' + c.x.toFixed(2) + 'px,' + c.y.toFixed(2) + 'px)'; });
-      el.style.transition = 'box-shadow .3s, background .3s, border-color .3s';
-      el.addEventListener('pointermove', function (e) { var r = el.getBoundingClientRect(); m.tgt.x = (e.clientX - r.left - r.width / 2) * .2; m.tgt.y = (e.clientY - r.top - r.height / 2) * .3; });
-      el.addEventListener('pointerleave', function () { m.tgt.x = m.tgt.y = 0; });
-    });
   }
   // Manifest: skreślenia płynnie podążają za przewijaniem
   var mf = document.querySelector('.manifest'), parts = [].slice.call(mf.querySelectorAll('[data-at]'));
