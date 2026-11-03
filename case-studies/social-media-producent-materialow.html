@@ -139,6 +139,40 @@
   .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
   .js .reveal.in { opacity: 1; transform: none; }
 
+
+  /* Pasek postępu czytania */
+  .progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: #E2683C; transform-origin: left; transform: scaleX(0); z-index: 30; }
+  /* Porównanie przed / po */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 6px; }
+  .cmp { border-radius: 14px; padding: 18px 20px; border: 1px solid var(--line); background: var(--canvas); }
+  .cmp small { font: 500 .74rem var(--mono); text-transform: uppercase; letter-spacing: .06em; display: block; margin-bottom: 10px; }
+  .cmp.before small { color: #F0A285; } .cmp.after small { color: #C3CEA9; }
+  .cmp p { margin: 0 0 8px; color: var(--ink); } .cmp .btnx { display: inline-block; margin-top: 6px; font: 600 .9rem var(--sans); padding: 8px 14px; border-radius: 9px; }
+  .cmp.before .btnx { background: #2A2F23; color: #E3A58C; text-decoration: line-through; } .cmp.after .btnx { background: #E2683C; color: #14170F; }
+  .cmp.before p { color: #C98A70; text-decoration: line-through; text-decoration-color: rgba(226,104,60,.7); }
+  .tbl { width: 100%; border-collapse: collapse; font-size: .95rem; margin-top: 4px; }
+  .tbl th { text-align: left; font: 500 .74rem var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+  .tbl td { padding: 12px 12px 12px 0; border-bottom: 1px dashed var(--line); color: var(--ink-2); vertical-align: top; }
+  .tbl td:first-child { color: var(--ink); font-weight: 500; }
+  .tbl .pr { font: 500 .74rem var(--mono); padding: 2px 8px; border-radius: 6px; white-space: nowrap; }
+  .pr.h { background: rgba(226,104,60,.18); color: #F0A285; } .pr.m { background: rgba(163,177,138,.16); color: #C3CEA9; }
+  .tbl-wrap { overflow-x: auto; max-width: 100%; }
+  .tbl .num { text-align: right; font-family: var(--mono); white-space: nowrap; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .body > div, .doc > * { min-width: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0 !important; margin: 4px 0 0; align-items: center; }
+  .chips li { margin: 0 !important; background: var(--canvas); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: .92rem; color: var(--ink); }
+  .chips li.arrow { border: 0; background: none; padding: 0; color: var(--muted); }
+  .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; list-style: none; padding: 0 !important; margin: 0; }
+  .principles li { margin: 0 !important; background: var(--canvas); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .principles b { display: block; font: 700 1.05rem var(--display); color: var(--ink); letter-spacing: -.01em; margin-bottom: 4px; }
+  .principles b span { color: #E2683C; font-family: var(--mono); font-size: .8rem; margin-right: 6px; }
+  .score { display: grid; grid-template-columns: 1fr 70px 70px; gap: 8px 12px; align-items: center; font-size: .93rem; }
+  .score .h { font: 500 .74rem var(--mono); color: var(--muted); text-transform: uppercase; }
+  .score .v { font: 600 .92rem var(--mono); text-align: right; color: var(--ink); }
+  .score .lbl { color: var(--ink-2); }
+  .src { display: inline-flex; gap: 8px; align-items: center; margin-top: 14px; font-weight: 600; text-decoration: none; border-bottom: 1.5px solid #E2683C; padding-bottom: 2px; }
+  @media (max-width: 680px) { .compare { grid-template-columns: 1fr; } }
   @media (max-width: 1000px) {
     .doc, .body { grid-template-columns: 1fr; }
     .margin { grid-template-columns: 1fr 1fr; padding-top: 0; }
@@ -159,7 +193,7 @@
   @media (max-width: 420px) { .kpis b { font-size: 1.8rem; } .kpis span { overflow-wrap: anywhere; } }
   @media print {
     :root { --canvas:#fff; --surface:#fff; --line:#DADCD2; --ink:#14170F; --ink-2:#3D4135; --muted:#5F6457; --ins:#4F5E35; }
-    .bar, .crumbs, .side .toc, .next, footer, .skip { display: none !important; }
+    .bar, .crumbs, .side .toc, .next, footer, .skip, .progress { display: none !important; }
     body { background: #fff; font-size: 11pt; }
     .sheet, .block, .note { box-shadow: none; border: 1px solid var(--line); }
     .doc, .body { grid-template-columns: 1fr; }
@@ -168,6 +202,7 @@
     .block { break-inside: avoid; }
   }
   @media (prefers-reduced-motion: reduce) {
+    .progress { display: none; }
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none !important; animation: none !important; }
     .js .reveal { opacity: 1; transform: none; }
@@ -178,6 +213,7 @@
 </head>
 <body>
 <a class="skip" href="#main">Przejdź do treści</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
 <header class="bar">
   <div class="wrap">
     <a class="file" href="../index.html"><span class="ic" aria-hidden="true"></span><span><b>Anna Ziółkowska</b><small>case study · social media</small></span></a>
@@ -203,10 +239,10 @@
     </div>
 
     <ul class="kpis reveal" aria-label="Wyniki z 90 dni">
-      <li><small>Zasięg</small><b>98,8%</b><span>wyświetleń od osób nieobserwujących</span></li>
-      <li><small>Interakcje</small><b>85,8%</b><span>interakcji od osób nieobserwujących</span></li>
-      <li><small>Rolki</small><b>56,9%</b><span>wszystkich wyświetleń</span></li>
-      <li><small>Posty</small><b>50,2%</b><span>wszystkich interakcji</span></li>
+      <li><small>Zasięg</small><b data-count="98,8" data-suffix="%">98,8%</b><span>wyświetleń od osób nieobserwujących</span></li>
+      <li><small>Interakcje</small><b data-count="85,8" data-suffix="%">85,8%</b><span>interakcji od osób nieobserwujących</span></li>
+      <li><small>Rolki</small><b data-count="56,9" data-suffix="%">56,9%</b><span>wszystkich wyświetleń</span></li>
+      <li><small>Posty</small><b data-count="50,2" data-suffix="%">50,2%</b><span>wszystkich interakcji</span></li>
     </ul>
 
     <div class="body">
@@ -280,7 +316,7 @@
 
     <nav class="next" aria-label="Dalej">
       <a href="../index.html#projekty"><small>← wróć</small><b>Wszystkie projekty</b></a>
-      <a class="dark" href="../index.html#kontakt"><small>porozmawiajmy</small><b>Napisz do mnie →</b></a>
+      <a class="dark" href="odetchnij-teraz.html"><small>następny projekt</small><b>Odetchnij Teraz →</b></a>
     </nav>
   </div>
 </main>
@@ -288,6 +324,15 @@
 <script>
 (function () {
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Pasek postępu czytania
+  var bar = document.getElementById('progress');
+  if (!reduce) addEventListener('scroll', function () { var h = document.documentElement.scrollHeight - innerHeight; bar.style.transform = 'scaleX(' + (h > 0 ? scrollY / h : 0) + ')'; }, { passive: true });
+  // Liczby doliczające się od zera
+  var nums = document.querySelectorAll('[data-count]');
+  function countUp(el) { var raw = el.getAttribute('data-count'), to = parseFloat(raw.replace(',', '.')), dec = (raw.split(',')[1] || '').length, suf = el.getAttribute('data-suffix') || '', t0 = null;
+    function step(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1200), e = 1 - Math.pow(1 - k, 3); el.textContent = (to * e).toFixed(dec).replace('.', ',') + suf; if (k < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step); }
+  if (!reduce && 'IntersectionObserver' in window) { var io2 = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { countUp(e.target); io2.unobserve(e.target); } }); }, { threshold: .6 }); nums.forEach(function (n) { io2.observe(n); }); }
   var els = document.querySelectorAll('.reveal');
   if (reduce || !('IntersectionObserver' in window)) els.forEach(function (e) { e.classList.add('in'); });
   else { var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' }); els.forEach(function (e) { io.observe(e); }); }
