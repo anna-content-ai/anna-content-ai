@@ -8,6 +8,13 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#14170F">
 <meta property="og:type" content="article">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Anna Ziółkowska">
+<link rel="canonical" href="https://anna-content-ai.github.io/anna-content-ai/case-studies/analiza-tresci-www.html">
+<meta property="og:url" content="https://anna-content-ai.github.io/anna-content-ai/case-studies/analiza-tresci-www.html">
+<link rel="alternate" hreflang="pl" href="https://anna-content-ai.github.io/anna-content-ai/case-studies/analiza-tresci-www.html">
+<link rel="alternate" hreflang="en" href="https://anna-content-ai.github.io/anna-content-ai/en/case-studies/analiza-tresci-www.html">
+<link rel="alternate" hreflang="x-default" href="https://anna-content-ai.github.io/anna-content-ai/case-studies/analiza-tresci-www.html">
 <meta property="og:title" content="Case study: analiza treści na www">
 <meta property="og:description" content="Od obietnic do konkretu: przegląd treści strony i porównanie dwóch modeli AI.">
 <meta property="og:image" content="https://anna-content-ai.github.io/anna-content-ai/og-image.png">
@@ -52,7 +59,7 @@
   .file .ic::after { content: ""; position: absolute; left: 6px; right: 6px; top: 11px; height: 2px; background: #14170F; box-shadow: 0 -4px 0 #14170F; }
   .file b { display: block; font-size: .95rem; line-height: 1.2; }
   .file small { display: block; font: 400 .75rem var(--mono); color: var(--muted); }
-  .back { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 10px; background: var(--ink); color: #14170F; font-weight: 600; font-size: .92rem; text-decoration: none; white-space: nowrap; }
+  .back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; background: var(--ink); color: #14170F; font-weight: 600; font-size: .92rem; text-decoration: none; white-space: nowrap; }
 
   .crumbs { font: 500 .8rem var(--mono); color: var(--muted); padding: 28px 0 14px; }
   .crumbs a { text-decoration: none; border-bottom: 1px solid #C3C8CF; display: inline-block; padding: 3px 0; }
@@ -208,6 +215,10 @@
     .js .reveal { opacity: 1; transform: none; }
     .js .chart .fill { transform: none; }
   }
+  .hdr-r { display: flex; align-items: center; gap: 10px; }
+  .bar .lang { font: 500 .78rem var(--mono); letter-spacing: .06em; text-decoration: none; color: inherit; border: 1px solid var(--line); border-radius: 8px; min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  .file, .src, footer a, .toc a { min-height: 44px; display: inline-flex; align-items: center; }
+  .crumbs a { display: inline-block; padding: 13px 0; }
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -217,7 +228,7 @@
 <header class="bar">
   <div class="wrap">
     <a class="file" href="../index.html"><span class="ic" aria-hidden="true"></span><span><b>Anna Ziółkowska</b><small>case study · content</small></span></a>
-    <a class="back" href="../index.html#projekty">← Wszystkie projekty</a>
+    <span class="hdr-r"><a class="lang" href="../en/case-studies/analiza-tresci-www.html" hreflang="en" lang="en" aria-label="EN – English version">EN</a><a class="back" href="../index.html#projekty">← Wszystkie projekty</a></span>
   </div>
 </header>
 
@@ -234,7 +245,7 @@
       </article>
       <aside class="margin" aria-label="Komentarze">
         <div class="note" data-for="m1"><header><span class="av" aria-hidden="true">AZ</span><b>Anna</b><small>diagnoza</small></header><p>„Najbardziej rewolucyjny”, „miliony użytkowników”, „gwarantowane efekty”: każde z tych zdań wymaga dowodu albo usunięcia.</p></div>
-        <div class="note ok" data-for="m2"><header><span class="av" aria-hidden="true">AZ</span><b>Anna</b><small>wniosek</small></header><p>Claude lepiej diagnozował, ChatGPT ostrożniej przepisywał. Najlepiej połączyć oba i dodać weryfikację.</p></div>
+        <div class="note ok" data-for="m2"><header><span class="av" aria-hidden="true">AZ</span><b>Anna</b><small>wynik</small></header><p>Analiza UX writingu: Claude 9/10, ChatGPT 8/10. Ostrożność przy przepisywaniu: Claude 7/10, ChatGPT 9/10.</p></div>
       </aside>
     </div>
 
@@ -242,7 +253,7 @@
       <li><small>Twierdzenia</small><b data-count="4">4</b><span>do weryfikacji lub usunięcia</span></li>
       <li><small>Priorytet</small><b data-count="3">3</b><span>główne problemy w tekście</span></li>
       <li><small>Modele</small><b data-count="2">2</b><span>porównane na tym samym zadaniu</span></li>
-      <li><small>Kryteria</small><b data-count="8">8</b><span>oceny odpowiedzi modeli</span></li>
+      <li><small>Oceny</small><b data-count="7">7</b><span>obszarów w skali do 10</span></li>
     </ul>
 
     <div class="body">
@@ -270,7 +281,7 @@
 
         <section class="block reveal" id="modele">
           <h2>ChatGPT czy Claude?</h2>
-          <p>Oba modele dostały ten sam prompt, kontekst i tekst, bez materiałów źródłowych i bez poprawek. Oceniłam je według 8 kryteriów. To wynik jednego testu, nie ogólny ranking modeli.</p>
+          <p>Oba modele dostały ten sam prompt, kontekst i tekst, bez materiałów źródłowych i bez poprawek. Wyniki oceniłam w 7 obszarach, w skali do 10. To wynik jednego testu, nie ogólny ranking modeli.</p>
           <div class="tbl-wrap" tabindex="0" role="region" aria-label="Tabela ocen modeli"><table class="tbl score-t"><caption class="sr">Oceny modeli w jednym teście</caption><thead><tr><th scope="col">Kryterium</th><th scope="col" class="num">Claude</th><th scope="col" class="num">ChatGPT</th></tr></thead><tbody><tr><td>Wykrywanie nieuzasadnionych twierdzeń</td><td class="num">9/10</td><td class="num">9/10</td></tr><tr><td>Analiza redakcyjna</td><td class="num">9/10</td><td class="num">8/10</td></tr><tr><td>Analiza UX writingu</td><td class="num">9/10</td><td class="num">8/10</td></tr><tr><td>Ostrożność przy przepisywaniu</td><td class="num">7/10</td><td class="num">9/10</td></tr><tr><td>Dopasowanie CTA do ścieżki</td><td class="num">7/10</td><td class="num">9/10</td></tr><tr><td>Struktura odpowiedzi</td><td class="num">9/10</td><td class="num">9/10</td></tr><tr><td>Przydatność dla redaktora</td><td class="num">8,5/10</td><td class="num">8,5/10</td></tr></tbody></table></div>
         </section>
 

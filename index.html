@@ -4,12 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anna Ziółkowska – treści, UX writing i AI w marketingu</title>
-<meta name="description" content="Portfolio Anny Ziółkowskiej: ponad 9 lat w marketingu, analiza i poprawa treści na www i w social mediach, UX writing oraz workflow z AI.">
+<meta name="description" content="Anna Ziółkowska: treści, UX writing i AI w marketingu. Ponad 9 lat w marketingu i social mediach, studia podyplomowe z AI na SGH, case study i własne Claude Skills.">
+<link rel="canonical" href="https://anna-content-ai.github.io/anna-content-ai/">
+<meta property="og:url" content="https://anna-content-ai.github.io/anna-content-ai/">
+<link rel="alternate" hreflang="pl" href="https://anna-content-ai.github.io/anna-content-ai/">
+<link rel="alternate" hreflang="en" href="https://anna-content-ai.github.io/anna-content-ai/en/">
+<link rel="alternate" hreflang="x-default" href="https://anna-content-ai.github.io/anna-content-ai/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Anna Ziółkowska", "url": "https://anna-content-ai.github.io/anna-content-ai/", "email": "mailto:aiprosciej@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Szkoła Główna Handlowa w Warszawie"}, "knowsAbout": ["UX writing", "Content strategy", "Fact-checking", "Content design", "Generative AI", "Claude Skills", "Social media analytics", "Accessibility"], "sameAs": ["https://www.linkedin.com/in/anna-ziolkowska-ai", "https://github.com/anna-content-ai"], "description": "Treści, UX writing i AI w marketingu"}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#14170F">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Anna Ziółkowska">
 <meta property="og:title" content="Anna Ziółkowska – treści, UX writing i AI w marketingu">
-<meta property="og:description" content="Poprawiam treści, żeby sprzedawały jasno. Marketing, UX writing i AI z człowiekiem na końcu.">
+<meta property="og:description" content="Piszę i poprawiam treści na strony, do interfejsów i social mediów. AI pomaga, fakty i ostateczną wersję sprawdzam sama.">
 <meta property="og:image" content="https://anna-content-ai.github.io/anna-content-ai/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -301,6 +309,15 @@
   .tile:hover a.go { background-size: 100% 1.5px; }
   /* Wejścia */
 
+
+  .tile.wide.full { grid-column: span 6; grid-template-columns: 1.1fr 1fr; }
+  .examples { margin-top: 48px; }
+  .ex-title { font: 500 .8rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 14px; }
+  .examples .tile.quote { min-height: 220px; }
+  .tile a.go, .brand, .links a, .me-links a, .me-links button, footer a { min-height: 44px; display: inline-flex; align-items: center; }
+  .menu-btn { min-height: 44px; }
+  @media (max-width: 980px) { .tile.wide.full { grid-column: span 6; } }
+  .links a.lang { font: 500 .8rem var(--mono); letter-spacing: .06em; border: 1px solid var(--line); }
   /* ===== Animacje v3 ===== */
   .progress { position: fixed; left: 0; top: 0; height: 3px; width: 100%; z-index: 60; background: linear-gradient(90deg, var(--accent), #F0A285); transform-origin: left; transform: scaleX(var(--sp, 0)); pointer-events: none; }
   .js-tick .ticker ul { animation: none !important; will-change: transform; }
@@ -368,7 +385,7 @@
     @page { margin: 14mm; }
     :root { --bg: #fff; --surface: #fff; --surface-2: #F1F2EC; --line: #DADCD2; --line-2: #C9CCBF; --text: #14170F; --text-2: #3D4135; --muted: #5F6457; --sage-text: #4F5E35; --accent: #B4522E; }
     body { background: #fff; font-size: 10.5pt; }
-    .bar, .glow, .hero::before, .actions, .panel, .vtabs, .form, .direct button, .me-links, footer, .skip, .tile.quote, .thumb, .stats em, .contact::before, .tile::before { display: none !important; }
+    .examples, .bar, .glow, .hero::before, .actions, .panel, .vtabs, .form, .direct button, .me-links, footer, .skip, .tile.quote, .thumb, .stats em, .contact::before, .tile::before { display: none !important; }
     .print-only { display: block; font: 9.5pt var(--sans); color: var(--text-2); margin-bottom: 6mm; }
     .wrap { max-width: none; padding: 0; }
     .hero { padding: 0; } .hero-grid { display: block; }
@@ -426,6 +443,7 @@
         <li><a href="#proces">Proces</a></li>
         <li><a href="#o-mnie">O mnie</a></li>
         <li class="cta-nav"><a href="#kontakt">Kontakt</a></li>
+        <li><a class="lang" href="en/" hreflang="en" lang="en" aria-label="EN – English version">EN</a></li>
       </ul>
     </nav>
   </div>
@@ -473,7 +491,7 @@
 
     <section class="manifest" id="podejscie" aria-labelledby="mf-title">
       <div class="mf-stick">
-        <span class="eyebrow scramble">00 · podejście</span>
+        <span class="eyebrow scramble">podejście</span>
         <h2 class="mf" id="mf-title" aria-label="Twoja oferta nie potrzebuje rewolucyjnych, innowacyjnych, najlepszych na rynku przymiotników. Potrzebuje konkretu.">
           <span aria-hidden="true">Twoja oferta nie potrzebuje <span class="x" data-at=".18">rewolucyjnych,</span> <span class="x" data-at=".34">innowacyjnych,</span> <span class="x" data-at=".5">najlepszych na rynku</span> przymiotników. Potrzebuje <span class="ok" data-at=".72">konkretu.</span></span>
         </h2>
@@ -488,11 +506,11 @@
 
     <section id="projekty">
       <div class="head reveal">
-        <div><span class="eyebrow scramble">01 · projekty</span><h2>Wybrane projekty</h2></div>
+        <div><span class="eyebrow scramble">projekty</span><h2>Wybrane projekty</h2></div>
         <p>Cztery projekty: narzędzia AI, UX aplikacji, analiza treści strony i dane z social mediów.</p>
       </div>
       <div class="bento">
-        <article class="tile wide reveal">
+        <article class="tile wide full reveal">
           <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
   <rect width="320" height="200" fill="#1A1E14"/>
   <rect x="20" y="22" width="280" height="30" rx="15" fill="#E2683C"/>
@@ -512,11 +530,6 @@
             <p>Moja biblioteka promptów do researchu, edycji, sprawdzania faktów i przerabiania treści na inne kanały. Cztery działają jako gotowe Claude Skills z kryteriami jakości.</p>
             <a class="go" href="https://github.com/anna-content-ai/AI-Prompt-Library">Zobacz na GitHubie <span aria-hidden="true">↗</span></a>
           </div>
-        </article>
-        <article class="tile narrow quote reveal">
-          <small>UX writing · przycisk</small>
-          <p class="q"><s>Kliknij tutaj</s><br><u>Pobierz cennik (PDF)</u></p>
-          <small>Przycisk mówi, co się stanie.</small>
         </article>
         <article class="tile reveal">
           <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
@@ -563,7 +576,7 @@
             <a class="go" href="case-studies/analiza-tresci-www.html">Czytaj case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
-        <article class="tile wide reveal">
+        <article class="tile wide full reveal">
           <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
   <rect width="320" height="200" fill="#1A1E14"/>
   <rect x="20" y="20" width="10" height="10" fill="#E2683C"/><text x="36" y="29" font-size="11" fill="#B9BCAE">wyświetlenia</text>
@@ -583,17 +596,27 @@
             <a class="go" href="case-studies/social-media-producent-materialow.html">Czytaj case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
-        <article class="tile narrow quote reveal">
+      </div>
+      <div class="examples">
+        <h3 class="ex-title">Przykłady UX writing</h3>
+        <div class="bento">
+        <article class="tile quote reveal">
+          <small>UX writing · przycisk</small>
+          <p class="q"><s>Kliknij tutaj</s><br><u>Pobierz cennik (PDF)</u></p>
+          <small>Przycisk mówi, co się stanie.</small>
+        </article>
+        <article class="tile quote reveal">
           <small>UX writing · komunikat o błędzie</small>
           <p class="q"><s>Błąd 404</s><br><u>Tej strony już nie ma. Sprawdź aktualne oferty.</u></p>
           <small>Co się stało i co dalej.</small>
         </article>
+        </div>
       </div>
     </section>
 
     <section id="proces">
       <div class="head reveal">
-        <div><span class="eyebrow scramble">02 · proces</span><h2>Jak pracuję z AI</h2></div>
+        <div><span class="eyebrow scramble">proces</span><h2>Jak pracuję z AI</h2></div>
         <p>AI robi szkice i analizę. Etapy na pomarańczowo zawsze wykonuję sama.</p>
       </div>
       <div class="vtabs" role="tablist" aria-label="Procesy" hidden>
@@ -613,7 +636,7 @@
     </section>
 
     <section id="o-mnie">
-      <div class="head reveal"><div><span class="eyebrow scramble">03 · o mnie</span><h2>O mnie</h2></div></div>
+      <div class="head reveal"><div><span class="eyebrow scramble">o mnie</span><h2>O mnie</h2></div></div>
       <div class="about">
         <div class="card reveal">
           <div class="me-row">
@@ -641,7 +664,7 @@
 
     <section id="kontakt" class="contact reveal">
       <div class="intro">
-        <span class="eyebrow scramble">04 · kontakt</span>
+        <span class="eyebrow scramble">kontakt</span>
         <h2>Szukasz osoby od <span class="acc">treści, UX i AI</span>?</h2>
         <p>Napisz maila albo zaproś mnie na LinkedInie. Chętnie porozmawiam o roli w Twoim zespole.</p>
         <ul class="direct">

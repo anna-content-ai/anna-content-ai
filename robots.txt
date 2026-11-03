@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anna-content-ai.github.io/anna-content-ai/sitemap.xml
