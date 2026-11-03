@@ -248,6 +248,65 @@
   .tile { transform-style: preserve-3d; }
   .tile.tilt { transition: transform .12s linear, border-color .35s, box-shadow .35s; }
   .btn.mag { transition: transform .15s linear, box-shadow .2s, background .2s, border-color .2s; }
+
+  /* ===== Animacje „wow” ===== */
+  @property --a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+  .spot { position: absolute; inset: -68px -32px 0; pointer-events: none; z-index: -1; opacity: 0; transition: opacity .4s;
+    background-image: linear-gradient(rgba(226,104,60,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(226,104,60,.35) 1px, transparent 1px); background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(220px circle at var(--x, 50%) var(--y, 50%), #000, transparent 70%); mask-image: radial-gradient(220px circle at var(--x, 50%) var(--y, 50%), #000, transparent 70%); }
+  .hero:hover .spot { opacity: 1; }
+  .panel { transform-style: preserve-3d; transition: transform .25s var(--ease); }
+  .panel::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1.5px; pointer-events: none;
+    background: conic-gradient(from var(--a), transparent 0 62%, rgba(226,104,60,.9) 76%, rgba(163,177,138,.9) 88%, transparent 100%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: spin 5s linear infinite; }
+  @keyframes spin { to { --a: 360deg; } }
+
+  /* Manifest przewijany */
+  .manifest { padding: 0; height: 240vh; position: relative; }
+  .mf-stick { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+  .mf { font-size: clamp(2.2rem, 5.6vw, 4.8rem); line-height: 1.08; letter-spacing: -.04em; max-width: 1100px; color: var(--text); }
+  .mf .x { position: relative; display: inline-block; color: var(--text); transition: color .5s var(--ease), opacity .5s var(--ease), transform .5s var(--ease); }
+  .mf .x::after { content: ""; position: absolute; left: -2%; right: -2%; top: 54%; height: .08em; background: var(--accent); border-radius: 4px; transform: scaleX(0); transform-origin: left; transition: transform .55s var(--ease); }
+  .mf .x.on { color: #6E7262; transform: translateY(.04em) scale(.96); }
+  .mf .x.on::after { transform: scaleX(1); }
+  .mf .ok { position: relative; display: inline-block; color: var(--text); transition: color .6s var(--ease); }
+  .mf .ok::before { content: ""; position: absolute; inset: .08em -.12em 0; background: rgba(163,177,138,.22); border-radius: .14em; transform: scaleX(0); transform-origin: left; transition: transform .7s var(--ease); z-index: -1; }
+  .mf .ok.on { color: var(--sage-text); }
+  .mf .ok.on::before { transform: scaleX(1); }
+  .mf-note { display: inline-flex; align-items: center; gap: 10px; margin: 34px 0 0; font: 500 .9rem var(--mono); color: var(--sage-text); background: var(--sage-bg); border: 1px solid rgba(163,177,138,.3); padding: 8px 14px; border-radius: 999px; align-self: flex-start; opacity: 0; transform: translateY(12px); transition: opacity .5s var(--ease), transform .5s var(--ease); }
+  .mf-note i { width: 8px; height: 8px; border-radius: 50%; background: var(--sage); }
+  .mf-note.on { opacity: 1; transform: none; }
+  .mf-bar { position: absolute; left: 0; bottom: 14vh; height: 2px; width: 220px; background: var(--line); overflow: hidden; border-radius: 2px; }
+  .mf-bar i { display: block; height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(var(--p, 0)); }
+
+  /* Pasek umiejętności */
+  .ticker { margin: 40px -32px 0; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; display: grid; gap: 10px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .ticker ul { display: flex; gap: 36px; width: max-content; list-style: none; margin: 0; padding: 0; font: 500 1.35rem var(--display); letter-spacing: -.02em; }
+  .ticker li { display: inline-flex; align-items: center; gap: 36px; white-space: nowrap; color: var(--text-2); }
+  .ticker li::after { content: "✦"; color: var(--accent); font-size: .8em; }
+  .ticker .t1 { animation: tick 46s linear infinite; }
+  .ticker .t2 { animation: tick 52s linear infinite reverse; color: var(--muted); }
+  .ticker .t2 li { color: var(--muted); }
+  .ticker:hover ul { animation-play-state: paused; }
+  @keyframes tick { to { transform: translateX(-50%); } }
+
+  /* Nagłówki sekcji wjeżdżają spod maski */
+  .js .head.reveal h2 { clip-path: inset(0 0 100% 0); transform: translateY(40%); transition: clip-path .9s var(--ease) .1s, transform .9s var(--ease) .1s; }
+  .js .head.reveal.in h2 { clip-path: inset(0 0 -10% 0); transform: none; }
+
+  /* Miniatury projektów ożywają */
+  .thumb svg rect[x="86"] { transform-box: fill-box; transform-origin: left; }
+  .js .tile .thumb svg rect[x="86"] { transform: scaleX(0); transition: transform .9s var(--ease); }
+  .js .tile.in .thumb svg rect[x="86"] { transform: scaleX(1); }
+  .js .tile.in .thumb svg rect[x="86"]:nth-of-type(2n) { transition-delay: .15s; }
+  .js .tile .thumb svg line { stroke-dasharray: 260; stroke-dashoffset: 260; transition: stroke-dashoffset .8s var(--ease) .5s; }
+  .js .tile.in .thumb svg line { stroke-dashoffset: 0; }
+  .js .tile .thumb svg [style*="--d"] { opacity: 0; transform: translateY(6px); transform-box: fill-box; transition: opacity .45s var(--ease), transform .45s var(--ease); transition-delay: var(--d); }
+  .js .tile.in .thumb svg [style*="--d"] { opacity: 1; transform: none; }
+
+  /* Linki z rysowanym podkreśleniem */
+  .tile a.go { background: linear-gradient(var(--accent), var(--accent)) left bottom / 0 1.5px no-repeat; padding-bottom: 2px; transition: background-size .35s var(--ease); }
+  .tile:hover a.go { background-size: 100% 1.5px; }
   /* Wejścia */
   .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
   .js .reveal.in { opacity: 1; transform: none; }
@@ -266,6 +325,10 @@
     .about, .contact { grid-template-columns: 1fr; }
   }
   @media (max-width: 720px) {
+    .manifest { height: 190vh; }
+    .mf { font-size: 2.15rem; }
+    .ticker { margin: 24px -18px 0; }
+    .ticker ul { font-size: 1.1rem; }
     .wrap { padding: 0 18px; }
     .links { display: none; }
     .menu-btn { display: inline-flex; align-items: center; }
@@ -312,11 +375,24 @@
     .js h1.split .w { opacity: 1 !important; transform: none !important; filter: none !important; }
     .js .flow .steps li.me::before { background: var(--accent) !important; border-color: var(--accent) !important; transform: none !important; }
     .steps::after { display: none; }
+    .manifest { height: auto; padding-top: 8mm; } .mf-stick { position: static; height: auto; } .mf { font-size: 18pt; }
+    .mf .x::after { transform: scaleX(1); } .mf-note { opacity: 1; transform: none; }
+    .ticker, .spot, .mf-bar, .panel::before { display: none !important; }
+    .js .head.reveal h2 { clip-path: none !important; transform: none !important; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none !important; animation: none !important; }
     .js .reveal { opacity: 1; transform: none; }
+    .manifest { height: auto; padding-top: 120px; }
+    .mf-stick { position: static; height: auto; }
+    .mf .x { color: #6E7262; } .mf .x::after { transform: scaleX(1); }
+    .mf .ok { color: var(--sage-text); } .mf .ok::before { transform: scaleX(1); }
+    .mf-note { opacity: 1; transform: none; }
+    .mf-bar, .spot { display: none; }
+    .js .head.reveal h2 { clip-path: none; transform: none; }
+    .js .tile .thumb svg rect[x="86"], .js .tile .thumb svg [style*="--d"] { transform: none; opacity: 1; }
+    .js .tile .thumb svg line { stroke-dashoffset: 0; }
     .js h1.split .w { opacity: 1; transform: none; filter: none; }
     .js .flow:not(.lit) .steps li.me::before { background: var(--accent); border-color: var(--accent); transform: none; }
     .js .flow:not(.lit) .steps li.me { color: var(--text); }
@@ -347,6 +423,7 @@
   <div class="wrap">
     <div class="hero" id="top">
       <div class="glow" aria-hidden="true"></div>
+      <div class="spot" aria-hidden="true"></div>
       <div class="hero-grid">
         <div>
           <span class="pill"><i aria-hidden="true"></i>otwarta na nową rolę · Warszawa</span>
@@ -381,9 +458,24 @@
       </ul>
     </div>
 
+    <section class="manifest" id="podejscie" aria-labelledby="mf-title">
+      <div class="mf-stick">
+        <span class="eyebrow scramble">00 · podejście</span>
+        <h2 class="mf" id="mf-title" aria-label="Twoja oferta nie potrzebuje rewolucyjnych, innowacyjnych, najlepszych na rynku przymiotników. Potrzebuje konkretu.">
+          <span aria-hidden="true">Twoja oferta nie potrzebuje <span class="x" data-at=".18">rewolucyjnych,</span> <span class="x" data-at=".34">innowacyjnych,</span> <span class="x" data-at=".5">najlepszych na rynku</span> przymiotników. Potrzebuje <span class="ok" data-at=".72">konkretu.</span></span>
+        </h2>
+        <p class="mf-note" data-at=".82"><i aria-hidden="true"></i>3 frazy bez dowodu usunięte · 1 konkret dodany</p>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <ul class="t1"><li>Analiza treści na www</li><li>UX writing</li><li>Claude Skills</li><li>Fact-checking</li><li>Heurystyki Nielsena</li><li>Strategia treści</li><li>Analiza social media</li><li>Dostępność</li><li>Repurposing</li><li>GA4</li><li>SEO i WordPress</li><li>Automatyzacje</li><li>Analiza treści na www</li><li>UX writing</li><li>Claude Skills</li><li>Fact-checking</li><li>Heurystyki Nielsena</li><li>Strategia treści</li><li>Analiza social media</li><li>Dostępność</li><li>Repurposing</li><li>GA4</li><li>SEO i WordPress</li><li>Automatyzacje</li></ul>
+      <ul class="t2"><li>Automatyzacje</li><li>SEO i WordPress</li><li>GA4</li><li>Repurposing</li><li>Dostępność</li><li>Analiza social media</li><li>Strategia treści</li><li>Heurystyki Nielsena</li><li>Fact-checking</li><li>Claude Skills</li><li>UX writing</li><li>Analiza treści na www</li><li>Automatyzacje</li><li>SEO i WordPress</li><li>GA4</li><li>Repurposing</li><li>Dostępność</li><li>Analiza social media</li><li>Strategia treści</li><li>Heurystyki Nielsena</li><li>Fact-checking</li><li>Claude Skills</li><li>UX writing</li><li>Analiza treści na www</li></ul>
+    </div>
+
     <section id="projekty">
       <div class="head reveal">
-        <div><span class="eyebrow">01 · projekty</span><h2>Wybrane projekty</h2></div>
+        <div><span class="eyebrow scramble">01 · projekty</span><h2>Wybrane projekty</h2></div>
         <p>Interfejs, narzędzia AI, redakcja i dane. Każdy projekt pokazuje inny kawałek mojej pracy.</p>
       </div>
       <div class="bento">
@@ -420,16 +512,16 @@
   <circle cx="284" cy="38" r="20" fill="none" stroke="#30362A" stroke-width="7"/><circle cx="284" cy="38" r="10" fill="#ECEBE4"/>
   <text x="14" y="34" font-size="11" font-weight="600" fill="#8C9180" letter-spacing="1">PRZEPŁYW PROTOTYPU</text>
   <g font-size="11.5" font-weight="600" fill="#ECEBE4">
-    <rect x="14" y="96" width="84" height="30" rx="15" fill="#2A3022"/><text x="56" y="115" text-anchor="middle">Onboarding</text>
-    <text x="102" y="115" fill="#8C9180">→</text>
-    <rect x="116" y="96" width="96" height="30" rx="15" fill="#2A3022"/><text x="164" y="115" text-anchor="middle">Ekran główny</text>
-    <text x="216" y="115" fill="#8C9180">→</text>
-    <rect x="230" y="96" width="78" height="30" rx="15" fill="#2A3022"/><text x="269" y="115" text-anchor="middle">Oddychanie</text>
-    <rect x="14" y="142" width="86" height="30" rx="15" fill="#2A3022"/><text x="57" y="161" text-anchor="middle">Ukończenie</text>
-    <text x="104" y="161" fill="#8C9180">→</text>
-    <rect x="118" y="142" width="70" height="30" rx="15" fill="#2A3022"/><text x="153" y="161" text-anchor="middle">Nawyki</text>
-    <text x="192" y="161" fill="#8C9180">→</text>
-    <rect x="206" y="142" width="76" height="30" rx="15" fill="#E2683C"/><text x="244" y="161" text-anchor="middle" fill="#14170F">Postępy</text>
+    <rect x="14" y="96" width="84" height="30" rx="15" fill="#2A3022" style="--d:0.15s"/><text x="56" y="115" text-anchor="middle" style="--d:0.24s">Onboarding</text>
+    <text x="102" y="115" fill="#8C9180" style="--d:0.24s">→</text>
+    <rect x="116" y="96" width="96" height="30" rx="15" fill="#2A3022" style="--d:0.33s"/><text x="164" y="115" text-anchor="middle" style="--d:0.33s">Ekran główny</text>
+    <text x="216" y="115" fill="#8C9180" style="--d:0.42s">→</text>
+    <rect x="230" y="96" width="78" height="30" rx="15" fill="#2A3022" style="--d:0.42s"/><text x="269" y="115" text-anchor="middle" style="--d:0.51s">Oddychanie</text>
+    <rect x="14" y="142" width="86" height="30" rx="15" fill="#2A3022" style="--d:0.51s"/><text x="57" y="161" text-anchor="middle" style="--d:0.60s">Ukończenie</text>
+    <text x="104" y="161" fill="#8C9180" style="--d:0.60s">→</text>
+    <rect x="118" y="142" width="70" height="30" rx="15" fill="#2A3022" style="--d:0.69s"/><text x="153" y="161" text-anchor="middle" style="--d:0.69s">Nawyki</text>
+    <text x="192" y="161" fill="#8C9180" style="--d:0.78s">→</text>
+    <rect x="206" y="142" width="76" height="30" rx="15" fill="#E2683C" style="--d:0.78s"/><text x="244" y="161" text-anchor="middle" fill="#14170F" style="--d:0.87s">Postępy</text>
   </g>
 </svg></div>
           <div class="body">
@@ -489,7 +581,7 @@
 
     <section id="proces">
       <div class="head reveal">
-        <div><span class="eyebrow">02 · proces</span><h2>Jak pracuję z AI</h2></div>
+        <div><span class="eyebrow scramble">02 · proces</span><h2>Jak pracuję z AI</h2></div>
         <p>AI przyspiesza szkice i analizę. Etapy oznaczone na pomarańczowo zawsze wykonuję sama.</p>
       </div>
       <div class="vtabs" role="tablist" aria-label="Procesy" hidden>
@@ -509,7 +601,7 @@
     </section>
 
     <section id="o-mnie">
-      <div class="head reveal"><div><span class="eyebrow">03 · o mnie</span><h2>O mnie</h2></div></div>
+      <div class="head reveal"><div><span class="eyebrow scramble">03 · o mnie</span><h2>O mnie</h2></div></div>
       <div class="about">
         <div class="card reveal">
           <div class="me-row">
@@ -537,7 +629,7 @@
 
     <section id="kontakt" class="contact reveal">
       <div class="intro">
-        <span class="eyebrow">04 · kontakt</span>
+        <span class="eyebrow scramble">04 · kontakt</span>
         <h2>Szukasz osoby od <span class="acc">treści, UX i AI</span>?</h2>
         <p>Napisz albo zaproś mnie na LinkedInie. Chętnie opowiem, jak pracuję z AI i jak mogę pomóc Twojemu zespołowi.</p>
         <ul class="direct">
@@ -620,6 +712,42 @@
       b.addEventListener('pointermove', function (e) { var r = b.getBoundingClientRect(); b.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * .18) + 'px,' + ((e.clientY - r.top - r.height / 2) * .28) + 'px)'; });
       b.addEventListener('pointerleave', function () { b.style.transform = ''; });
     });
+  }
+  // ===== Animacje „wow” =====
+  var fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  // Światło kursora na siatce i paralaksa panelu
+  var hero = document.querySelector('.hero'), spot = hero.querySelector('.spot'), panel = document.querySelector('.panel'), glow = hero.querySelector('.glow');
+  if (!reduce && fine) hero.addEventListener('pointermove', function (e) {
+    var r = hero.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+    spot.style.setProperty('--x', (x + 32) + 'px'); spot.style.setProperty('--y', (y + 68) + 'px');
+    var nx = x / r.width - .5, ny = y / r.height - .5;
+    panel.style.transform = 'perspective(1000px) rotateY(' + (nx * 7) + 'deg) rotateX(' + (-ny * 6) + 'deg)';
+    glow.style.translate = (nx * 60) + 'px ' + (ny * 50) + 'px';
+  });
+  if (fine) hero.addEventListener('pointerleave', function () { panel.style.transform = ''; glow.style.translate = ''; });
+  // Manifest: skreślanie przy przewijaniu
+  var mf = document.querySelector('.manifest'), parts = [].slice.call(mf.querySelectorAll('[data-at]'));
+  var mbar = document.createElement('span'); mbar.className = 'mf-bar'; mbar.setAttribute('aria-hidden', 'true'); mbar.innerHTML = '<i></i>'; mf.querySelector('.mf-stick').appendChild(mbar);
+  function mfUpdate() {
+    if (reduce) { parts.forEach(function (el) { el.classList.add('on'); }); return; }
+    var r = mf.getBoundingClientRect(), total = r.height - innerHeight, p = Math.min(1, Math.max(0, -r.top / (total || 1)));
+    mbar.style.setProperty('--p', p);
+    parts.forEach(function (el) { el.classList.toggle('on', p >= parseFloat(el.getAttribute('data-at'))); });
+  }
+  addEventListener('scroll', mfUpdate, { passive: true }); addEventListener('resize', mfUpdate); mfUpdate();
+  // Etykiety sekcji: efekt „deszyfrowania”
+  var glyphs = 'ABCDEFGHIJKLMNOPRSTUWZ0123456789#%&/·';
+  function scramble(el) {
+    var fin = el.getAttribute('data-text') || el.textContent; el.setAttribute('data-text', fin);
+    var f = 0, total = 18;
+    (function tick() {
+      el.textContent = fin.split('').map(function (c, i) { if (c === ' ' || c === '·') return c; return i < (f / total) * fin.length ? c : glyphs[Math.floor(Math.random() * glyphs.length)]; }).join('');
+      if (++f <= total) setTimeout(tick, 38); else el.textContent = fin;
+    })();
+  }
+  if (!reduce && 'IntersectionObserver' in window) {
+    var ioS = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { scramble(e.target); ioS.unobserve(e.target); } }); }, { threshold: 1 });
+    document.querySelectorAll('.scramble').forEach(function (el) { el.setAttribute('aria-label', el.textContent); ioS.observe(el); });
   }
   // Wejścia sekcji
   var els = document.querySelectorAll('.reveal');
