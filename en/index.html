@@ -210,7 +210,10 @@
   .card p strong { color: var(--text); font-weight: 600; }
   .me-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; list-style: none; padding: 0; }
   .me-links a, .me-links button { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); color: var(--text); font: 600 .9rem var(--sans); text-decoration: none; cursor: pointer; transition: border-color .2s; }
-  .me-links a:hover, .me-links button:hover { border-color: var(--text-2); }
+  .me-links a { background: transparent; border: 1.5px solid #8C9180; color: var(--text); font-weight: 600; padding: 0 20px; }
+  .me-links a:hover { border-color: var(--text); }
+  .me-links a.ml-main { background: var(--accent); border-color: var(--accent); color: #14170F; }
+  .me-links a.ml-main:hover { background: #F0A285; border-color: #F0A285; }
   .skills summary { display: flex; align-items: center; gap: 10px; font: 700 1.25rem var(--display); cursor: pointer; list-style: none; min-height: 44px; letter-spacing: -.02em; }
   .skills summary::-webkit-details-marker { display: none; }
   .skills summary .count { font: 500 .76rem var(--mono); background: var(--surface-2); padding: 3px 8px; border-radius: 6px; color: var(--muted); letter-spacing: 0; }
@@ -228,7 +231,8 @@
   .contact .intro p { color: var(--text-2); margin: 18px 0 0; font-size: 1.06rem; }
   .direct { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 10px; }
   .direct a, .direct button { display: flex; justify-content: space-between; align-items: center; gap: 10px; width: 100%; min-height: 54px; padding: 0 18px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); font: 600 .98rem var(--sans); text-decoration: none; cursor: pointer; transition: border-color .2s; }
-  .direct a:hover, .direct button:hover { border-color: var(--text-2); }
+  .direct a, .direct button { border: 1.5px solid #8C9180; font-weight: 600; }
+  .direct a:hover, .direct button:hover { border-color: var(--text); }
   .direct span { font: 400 .8rem var(--mono); color: var(--muted); }
   .form { display: grid; gap: 14px; position: relative; }
   .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -516,7 +520,7 @@
       <ul class="stats reveal" aria-label="In numbers">
         <li><a href="#o-mnie"><b><span data-count="9">9</span>+ years</b><span>in marketing and social media</span><em>About →</em></a></li>
         <li><a href="#o-mnie"><b>SGH</b><span>postgraduate: AI and automation</span><em>About →</em></a></li>
-        <li><a href="https://github.com/anna-content-ai/AI-Prompt-Library"><b data-count="4">4</b><span>Claude Skills of my own</span><em>Library on GitHub ↗</em></a></li>
+        <li><a href="https://github.com/anna-content-ai/AI-Prompt-Library"><b data-count="4">4</b><span>Claude Skills of my own</span><em>Library on GitHub</em></a></li>
         <li><a href="#o-mnie"><b data-count="5">5</b><span>social media channels I coordinate</span><em>About →</em></a></li>
       </ul>
     </div>
@@ -561,7 +565,7 @@
             <p class="meta"><span>AI · automation</span><span>GitHub</span></p>
             <h3>AI Prompt Library</h3>
             <p>My library of prompts for research, editing, fact-checking and adapting content to other channels. Four of them work as ready-made Claude Skills with quality criteria.</p>
-            <a class="go" href="https://github.com/anna-content-ai/AI-Prompt-Library">View on GitHub <span aria-hidden="true">↗</span></a>
+            <a class="go" href="https://github.com/anna-content-ai/AI-Prompt-Library">View on GitHub</a>
           </div>
         </article>
         <article class="tile reveal">
@@ -653,12 +657,12 @@
         <p>I write about AI in marketing: regulation, prompts and fact-checking. Posts in Polish.</p>
       </div>
       <ul class="posts">
-        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7522961120341516288/"><p class="pm"><span>November 2026</span><span>AI Act · carousel</span></p><h3>Writing with AI? There are new rules.</h3><p class="px">What Article 50 of the AI Act means from 2 August 2026 for AI-assisted texts, and why human review matters.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
-        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7520749371777245184/"><p class="pm"><span>October 2026</span><span>fact-checking · prompt</span></p><h3>AI wrote this text. Can you spot two traps?</h3><p class="px">A puzzle with an AI-written text and a prompt that lists every claim to check before publishing.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
-        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7518973172571066368/"><p class="pm"><span>October 2026</span><span>summaries · prompt</span></p><h3>AI summarised a report in 20 seconds. But is it true?</h3><p class="px">One change to the prompt: a page number for every point, so the summary can be checked quickly.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
-        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7515336231090675712/"><p class="pm"><span>October 2026</span><span>LinkedIn · analysis</span></p><h3>LinkedIn limits the reach of generic AI posts.</h3><p class="px">What the platform actually announced, what Polish write-ups got wrong, and how it ties in with the AI Act.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7522961120341516288/"><p class="pm"><span>November 2026</span><span>AI Act · carousel</span></p><h3>Writing with AI? There are new rules.</h3><p class="px">What Article 50 of the AI Act means from 2 August 2026 for AI-assisted texts, and why human review matters.</p><span class="pgo">Read on LinkedIn</span></a></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7520749371777245184/"><p class="pm"><span>October 2026</span><span>fact-checking · prompt</span></p><h3>AI wrote this text. Can you spot two traps?</h3><p class="px">A puzzle with an AI-written text and a prompt that lists every claim to check before publishing.</p><span class="pgo">Read on LinkedIn</span></a></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7518973172571066368/"><p class="pm"><span>October 2026</span><span>summaries · prompt</span></p><h3>AI summarised a report in 20 seconds. But is it true?</h3><p class="px">One change to the prompt: a page number for every point, so the summary can be checked quickly.</p><span class="pgo">Read on LinkedIn</span></a></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7515336231090675712/"><p class="pm"><span>October 2026</span><span>LinkedIn · analysis</span></p><h3>LinkedIn limits the reach of generic AI posts.</h3><p class="px">What the platform actually announced, what Polish write-ups got wrong, and how it ties in with the AI Act.</p><span class="pgo">Read on LinkedIn</span></a></li>
       </ul>
-      <a class="btn btn-line posts-all" href="https://www.linkedin.com/in/anna-ziolkowska-ai/recent-activity/all/">All posts on LinkedIn <span aria-hidden="true">↗</span></a>
+      <a class="btn btn-line posts-all" href="https://www.linkedin.com/in/anna-ziolkowska-ai/recent-activity/all/">All posts on LinkedIn</a>
     </section>
 
     <section id="proces">
@@ -694,9 +698,8 @@
           <p>At a <strong>building materials manufacturer</strong> I’m responsible for content strategy and social media copy (Facebook, Instagram, YouTube, TikTok, LinkedIn), campaigns and contests, industry events and working with the agency. I also roll out AI tools in the team and run AI workshops.</p>
           <p>I completed the postgraduate programme <strong>“Artificial Intelligence and Automation in Marketing” at SGH Warsaw School of Economics</strong>, with a thesis on fake promotions impersonating airline brands. I hold Google Analytics (2026) and HubSpot Email Marketing certifications. I build and test AI tools myself, from prompts to Claude Skills on GitHub.</p>
           <ul class="me-links">
-            <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn ↗</a></li>
-            <li><a href="https://github.com/anna-content-ai">GitHub ↗</a></li>
-            <li><button type="button" id="pdf">Save as PDF</button></li>
+            <li><a class="ml-main" href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn</a></li>
+            <li><a href="https://github.com/anna-content-ai">GitHub</a></li>
           </ul>
         </div>
         <details class="card skills reveal" id="skills" open>
@@ -715,7 +718,7 @@
         <h2>Let’s talk about <span class="acc">content and AI</span></h2>
         <p>Send me an email or connect on LinkedIn. I’m happy to talk about AI in marketing and content strategy.</p>
         <ul class="direct">
-          <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn <span>↗</span></a></li>
+          <li><a href="https://www.linkedin.com/in/anna-ziolkowska-ai">LinkedIn</a></li>
           <li><button type="button" id="copy">aiprosciej@gmail.com <span id="copy-label">copy</span></button></li>
         </ul>
       </div>
@@ -947,7 +950,6 @@
   tabs.forEach(function (t, k) { t.addEventListener('click', function () { show(k); }); t.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); show((k + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length, true); } }); });
   setup(); mq.addEventListener('change', setup);
   // PDF
-  document.getElementById('pdf').addEventListener('click', function () { window.print(); });
   addEventListener('beforeprint', function () { document.getElementById('skills').setAttribute('open', ''); });
   // Kopiowanie adresu
   var mail = 'aiprosciej@gmail.com', st = document.getElementById('status'), cl = document.getElementById('copy-label');
