@@ -217,7 +217,6 @@
     .js .reveal { opacity: 1; transform: none; }
     .js .chart .fill { transform: none; }
   }
-  .hdr-r { display: flex; align-items: center; gap: 10px; }
   .bar .lang { font: 500 .78rem var(--mono); letter-spacing: .06em; text-decoration: none; color: inherit; border: 1px solid var(--line); border-radius: 8px; min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .file, .src, footer a, .toc a { min-height: 44px; display: inline-flex; align-items: center; }
   .crumbs a { display: inline-block; padding: 13px 0; }
@@ -228,6 +227,19 @@
   .pn button { min-height: 44px; padding: 0 18px; border-radius: 10px; border: 0; background: #E2683C; color: #14170F; font: 600 .9rem Inter, system-ui, sans-serif; cursor: pointer; }
   .pn button:focus-visible { outline: 2px solid #ECEBE4; outline-offset: 2px; }
   @media print { .pn { display: none !important; } }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .hdr-r { display: flex; align-items: center; gap: 10px; }
+  .lng { position: relative; }
+  .lng-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid #3A4130; background: transparent; color: #ECEBE4; font: 500 .82rem "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .06em; cursor: pointer; }
+  .lng-btn:hover, .lng-btn[aria-expanded="true"] { border-color: #8C9180; }
+  .lng-btn svg { transition: transform .2s; }
+  .lng-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+  .lng-list { position: absolute; right: 0; top: calc(100% + 8px); min-width: 180px; list-style: none; margin: 0; padding: 6px; background: #1B1F15; border: 1px solid #3A4130; border-radius: 12px; box-shadow: 0 20px 40px -20px rgba(0,0,0,.8); z-index: 50; }
+  .lng-list a { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 12px; border-radius: 8px; color: #ECEBE4; text-decoration: none; font: 500 .95rem Inter, system-ui, sans-serif; }
+  .lng-list a b { font: 500 .78rem "IBM Plex Mono", monospace; color: #8C9180; width: 22px; }
+  .lng-list a:hover { background: #252A1D; }
+  .lng-list a[aria-current="true"] { background: #252A1D; }
+  .lng-list a[aria-current="true"]::after { content: "✓"; margin-left: auto; color: #E2683C; }
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -237,7 +249,8 @@
 <header class="bar">
   <div class="wrap">
     <a class="file" href="../index.html"><span><b>AI Prościej</b><small>case study · content</small></span></a>
-    <span class="hdr-r"><a class="lang" href="../en/case-studies/analiza-tresci-www.html" hreflang="en" lang="en" aria-label="EN – English version">EN</a><a class="back" href="../index.html#projekty">← Wszystkie projekty</a></span>
+    <span class="hdr-r"><div class="lng" id="lng"><button type="button" class="lng-btn" id="lng-btn" aria-expanded="false" aria-controls="lng-list" aria-haspopup="true"><span class="vh">Język: </span>PL<svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><ul class="lng-list" id="lng-list" hidden><li><a href="#" aria-current="true" lang="pl"><b>PL</b>Polski</a></li><li><a href="../en/case-studies/analiza-tresci-www.html" hreflang="en" lang="en"><b>EN</b>English</a></li></ul></div>
+<script>(function(){var w=document.getElementById('lng'),b=document.getElementById('lng-btn'),l=document.getElementById('lng-list');function set(o){b.setAttribute('aria-expanded',o);l.hidden=!o;}b.addEventListener('click',function(){set(l.hidden);});l.querySelector('[aria-current]').addEventListener('click',function(e){e.preventDefault();set(false);b.focus();});document.addEventListener('click',function(e){if(!w.contains(e.target))set(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!l.hidden){set(false);b.focus();}});})();</script><a class="back" href="../index.html#projekty">← Wszystkie projekty</a></span>
   </div>
 </header>
 
