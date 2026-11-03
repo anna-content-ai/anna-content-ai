@@ -232,6 +232,22 @@
   footer a { color: var(--text-2); display: inline-block; padding: 6px 0; }
   .print-only { display: none; }
 
+
+  /* Animacje: nagłówek słowo po słowie */
+  .js h1.split .w { display: inline-block; opacity: 0; transform: translateY(.45em) rotate(2deg); filter: blur(6px); transition: opacity .7s var(--ease), transform .7s var(--ease), filter .7s var(--ease); }
+  .js h1.split.go .w { opacity: 1; transform: none; filter: none; }
+  /* Etapy procesu zapalane przy przewijaniu */
+  .js .steps li { transition: color .4s; }
+  .js .steps li::before { transition: background .4s, border-color .4s, transform .4s var(--ease); }
+  .js .flow:not(.lit) .steps li.me::before { background: var(--surface); border-color: var(--line-2); transform: scale(.7); }
+  .js .flow:not(.lit) .steps li.me { color: var(--text-2); }
+  .js .flow.lit .steps li.me::before { transition-delay: calc(var(--i) * 120ms); }
+  .steps::after { content: ""; position: absolute; left: 9px; top: 12px; width: 2px; height: calc(100% - 24px); background: var(--accent); transform-origin: top; transform: scaleY(0); transition: transform 1.2s var(--ease); }
+  .flow.lit .steps::after { transform: scaleY(1); }
+  /* Przechylenie kart i magnetyczne przyciski */
+  .tile { transform-style: preserve-3d; }
+  .tile.tilt { transition: transform .12s linear, border-color .35s, box-shadow .35s; }
+  .btn.mag { transition: transform .15s linear, box-shadow .2s, background .2s, border-color .2s; }
   /* Wejścia */
   .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
   .js .reveal.in { opacity: 1; transform: none; }
@@ -293,11 +309,17 @@
     .about { grid-template-columns: 1.2fr 1fr; }
     .contact { display: block; border: 1px solid var(--line); padding: 5mm; margin-top: 8mm; }
     .js .reveal { opacity: 1 !important; transform: none !important; }
+    .js h1.split .w { opacity: 1 !important; transform: none !important; filter: none !important; }
+    .js .flow .steps li.me::before { background: var(--accent) !important; border-color: var(--accent) !important; transform: none !important; }
+    .steps::after { display: none; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none !important; animation: none !important; }
     .js .reveal { opacity: 1; transform: none; }
+    .js h1.split .w { opacity: 1; transform: none; filter: none; }
+    .js .flow:not(.lit) .steps li.me::before { background: var(--accent); border-color: var(--accent); transform: none; }
+    .js .flow:not(.lit) .steps li.me { color: var(--text); }
   }
 </style>
 <script>document.documentElement.classList.add('js')</script>
@@ -328,7 +350,7 @@
       <div class="hero-grid">
         <div>
           <span class="pill"><i aria-hidden="true"></i>otwarta na nową rolę · Warszawa</span>
-          <h1>Poprawiam treści, żeby <span class="acc">sprzedawały jasno.</span></h1>
+          <h1 class="split" aria-label="Poprawiam treści, żeby sprzedawały jasno."><span aria-hidden="true"><span class="w">Poprawiam</span> <span class="w">treści,</span> <span class="w">żeby</span> <span class="acc"><span class="w">sprzedawały</span> <span class="w">jasno.</span></span></span></h1>
           <p class="lead">Marketing, UX writing i AI w jednym procesie. Ponad 9 lat doświadczenia, studia podyplomowe z AI na SGH i własne narzędzia do pracy z treścią.</p>
           <div class="actions">
             <a class="btn btn-main" href="#projekty">Zobacz projekty <span aria-hidden="true">→</span></a>
@@ -352,10 +374,10 @@
       </div>
 
       <ul class="stats reveal" aria-label="W liczbach">
-        <li><a href="#o-mnie"><b>9+ lat</b><span>w marketingu i social mediach</span><em>O mnie →</em></a></li>
+        <li><a href="#o-mnie"><b><span data-count="9">9</span>+ lat</b><span>w marketingu i social mediach</span><em>O mnie →</em></a></li>
         <li><a href="#o-mnie"><b>SGH</b><span>podyplomowe: AI i automatyzacja</span><em>O mnie →</em></a></li>
-        <li><a href="https://github.com/anna-content-ai/AI-Prompt-Library"><b>4</b><span>własne Claude Skills</span><em>Biblioteka na GitHubie ↗</em></a></li>
-        <li><a href="case-studies/social-media-producent-materialow.html"><b>98,8%</b><span>wyświetleń od nieobserwujących</span><em>Case study →</em></a></li>
+        <li><a href="https://github.com/anna-content-ai/AI-Prompt-Library"><b data-count="4">4</b><span>własne Claude Skills</span><em>Biblioteka na GitHubie ↗</em></a></li>
+        <li><a href="case-studies/social-media-producent-materialow.html"><b data-count="98,8" data-suffix="%">98,8%</b><span>wyświetleń od nieobserwujących</span><em>Case study →</em></a></li>
       </ul>
     </div>
 
@@ -411,10 +433,10 @@
   </g>
 </svg></div>
           <div class="body">
-            <p class="meta"><span>UX · prototyp</span><span>GitHub</span></p>
+            <p class="meta"><span>UX · prototyp</span><span>case study</span></p>
             <h3>Odetchnij Teraz</h3>
             <p>Projekt zespołowy z SGH: przepływy, interfejs i treści UX, sprawdzone heurystykami Nielsena i pod kątem dostępności.</p>
-            <a class="go" href="https://github.com/anna-content-ai/odetchnij-teraz">Zobacz na GitHubie <span aria-hidden="true">↗</span></a>
+            <a class="go" href="case-studies/odetchnij-teraz.html">Czytaj case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <article class="tile reveal">
@@ -433,8 +455,8 @@
           <div class="body">
             <p class="meta"><span>Content · UX writing</span><span>case study</span></p>
             <h3>Analiza treści na www</h3>
-            <p>Przegląd strony pod kątem faktów, jasności i nieuzasadnionych twierdzeń. Porównanie wyników dwóch modeli AI i gotowe poprawki.</p>
-            <a class="go" href="https://github.com/anna-content-ai/AI-Prompt-Library/blob/main/case-studies/ai-content-review-example.md">Czytaj na GitHubie <span aria-hidden="true">↗</span></a>
+            <p>Przegląd tekstu strony pod kątem faktów, jasności i nieuzasadnionych obietnic, gotowe poprawki i porównanie, jak to samo zadanie wykonują ChatGPT i Claude.</p>
+            <a class="go" href="case-studies/analiza-tresci-www.html">Czytaj case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <article class="tile wide reveal">
@@ -570,6 +592,34 @@
       }, 700);
     }
     run();
+  }
+  // Nagłówek słowo po słowie
+  var h1 = document.querySelector('h1.split');
+  h1.querySelectorAll('.w').forEach(function (w, k) { w.style.transitionDelay = (k * 90) + 'ms'; });
+  requestAnimationFrame(function () { requestAnimationFrame(function () { h1.classList.add('go'); }); });
+  // Liczby doliczające się od zera
+  function countUp(el) { var raw = el.getAttribute('data-count'), to = parseFloat(raw.replace(',', '.')), dec = (raw.split(',')[1] || '').length, suf = el.getAttribute('data-suffix') || '', t0 = null;
+    function step(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1300), e = 1 - Math.pow(1 - k, 3); el.textContent = (to * e).toFixed(dec).replace('.', ',') + suf; if (k < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step); }
+  // Etapy procesu
+  document.querySelectorAll('.steps').forEach(function (ol) { var i = 0; ol.querySelectorAll('li').forEach(function (li) { li.style.setProperty('--i', i++); }); });
+  if (!reduce && 'IntersectionObserver' in window) {
+    var ioC = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { countUp(e.target); ioC.unobserve(e.target); } }); }, { threshold: .6 });
+    document.querySelectorAll('[data-count]').forEach(function (n) { ioC.observe(n); });
+    var ioF = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('lit'); ioF.unobserve(e.target); } }); }, { threshold: .45 });
+    document.querySelectorAll('.flow').forEach(function (f) { ioF.observe(f); });
+  } else document.querySelectorAll('.flow').forEach(function (f) { f.classList.add('lit'); });
+  // Przechylenie kart i magnetyczne przyciski (tylko mysz)
+  if (!reduce && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('.tile:not(.quote)').forEach(function (t) {
+      t.addEventListener('pointermove', function (e) { var r = t.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; t.classList.add('tilt'); t.style.transform = 'perspective(900px) rotateX(' + (-y * 4) + 'deg) rotateY(' + (x * 5) + 'deg) translateY(-4px)'; });
+      t.addEventListener('pointerleave', function () { t.classList.remove('tilt'); t.style.transform = ''; });
+    });
+    document.querySelectorAll('.btn-main, .btn-line').forEach(function (b) {
+      b.classList.add('mag');
+      b.addEventListener('pointermove', function (e) { var r = b.getBoundingClientRect(); b.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * .18) + 'px,' + ((e.clientY - r.top - r.height / 2) * .28) + 'px)'; });
+      b.addEventListener('pointerleave', function () { b.style.transform = ''; });
+    });
   }
   // Wejścia sekcji
   var els = document.querySelectorAll('.reveal');
