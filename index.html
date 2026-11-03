@@ -426,6 +426,13 @@
     .js .flow:not(.lit) .steps li.me::before { background: var(--accent); border-color: var(--accent); transform: none; }
     .js .flow:not(.lit) .steps li.me { color: var(--text); }
   }
+  .pn { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 80; max-width: 560px; margin: 0 auto; display: flex; gap: 14px; align-items: center; padding: 14px 16px; border-radius: 14px; background: #1B1F15; color: #ECEBE4; border: 1px solid #3A4130; box-shadow: 0 20px 50px -20px rgba(0,0,0,.8); font: 400 .9rem/1.45 Inter, system-ui, sans-serif; }
+  .pn[hidden] { display: none; }
+  .pn p { margin: 0; flex: 1; }
+  .pn a { color: #F0A285; }
+  .pn button { min-height: 44px; padding: 0 18px; border-radius: 10px; border: 0; background: #E2683C; color: #14170F; font: 600 .9rem Inter, system-ui, sans-serif; cursor: pointer; }
+  .pn button:focus-visible { outline: 2px solid #ECEBE4; outline-offset: 2px; }
+  @media print { .pn { display: none !important; } }
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -687,7 +694,10 @@
   </div>
 </main>
 
-<footer><div class="wrap"><span>© Anna Ziółkowska · 2026</span><a href="#top">↑ Wróć na górę</a></div></footer>
+<footer><div class="wrap"><span>© Anna Ziółkowska · 2026</span><a href="prywatnosc/">Prywatność</a><a href="#top">↑ Wróć na górę</a></div></footer>
+<div class="pn" id="pn" role="region" aria-label="Informacja o prywatności" hidden><p>Ta strona nie używa cookies ani statystyk. <a href="prywatnosc/">Polityka prywatności</a></p><button type="button" id="pn-ok">Rozumiem</button></div>
+<script>(function(){var k='privacy-notice',b=document.getElementById('pn');try{if(localStorage.getItem(k))return;}catch(e){}b.hidden=false;document.getElementById('pn-ok').addEventListener('click',function(){b.hidden=true;try{localStorage.setItem(k,'1');}catch(e){}});})();</script>
+
 
 <script>
 (function () {
