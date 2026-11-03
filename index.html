@@ -10,7 +10,7 @@
 <link rel="alternate" hreflang="pl" href="https://anna-content-ai.github.io/anna-content-ai/">
 <link rel="alternate" hreflang="en" href="https://anna-content-ai.github.io/anna-content-ai/en/">
 <link rel="alternate" hreflang="x-default" href="https://anna-content-ai.github.io/anna-content-ai/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Anna Ziółkowska", "jobTitle": "Content Marketing & AI Specialist", "url": "https://anna-content-ai.github.io/anna-content-ai/", "email": "mailto:aiprosciej@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Szkoła Główna Handlowa w Warszawie"}, "knowsAbout": ["UX writing", "Content strategy", "Fact-checking", "Content design", "Generative AI", "Claude Skills", "Social media analytics", "Accessibility"], "sameAs": ["https://www.linkedin.com/in/anna-ziolkowska-ai", "https://github.com/anna-content-ai"], "description": "Treści, UX writing i AI w marketingu"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Anna Ziółkowska", "jobTitle": "Content Marketing & AI Specialist", "url": "https://anna-content-ai.github.io/anna-content-ai/", "image": "https://anna-content-ai.github.io/anna-content-ai/photo.jpg", "email": "mailto:aiprosciej@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Szkoła Główna Handlowa w Warszawie"}, "knowsAbout": ["UX writing", "Content strategy", "Fact-checking", "Content design", "Generative AI", "Claude Skills", "Social media analytics", "Accessibility"], "sameAs": ["https://www.linkedin.com/in/anna-ziolkowska-ai", "https://github.com/anna-content-ai"], "description": "Treści, UX writing i AI w marketingu"}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#14170F">
 <meta property="og:type" content="website">
@@ -68,6 +68,7 @@
   .bar.scrolled { border-color: var(--line); }
   .bar.hide { transform: translateY(-100%); }
   .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+  img.avatar.photo { width: 96px; height: 96px; object-fit: cover; padding: 0; background: var(--surface-2); border: 1px solid var(--line-2); display: block; }
   .brand { display: inline-flex; align-items: center; gap: 10px; font: 700 1.05rem var(--display); letter-spacing: -.02em; text-decoration: none; }
   .brand i { width: 24px; height: 24px; border-radius: 7px; background: var(--accent); position: relative; }
   .brand i::after { content: ""; position: absolute; left: 6px; right: 6px; top: 11px; height: 2px; background: var(--accent-ink); box-shadow: 0 -4px 0 var(--accent-ink); }
@@ -648,9 +649,7 @@
       <div class="about">
         <div class="card reveal">
           <div class="me-row">
-            <!-- ZDJĘCIE: wstaw photo.jpg (kwadrat lub 4:5, min. 600 px) i zamień <span class="avatar"> na:
-                 <img class="avatar" src="photo.jpg" alt="Anna Ziółkowska" width="600" height="600"> -->
-            <span class="avatar" aria-hidden="true">AZ</span>
+<picture><source srcset="photo.webp" type="image/webp"><img class="avatar photo" src="photo.jpg" alt="Portret Anny Ziółkowskiej" width="600" height="600" loading="lazy" decoding="async"></picture>
             <div><b>Anna Ziółkowska</b><span>Content Marketing & AI Specialist · Warszawa</span></div>
           </div>
           <p>Od ponad 9 lat zajmuję się content marketingiem i komunikacją marek B2B i B2C: od strategii treści, przez kampanie i e-mail marketing, po targi i wydarzenia. Dziś łączę to z praktycznym wykorzystaniem AI.</p>
