@@ -329,11 +329,18 @@
   @media (max-width: 980px) { .tile.wide.full { grid-column: span 6; } }
   .links a.lang { font: 500 .8rem var(--mono); letter-spacing: .06em; border: 1px solid var(--line); }
   .posts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .post { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px 24px; }
-  .post .pm { display: flex; gap: 10px; flex-wrap: wrap; font: 500 .74rem var(--mono); color: var(--muted); margin: 0 0 10px; }
-  .post .pm span + span::before { content: "·"; margin-right: 10px; }
-  .post h3 { font-size: 1.2rem; line-height: 1.2; margin-bottom: 8px; }
-  .post p:last-child { margin: 0; color: var(--text-2); font-size: .95rem; }
+  .posts > li { display: flex; }
+  .post { display: flex; flex-direction: column; width: 100%; background: #F4F3EC; color: #14170F; border-radius: 18px; padding: 22px 24px; text-decoration: none; border: 1px solid transparent; transition: transform .3s var(--ease), box-shadow .3s; }
+  .post:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -30px rgba(0,0,0,.9); }
+  .post:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .post .pm { display: flex; gap: 6px 12px; flex-wrap: wrap; font: 500 .74rem var(--mono); color: #B4522E; margin: 0 0 10px; }
+  .post .pm span { white-space: nowrap; }
+  .post .pm span + span::before { content: "·"; margin-right: 12px; color: #9A9E8E; }
+  .post h3 { font-size: 1.25rem; line-height: 1.2; margin-bottom: 8px; color: #14170F; }
+  .post .px { margin: 0 0 18px; color: #4A4E42; font-size: .95rem; }
+  .post .pgo { margin-top: auto; font-weight: 600; font-size: .92rem; color: #14170F; display: inline-flex; gap: 6px; align-items: center; min-height: 44px; }
+  .post .pgo span { color: #B4522E; transition: transform .25s var(--ease); }
+  .post:hover .pgo span { transform: translate(3px,-3px); }
   .posts-all { margin-top: 20px; }
   @media (max-width: 720px) { .posts { grid-template-columns: 1fr; } }
   @media print { .posts-all { display: none !important; } }
@@ -646,10 +653,10 @@
         <p>I write about AI in marketing: regulation, prompts and fact-checking. Posts in Polish.</p>
       </div>
       <ul class="posts">
-        <li class="post reveal"><p class="pm"><span>November 2026</span><span>AI Act · carousel</span></p><h3>Writing with AI? There are new rules.</h3><p>What Article 50 of the AI Act means from 2 August 2026 for AI-assisted texts, and why human review matters.</p></li>
-        <li class="post reveal"><p class="pm"><span>October 2026</span><span>fact-checking · prompt</span></p><h3>AI wrote this text. Can you spot two traps?</h3><p>A puzzle with an AI-written text and a prompt that lists every claim to check before publishing.</p></li>
-        <li class="post reveal"><p class="pm"><span>October 2026</span><span>summaries · prompt</span></p><h3>AI summarised a report in 20 seconds. But is it true?</h3><p>One change to the prompt: a page number for every point, so the summary can be checked quickly.</p></li>
-        <li class="post reveal"><p class="pm"><span>October 2026</span><span>LinkedIn · analysis</span></p><h3>LinkedIn limits the reach of generic AI posts.</h3><p>What the platform actually announced, what Polish write-ups got wrong, and how it ties in with the AI Act.</p></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7522961120341516288/"><p class="pm"><span>November 2026</span><span>AI Act · carousel</span></p><h3>Writing with AI? There are new rules.</h3><p class="px">What Article 50 of the AI Act means from 2 August 2026 for AI-assisted texts, and why human review matters.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7520749371777245184/"><p class="pm"><span>October 2026</span><span>fact-checking · prompt</span></p><h3>AI wrote this text. Can you spot two traps?</h3><p class="px">A puzzle with an AI-written text and a prompt that lists every claim to check before publishing.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7518973172571066368/"><p class="pm"><span>October 2026</span><span>summaries · prompt</span></p><h3>AI summarised a report in 20 seconds. But is it true?</h3><p class="px">One change to the prompt: a page number for every point, so the summary can be checked quickly.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
+        <li class="reveal"><a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7515336231090675712/"><p class="pm"><span>October 2026</span><span>LinkedIn · analysis</span></p><h3>LinkedIn limits the reach of generic AI posts.</h3><p class="px">What the platform actually announced, what Polish write-ups got wrong, and how it ties in with the AI Act.</p><span class="pgo">Read on LinkedIn <span aria-hidden="true">↗</span></span></a></li>
       </ul>
       <a class="btn btn-line posts-all" href="https://www.linkedin.com/in/anna-ziolkowska-ai/recent-activity/all/">All posts on LinkedIn <span aria-hidden="true">↗</span></a>
     </section>
