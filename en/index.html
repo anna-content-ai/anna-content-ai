@@ -318,6 +318,8 @@
   /* Wejścia */
 
 
+  .thumb { border: 0; }
+  .t-sage { background: #A3B18A; } .t-terra { background: #E2683C; } .t-cream { background: #F6E1D6; } .t-light { background: #ECEBE4; }
   .tile.wide.full { grid-column: span 6; grid-template-columns: 1.1fr 1fr; }
   .examples { margin-top: 48px; }
   .ex-title { font: 500 .8rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 14px; }
@@ -339,7 +341,6 @@
   .progress { position: fixed; left: 0; top: 0; height: 3px; width: 100%; z-index: 60; background: linear-gradient(90deg, var(--accent), #F0A285); transform-origin: left; transform: scaleX(var(--sp, 0)); pointer-events: none; }
   .js-tick .ticker ul { animation: none !important; will-change: transform; }
   .js .hero-in { will-change: transform, opacity; }
-  .thumb svg { translate: 0 var(--py, 0px); scale: 1.08; }
   .js .flow .steps::after { transform: scaleY(var(--p, 0)); transition: none; }
   .js .flow .steps li.me::before { transition-delay: 0s !important; }
   .js .flow .steps li.me:not(.on)::before { background: var(--surface); border-color: var(--line-2); transform: scale(.7); }
@@ -385,7 +386,7 @@
     .bar.open .links .cta-nav a { margin: 8px 0 0; justify-content: center; }
     .hero { padding-top: 40px; }
     .tile, .tile.wide, .tile.narrow { grid-column: span 6; }
-    .thumb, .tile.wide .thumb { aspect-ratio: 5/2; }
+    .thumb, .tile.wide .thumb { aspect-ratio: 16/10; }
     .stats a { padding-right: 10px; }
     .panel-top .dots { display: none; }
     .panel-top { font-size: .7rem; }
@@ -535,18 +536,19 @@
       </div>
       <div class="bento">
         <article class="tile wide full reveal">
-          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#1A1E14"/>
-  <rect x="20" y="22" width="280" height="30" rx="15" fill="#E2683C"/>
-  <text x="36" y="42" font-size="11.5" fill="#14170F" font-family="ui-monospace, Menlo, Consolas, monospace">claude-skills/content-review/SKILL.md</text>
-  <text x="20" y="80" font-size="11" fill="#8C9180" font-family="ui-monospace, Menlo, Consolas, monospace">name: content-review</text>
-  <text x="20" y="104" font-size="11" font-weight="600" fill="#8C9180" letter-spacing="1">TRIGGERED BY</text>
-  <g font-size="12" font-weight="600" fill="#ECEBE4">
-    <rect x="20" y="114" width="132" height="28" rx="14" fill="#2A3022"/><text x="86" y="132" text-anchor="middle">“check this copy”</text>
-    <rect x="160" y="114" width="140" height="28" rx="14" fill="#2A3022"/><text x="230" y="132" text-anchor="middle">“review this copy”</text>
+          <div class="thumb t-terra" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#E2683C"/>
+  <circle cx="300" cy="0" r="90" fill="#E87B53"/>
+  <rect x="24" y="24" width="272" height="152" rx="14" fill="#14170F"/>
+  <circle cx="40" cy="40" r="3.5" fill="#3A4130"/><circle cx="52" cy="40" r="3.5" fill="#3A4130"/><circle cx="64" cy="40" r="3.5" fill="#3A4130"/>
+  <text x="80" y="44" font-size="10" fill="#8C9180" font-family="ui-monospace, Menlo, Consolas, monospace">content-review/SKILL.md</text>
+  <text x="40" y="72" font-size="10.5" fill="#A3B18A" font-family="ui-monospace, Menlo, Consolas, monospace" style="--d:0.2s">name: content-review</text>
+  <g font-size="10.5" font-weight="600" fill="#14170F">
+    <rect x="40" y="84" width="112" height="22" rx="11" fill="#ECEBE4" style="--d:0.35s"/><text x="96" y="99" text-anchor="middle" style="--d:0.35s">“check this copy”</text>
+    <rect x="158" y="84" width="110" height="22" rx="11" fill="#ECEBE4" style="--d:0.5s"/><text x="213" y="99" text-anchor="middle" style="--d:0.5s">“review this copy”</text>
   </g>
-  <text x="20" y="168" font-size="22" font-weight="800" fill="#ECEBE4">4 Claude Skills</text>
-  <text x="20" y="188" font-size="11.5" fill="#8C9180">+ 9 prompts and workflows</text>
+  <text x="40" y="142" font-size="21" font-weight="800" fill="#ECEBE4" style="--d:0.65s">4 Claude Skills</text>
+  <text x="40" y="162" font-size="10.5" fill="#B8B8AE" style="--d:0.75s">+ 9 prompts and workflows</text>
 </svg></div>
           <div class="body">
             <p class="meta"><span>AI · automation</span><span>GitHub</span></p>
@@ -556,68 +558,68 @@
           </div>
         </article>
         <article class="tile reveal">
-          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#1A1E14"/>
-  <circle cx="284" cy="38" r="20" fill="none" stroke="#30362A" stroke-width="7"/><circle cx="284" cy="38" r="10" fill="#ECEBE4"/>
-  <text x="14" y="34" font-size="11" font-weight="600" fill="#8C9180" letter-spacing="1">PROTOTYPE FLOW</text>
-  <g font-size="11.5" font-weight="600" fill="#ECEBE4">
-    <rect x="14" y="96" width="84" height="30" rx="15" fill="#2A3022" style="--d:0.15s"/><text x="56" y="115" text-anchor="middle" style="--d:0.24s">Onboarding</text>
-    <text x="102" y="115" fill="#8C9180" style="--d:0.24s">→</text>
-    <rect x="116" y="96" width="96" height="30" rx="15" fill="#2A3022" style="--d:0.33s"/><text x="164" y="115" text-anchor="middle" style="--d:0.33s">Home</text>
-    <text x="216" y="115" fill="#8C9180" style="--d:0.42s">→</text>
-    <rect x="230" y="96" width="78" height="30" rx="15" fill="#2A3022" style="--d:0.42s"/><text x="269" y="115" text-anchor="middle" style="--d:0.51s">Breathing</text>
-    <rect x="14" y="142" width="86" height="30" rx="15" fill="#2A3022" style="--d:0.51s"/><text x="57" y="161" text-anchor="middle" style="--d:0.60s">Done</text>
-    <text x="104" y="161" fill="#8C9180" style="--d:0.60s">→</text>
-    <rect x="118" y="142" width="70" height="30" rx="15" fill="#2A3022" style="--d:0.69s"/><text x="153" y="161" text-anchor="middle" style="--d:0.69s">Habits</text>
-    <text x="192" y="161" fill="#8C9180" style="--d:0.78s">→</text>
-    <rect x="206" y="142" width="76" height="30" rx="15" fill="#E2683C" style="--d:0.78s"/><text x="244" y="161" text-anchor="middle" fill="#14170F" style="--d:0.87s">Progress</text>
+          <div class="thumb t-sage" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#A3B18A"/>
+  <circle cx="160" cy="210" r="150" fill="#B4C09C"/>
+  <rect x="108" y="22" width="104" height="200" rx="18" fill="#14170F"/>
+  <rect x="114" y="28" width="92" height="190" rx="13" fill="#F4F3EC"/>
+  <text x="124" y="46" font-size="8" fill="#6B6F60" font-weight="600">09:41</text>
+  <text x="124" y="66" font-size="11" font-weight="700" fill="#14170F">Breath 4-7-8</text>
+  <circle cx="160" cy="112" r="30" fill="#F6D9CB" style="--d:0.2s"/><circle cx="160" cy="112" r="19" fill="#E2683C" style="--d:0.35s"/>
+  <text x="160" y="116" font-size="9" font-weight="700" fill="#14170F" text-anchor="middle" style="--d:0.5s">Inhale</text>
+  <rect x="126" y="158" width="68" height="22" rx="11" fill="#14170F" style="--d:0.6s"/><text x="160" y="173" font-size="9" font-weight="600" fill="#F4F3EC" text-anchor="middle" style="--d:0.6s">Start</text>
+  <g font-size="10" font-weight="600">
+    <rect x="22" y="62" width="74" height="26" rx="13" fill="#F4F3EC" style="--d:0.7s"/><text x="59" y="79" text-anchor="middle" fill="#14170F" style="--d:0.7s">✓ Habits</text>
+    <rect x="224" y="112" width="74" height="26" rx="13" fill="#14170F" style="--d:0.85s"/><text x="261" y="129" text-anchor="middle" fill="#F4F3EC" style="--d:0.85s">SOS · 1 min</text>
   </g>
 </svg></div>
           <div class="body">
-            <p class="meta"><span>UX · prototyp</span><span>case study</span></p>
+            <p class="meta"><span>UX · prototype</span><span>case study</span></p>
             <h3>Odetchnij Teraz</h3>
             <p>An app for everyday stress (team project, SGH). I made the screens, flows and copy, and reviewed UX and accessibility.</p>
-            <a class="go" href="case-studies/odetchnij-teraz.html">Czytaj case study <span aria-hidden="true">→</span></a>
+            <a class="go" href="case-studies/odetchnij-teraz.html">Read case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <article class="tile reveal">
-          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#1A1E14"/>
-  <text x="20" y="32" font-size="11" font-weight="600" fill="#8C9180" letter-spacing="1">BEFORE</text>
-  <text x="20" y="54" font-size="14" fill="#8C9180">Build the perfect website instantly</text>
-  <line x1="20" y1="49" x2="247" y2="49" stroke="#E2683C" stroke-width="2"/>
-  <text x="20" y="88" font-size="11" font-weight="600" fill="#ECEBE4" letter-spacing="1">AFTER</text>
-  <text x="20" y="110" font-size="14" font-weight="700" fill="#ECEBE4">Create your first website draft with AI</text>
-  <rect x="20" y="138" width="92" height="36" rx="18" fill="#2A3022"/><text x="66" y="161" font-size="13" fill="#8C9180" text-anchor="middle">Continue</text>
-  <line x1="36" y1="156" x2="96" y2="156" stroke="#E2683C" stroke-width="2"/>
-  <text x="118" y="161" font-size="14" fill="#8C9180">→</text>
-  <rect x="136" y="138" width="172" height="36" rx="18" fill="#E2683C"/><text x="222" y="161" font-size="12.5" font-weight="600" fill="#14170F" text-anchor="middle">Create my website draft</text>
+          <div class="thumb t-cream" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#F6E1D6"/>
+  <rect x="22" y="20" width="276" height="160" rx="14" fill="#FFFDF8"/>
+  <text x="38" y="44" font-size="9.5" font-weight="700" fill="#9A9E8E" letter-spacing="1">BEFORE</text>
+  <text x="38" y="62" font-size="12" fill="#6B6F60">Build the perfect website instantly</text>
+  <line x1="38" y1="58" x2="238" y2="58" stroke="#E2683C" stroke-width="2"/>
+  <text x="38" y="92" font-size="9.5" font-weight="700" fill="#B4522E" letter-spacing="1">AFTER</text>
+  <text x="38" y="110" font-size="12.5" font-weight="700" fill="#14170F">Create your first website draft with AI</text>
+  <rect x="38" y="132" width="70" height="28" rx="14" fill="#ECEBE4"/><text x="73" y="150" font-size="10.5" fill="#6B6F60" text-anchor="middle">Continue</text>
+  <line x1="50" y1="146" x2="96" y2="146" stroke="#E2683C" stroke-width="2"/>
+  <text x="114" y="150" font-size="12" fill="#6B6F60">→</text>
+  <rect x="132" y="132" width="150" height="28" rx="14" fill="#E2683C"/><text x="207" y="150" font-size="10.5" font-weight="700" fill="#14170F" text-anchor="middle">Create my website draft</text>
 </svg></div>
           <div class="body">
             <p class="meta"><span>Content · UX writing</span><span>case study</span></p>
             <h3>Website copy review</h3>
             <p>A review of website copy: facts, clarity and unsupported promises. Ready-to-use fixes and a comparison of how ChatGPT and Claude handle the same task.</p>
-            <a class="go" href="case-studies/analiza-tresci-www.html">Czytaj case study <span aria-hidden="true">→</span></a>
+            <a class="go" href="case-studies/analiza-tresci-www.html">Read case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <article class="tile wide full reveal">
-          <div class="thumb" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
-  <rect width="320" height="200" fill="#1A1E14"/>
-  <rect x="20" y="20" width="10" height="10" fill="#E2683C"/><text x="36" y="29" font-size="11" fill="#B9BCAE">views</text>
-  <rect x="120" y="20" width="10" height="10" fill="#A3B18A"/><text x="136" y="29" font-size="11" fill="#B9BCAE">interactions</text>
-  <g font-size="12" font-weight="600" fill="#ECEBE4">
-    <text x="20" y="64">Reels</text><rect x="86" y="52" width="122" height="11" rx="3" fill="#E2683C"/><rect x="86" y="66" width="95" height="11" rx="3" fill="#A3B18A"/>
-    <text x="20" y="110">Posts</text><rect x="86" y="98" width="63" height="11" rx="3" fill="#E2683C"/><rect x="86" y="112" width="107" height="11" rx="3" fill="#A3B18A"/>
-    <text x="20" y="156">Stories</text><rect x="86" y="144" width="30" height="11" rx="3" fill="#E2683C"/><rect x="86" y="158" width="12" height="11" rx="3" fill="#A3B18A"/>
+          <div class="thumb t-light" aria-hidden="true"><svg viewBox="0 0 320 200" font-family="Inter, system-ui, sans-serif">
+  <rect width="320" height="200" fill="#ECEBE4"/>
+  <rect x="20" y="22" width="10" height="10" rx="2" fill="#E2683C"/><text x="36" y="31" font-size="10.5" fill="#4A4E42">views</text>
+  <rect x="120" y="22" width="10" height="10" rx="2" fill="#6E7D57"/><text x="136" y="31" font-size="10.5" fill="#4A4E42">interactions</text>
+  <g font-size="11.5" font-weight="700" fill="#14170F">
+    <text x="20" y="66">Reels</text><rect x="86" y="54" width="170" height="11" rx="3" fill="#E2683C"/><rect x="86" y="68" width="133" height="11" rx="3" fill="#6E7D57"/>
+    <text x="20" y="112">Posts</text><rect x="86" y="100" width="88" height="11" rx="3" fill="#E2683C"/><rect x="86" y="114" width="151" height="11" rx="3" fill="#6E7D57"/>
+    <text x="20" y="158">Stories</text><rect x="86" y="146" width="41" height="11" rx="3" fill="#E2683C"/><rect x="86" y="160" width="17" height="11" rx="3" fill="#6E7D57"/>
   </g>
-  <text x="20" y="190" font-size="10.5" fill="#8C9180">Share of content types, 90 days (percent)</text>
+  <text x="20" y="190" font-size="9.5" fill="#6B6F60">Share of content types, 90 days (percent)</text>
 </svg></div>
+
           <div class="body">
             <p class="meta"><span>Social media · data</span><span>case study</span></p>
             <h3>Building materials brand channel</h3>
             <p>90 days of data from a building materials manufacturer’s channel: where reach comes from, what drives interactions and the testing plan. Work with an agency.</p>
             <p class="num"><b>98.8%</b> of views from non-followers · <b>50.2%</b> of interactions from posts</p>
-            <a class="go" href="case-studies/social-media-producent-materialow.html">Czytaj case study <span aria-hidden="true">→</span></a>
+            <a class="go" href="case-studies/social-media-producent-materialow.html">Read case study <span aria-hidden="true">→</span></a>
           </div>
         </article>
       </div>
