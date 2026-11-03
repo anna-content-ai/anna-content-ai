@@ -219,6 +219,13 @@
   .bar .lang { font: 500 .78rem var(--mono); letter-spacing: .06em; text-decoration: none; color: inherit; border: 1px solid var(--line); border-radius: 8px; min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .file, .src, footer a, .toc a { min-height: 44px; display: inline-flex; align-items: center; }
   .crumbs a { display: inline-block; padding: 13px 0; }
+  .pn { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 80; max-width: 560px; margin: 0 auto; display: flex; gap: 14px; align-items: center; padding: 14px 16px; border-radius: 14px; background: #1B1F15; color: #ECEBE4; border: 1px solid #3A4130; box-shadow: 0 20px 50px -20px rgba(0,0,0,.8); font: 400 .9rem/1.45 Inter, system-ui, sans-serif; }
+  .pn[hidden] { display: none; }
+  .pn p { margin: 0; flex: 1; }
+  .pn a { color: #F0A285; }
+  .pn button { min-height: 44px; padding: 0 18px; border-radius: 10px; border: 0; background: #E2683C; color: #14170F; font: 600 .9rem Inter, system-ui, sans-serif; cursor: pointer; }
+  .pn button:focus-visible { outline: 2px solid #ECEBE4; outline-offset: 2px; }
+  @media print { .pn { display: none !important; } }
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -316,7 +323,10 @@
     </nav>
   </div>
 </main>
-<footer><div class="wrap"><span>© Anna Ziółkowska · the brand in the example is fictional</span><a href="#main">↑ Back to top</a></div></footer>
+<footer><div class="wrap"><span>© Anna Ziółkowska · the brand in the example is fictional</span><a href="../privacy/">Privacy</a><a href="#main">↑ Back to top</a></div></footer>
+<div class="pn" id="pn" role="region" aria-label="Privacy notice" hidden><p>This site uses no cookies or analytics. <a href="../privacy/">Privacy policy</a></p><button type="button" id="pn-ok">Got it</button></div>
+<script>(function(){var k='privacy-notice',b=document.getElementById('pn');try{if(localStorage.getItem(k))return;}catch(e){}b.hidden=false;document.getElementById('pn-ok').addEventListener('click',function(){b.hidden=true;try{localStorage.setItem(k,'1');}catch(e){}});})();</script>
+
 <script>
 (function () {
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
